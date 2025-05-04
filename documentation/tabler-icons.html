@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Tabler Icons - Muze Documentation | Muze - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+  <link href="../assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
+
+  <!-- CSS Muze Template -->
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+
+  <!-- CSS Muze Doc -->
+  <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body>
+  <!-- Muze Documentation -->
+<div class="py-0 muze-documentation">
+	<header class="doc-header bg-white px-3 px-md-4 shadow-sm position-fixed">
+    <nav class="navbar navbar-expand-lg has-header-inner py-0">
+      <a class="navbar-brand" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="21" viewBox="0 0 102 21">
+          <g data-name="Group 5" transform="translate(0 -14)">
+            <path d="M38.591,21a12.83,12.83,0,0,1-4-.588,8.284,8.284,0,0,1-3.046-1.736,7.742,7.742,0,0,1-1.93-2.8,9.914,9.914,0,0,1-.677-3.772V0h5.281V12.393a4.5,4.5,0,0,0,1.117,3.127,4.177,4.177,0,0,0,3.25,1.234,4.176,4.176,0,0,0,3.249-1.234,4.5,4.5,0,0,0,1.118-3.127V0h5.28V12.107a9.317,9.317,0,0,1-.677,3.586,8.03,8.03,0,0,1-1.93,2.812,8.9,8.9,0,0,1-3.047,1.836A11.55,11.55,0,0,1,38.591,21ZM5.218,20.518H0V0H5.218l6.913,10.03h.339L19.383,0H24.6V20.516H19.383V11.434l.338-3.439h-.338L13.86,16.161H10.742L5.218,7.995H4.88l.338,3.439v9.084Zm83.782,0H73.081V0H89V4.241H78.342v3.9h9.579V12.38H78.342v3.9H89v4.24Zm-19.536,0H51.133v-4.47L63.149,4.241H51.676V0H69.328V4.47L57.515,16.277H69.464v4.24Z" transform="translate(0 14)" fill="#1e1e1e"></path>
+            <circle cx="4.5" cy="4.5" r="4.5" transform="translate(93 25)" fill="#ffc107"></circle>
+          </g>
+        </svg>
+      </a>
+      <div class="text-end d-block d-xl-none order-md-2 ms-auto">
+        <a href="javascript:void(0);" class="aside-toggle" onclick="toggleClass()">
+          <img src="../assets/svg/icons/hamburger@20.svg" class="menu-icon" alt="Menu">        
+          <img src="../assets/svg/icons/close@20.svg" class="menu-close" alt="Menu Close">
+        </a>
+      </div>
+      <ul class="nav nav-classic nav-sm border-0 nav-docs-space ms-auto">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+            <span class="d-none d-sm-block">Documentation</span>
+            <span class="d-sm-none">Docs</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/analytics.html">Templates</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container-fluid main-docs">
+    <div class="row justify-content-lg-end">
+      <nav class="col-lg-3 col-xl-2 muzesidebar navbar-expand-lg ms-2 px-0 muze-sidebar">
+        <div class="collapse navbar-collapse show" id="sidebar-nav">
+          <div id="sidebarNav" class="muzesidebar-scrollbar muzesidebar-sticky ps-2 ps-md-0 pe-2 accordion" data-simplebar>
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#getting-started-collapse" role="button" aria-expanded="false">Getting started</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="getting-started-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="index.html">Introduction</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="gulp.html">Gulp</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="contents.html">Contents</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="browsers-devices.html">Browsers &amp; devices</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="javascript.html">JavaScript</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="build-tools.html">Build tools</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="webpack.html">Webpack</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accessibility.html">Accessibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rfs.html">RFS</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rtl.html">RTL</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#customize-collapse" role="button" aria-expanded="false">Customize</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="customize-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sass.html">Sass</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="options.html">Options</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colors.html">Color</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="customize-components.html">Components</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="css-variables.html">CSS variables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="optimize.html">Optimize</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dark-mode.html">Dark mode</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="container.html">Container</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="headers.html">Headers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sidebar.html">Sidebar</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#content-collapse" role="button" aria-expanded="false">Content</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="content-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="typography.html">Typography</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="images.html">Images</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tables.html">Tables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="figures.html">Figures</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#forms-collapse" role="button" aria-expanded="false">Forms</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="forms-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-control.html">Form control</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="select.html">Select</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="checks.html">Checks</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="range.html">Range</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="input-group.html">Input group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="floating-labels.html">Floating labels</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-layout.html">Layout</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="validation.html">Validation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#components-collapse" role="button" aria-expanded="false">Components</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="components-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accordion.html">Accordion</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="alerts.html">Alerts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="avatars.html">Avatars</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="badge.html">Badge</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="buttons.html">Buttons</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="button-group.html">Button Group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="links.html">Links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="cards.html">Cards</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="carousel.html">Carousel</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="close-button.html">Close Button</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="collapse.html">Collapse</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dropdowns.html">Dropdowns</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="list-group.html">List group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="modal.html">Modal</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navbar.html">Navbar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navs.html">Navs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="pagination.html">Pagination</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="popovers.html">Popovers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="progress.html">Progress</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="scrollspy.html">Scrollspy</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spinners.html">Spinners</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabs.html">Tabs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="toasts.html">Toasts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#helpers-collapse" role="button" aria-expanded="false">Helpers</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="helpers-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="clearfix.html">Clearfix</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colored-links.html">Colored links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="embed.html">Embed</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="screen-readers.html">Screen readers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="stretched-link.html">Stretched link</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="text-truncation.html">Text truncation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#utilities-collapse" role="button" aria-expanded="false">Utilities</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="utilities-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="animations.html">Animations</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="borders.html">Borders</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="display.html">Display</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="flex.html">Flex</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="float.html">Float</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="overflow.html">Overflow</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="utilitie-position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="shadows.html">Shadows</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sizing.html">Sizing</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spacings.html">Spacings</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="ui.html">UI</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="vertical-align.html">Vertical align</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="visibility.html">Visibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="others.html">Others</a></li>
+            </ul>
+
+            <a class="muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#extend-collapse" role="button" aria-expanded="true">Extend</a>
+            <ul class="muzesidebar-nav collapse show mb-0" id="extend-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="approach.html">Approach</a></li>
+              <li class="muzesidebar-item">
+                <span class="muzesidebar-link">Icons:</span>
+                <ul class="muzesidebar-nav ms-2">
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="bootstrap-icons.html">Bootstrap Icons</a></li>
+                  <li class="muzesidebar-item"><a class="muzesidebar-link active" href="tabler-icons.html">Tabler Icons</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#plugins-collapse" role="button" aria-expanded="false">Plugins</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="plugins-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="charts.html">Charts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link " href="fullcalendar.html">Fullcalendar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="quill.html">Quill</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#more-collapse" role="button" aria-expanded="false">More</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="more-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="credits.html">Credits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="col-xl-10 muze-docs-content"> 
+        <div class="p-0 p-md-4">
+          <div class="muzedocs-content-divider">
+            <h1>Tabler SVG Set</h1>
+            <p class="lead">Tabler is an open source library of fully customizable modern icons. Big thanks to the amazing work by <a href="https://twitter.com/codecalm" target="_blank">Paweł Kuna</a> and <a href="https://twitter.com/csaba_kissi" target="_blank">Csaba Kissi.</a></p>
+          </div>
+            <h2>895 icons and growing</h2>
+            <p>Download more icons by visiting Tabler icons <a href="https://github.com/tabler/tabler-icons" target="_blank">Official Github</a> or their <a href="https://tablericons.com/" target="_blank">Official Website.</a></p>
+          <div id="icons" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading h3 mb-3">Icons</h2>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-2" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-2" data-bs-toggle="pill" href="#pills-result-2" role="tab" aria-controls="pills-result-2" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-2" data-bs-toggle="pill" href="#pills-html-2" role="tab" aria-controls="pills-html-2" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-2">
+                <div class="tab-pane fade p-4 show active" id="pills-result-2" role="tabpanel" aria-labelledby="pills-result-tab-2">
+                  <div class="bd-example">
+                    <ul class="tabler-icons d-flex flex-wrap list-unstyled">
+                      <li>
+                        <svg data-name="icons/tabler/add" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Add background" width="24" height="24" fill="none"/>
+                          <path d="M7.233,15.331l-.007-.1V8.774H.774A.774.774,0,0,1,.669,7.233l.105-.007H7.226V.774A.774.774,0,0,1,8.767.669l.007.105V7.226h6.452a.774.774,0,0,1,.1,1.541l-.1.007H8.774v6.452a.774.774,0,0,1-1.541.1Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/arrow-bar-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Arrow Bar Left background" width="24" height="24" fill="none"/>
+                          <path data-name="Combined Shape" d="M14.635,15.407l-.006-.093V.686A.686.686,0,0,1,15.994.593L16,.686V15.314a.686.686,0,0,1-1.365.093Zm-10.7-3.2-.076-.067L.2,8.485.189,8.473l0,0L.178,8.461.173,8.455.167,8.448.161,8.442.156,8.436.151,8.429.146,8.423.14,8.416.135,8.409l0-.006L.125,8.4l0-.006,0-.006h0l0-.005,0-.005,0,0v0l0,0,0,0,0-.006,0-.007,0-.008,0,0h0L.08,8.323v0A.683.683,0,0,1,0,8.011S0,8,0,8V8s0,0,0-.005,0-.006,0-.009v-.1l0-.012v0l0-.013v0a.68.68,0,0,1,.119-.265h0A.692.692,0,0,1,.2,7.515L3.858,3.858a.686.686,0,0,1,1.036.893l-.067.076L2.342,7.314H9.829A.686.686,0,0,1,9.922,8.68l-.093.006H2.342l2.486,2.487a.686.686,0,0,1-.893,1.036Z" fill="#1e1e1e"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/bolt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Bolt background" width="24" height="24" fill="none"/>
+                          <path d="M5.668,16a.621.621,0,0,1-.63-.53l-.005-.086V10.256H.63a.624.624,0,0,1-.544-.306.6.6,0,0,1-.013-.6l.048-.074L6.838.244,6.893.181,6.958.125,7.034.077l.06-.029L7.171.022,7.253.005,7.339,0h.033l.052,0L7.46.012l.046.01.04.013.038.014.046.021.079.049.014.01a.68.68,0,0,1,.06.052L7.84.243l.049.074.03.059.027.076.016.08.006.084V5.743h4.4a.625.625,0,0,1,.544.307.6.6,0,0,1,.012.6l-.047.073L6.17,15.746A.614.614,0,0,1,5.668,16ZM6.709,2.507,1.865,9.025h3.8a.626.626,0,0,1,.624.532l.005.083v3.85l4.844-6.516h-3.8a.626.626,0,0,1-.623-.532l-.006-.084Z" transform="translate(2)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/bookmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Bookmark background" width="24" height="24" fill="none"/>
+                          <path d="M.687,16a.686.686,0,0,1-.681-.595L0,15.314V2.514A2.516,2.516,0,0,1,2.361,0l.153,0H8a2.516,2.516,0,0,1,2.51,2.361l0,.153v12.8A.688.688,0,0,1,9.827,16a.671.671,0,0,1-.27-.057L9.475,15.9,5.257,13.37,1.039,15.9A.684.684,0,0,1,.687,16Zm4.57-4.115a.678.678,0,0,1,.256.05l.1.048L9.142,14.1V2.514A1.139,1.139,0,0,0,8.116,1.377L8,1.372H2.514L2.4,1.377A1.147,1.147,0,0,0,1.377,2.4l-.005.116V14.1L4.9,11.983A.687.687,0,0,1,5.257,11.885Z" transform="translate(3)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 16">
+                          <path d="M7,16H7a.582.582,0,0,1-.11-.01h0l-.008,0a.588.588,0,0,1-.189-.077L.306,12.228a.619.619,0,0,1-.3-.454L0,11.692V4.306C0,4.3,0,4.3,0,4.29v0a.623.623,0,0,1,.077-.283.6.6,0,0,1,.232-.237l6.4-3.69L6.78.043,6.855.018,6.933,0,7.01,0l.076.006.076.016.072.026.06.031,6.4,3.692a.593.593,0,0,1,.068.046l0,0,.008.006a.612.612,0,0,1,.15.181.63.63,0,0,1,.043.1h0l0,.012,0,.006v0a.622.622,0,0,1,.022.1v0A.629.629,0,0,1,14,4.3v7.39a.625.625,0,0,1-.239.491l-.067.045L7.3,15.918A.585.585,0,0,1,7,16Zm.6-1.668,5.2-3V5.36l-5.2,3Zm-6.4-3,5.2,3V8.36L3.521,6.7l-.029-.017L1.2,5.359ZM7,7.294l5.176-2.986L10.2,3.168,5.024,6.154ZM3.8,5.448,8.976,2.462,7,1.322,1.824,4.307Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/browser" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Browser background" width="24" height="24" fill="none"/>
+                          <path d="M1.6,16A1.6,1.6,0,0,1,0,14.4V1.6A1.6,1.6,0,0,1,1.6,0H14.4A1.6,1.6,0,0,1,16,1.6V14.4A1.6,1.6,0,0,1,14.4,16Zm-.229-1.6a.229.229,0,0,0,.229.229H14.4a.229.229,0,0,0,.229-.229V5.028H1.372ZM14.629,3.657V1.6a.229.229,0,0,0-.229-.229H5.028V3.657Zm-10.972,0V1.372H1.6a.229.229,0,0,0-.229.229V3.657Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Calendar background" width="24" height="24" fill="none"/>
+                          <path d="M2.256,16A2.259,2.259,0,0,1,0,13.743V3.9A2.259,2.259,0,0,1,2.256,1.641H3.282V.616A.615.615,0,0,1,4.507.532l.005.084V1.641H9.846V.616A.615.615,0,0,1,11.071.532l.006.084V1.641H12.1A2.259,2.259,0,0,1,14.359,3.9v9.846A2.259,2.259,0,0,1,12.1,16ZM1.231,13.743a1.027,1.027,0,0,0,1.025,1.026H12.1a1.027,1.027,0,0,0,1.026-1.026V7.795H1.231Zm11.9-7.179V3.9A1.027,1.027,0,0,0,12.1,2.872H11.077V3.9a.616.616,0,0,1-1.226.084L9.846,3.9V2.872H4.513V3.9a.615.615,0,0,1-1.225.084L3.282,3.9V2.872H2.256A1.026,1.026,0,0,0,1.231,3.9V6.564Z" transform="translate(1)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Cart background" width="24" height="24" fill="none"/>
+                          <path d="M8.753,13.995A2.006,2.006,0,1,1,10.759,16,2.008,2.008,0,0,1,8.753,13.995Zm1.094,0a.912.912,0,1,0,.912-.912A.913.913,0,0,0,9.847,13.995Zm-6.929,0A2.006,2.006,0,1,1,4.924,16,2.008,2.008,0,0,1,2.918,13.995Zm1.094,0a.912.912,0,1,0,.912-.912A.913.913,0,0,0,4.012,13.995ZM10.9,11.309l-.142,0H5.684c-.052,0-.1,0-.157,0A2.723,2.723,0,0,1,3,9.616l-.052-.136-.023-.092L2.1,4.434l-.013-.028a.5.5,0,0,1-.038-.139l-.005-.074a.512.512,0,0,1,.005-.075L1.542,1.094H.547A.548.548,0,0,1,.005.621L0,.547A.548.548,0,0,1,.473.005L.547,0H2.006a.544.544,0,0,1,.52.38l.019.077.531,3.19h10.6a.547.547,0,0,1,.547.549l-.006.076-.729,5.1-.025.1a2.721,2.721,0,0,1-2.554,1.829Zm-.111-1.1.095,0a1.64,1.64,0,0,0,1.5-.977l.03-.077.632-4.419H3.259l.735,4.412.033.085a1.643,1.643,0,0,0,1.491.977l.133,0Z" transform="translate(1)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <g data-name="icons/tabler/chart" transform="translate(0)">
+                            <rect data-name="Icons/Tabler/Chart background" width="24" height="24" fill="none"/>
+                            <path d="M.686,13.257a.686.686,0,0,1-.093-1.365l.093-.006H15.314a.686.686,0,0,1,.093,1.365l-.093.006ZM.394,9.535l-.089-.05a.688.688,0,0,1-.24-.863l.05-.088L3.773,3.048a.684.684,0,0,1,.782-.272l.095.039L7.811,4.4,11.121.257a.687.687,0,0,1,.945-.122L12.142.2,15.8,3.858a.686.686,0,0,1-.893,1.036l-.077-.067L11.713,1.712,8.536,5.685a.684.684,0,0,1-.743.225l-.1-.04L4.578,4.313,1.256,9.294a.684.684,0,0,1-.862.24Z" transform="translate(0 1)" fill="#1e1e1e"/>
+                          </g>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Check background" width="24" height="24" fill="none"/>
+                          <path d="M14.758.213a.727.727,0,0,1,1.1.947l-.07.082-9.7,9.7a.727.727,0,0,1-.947.07l-.082-.07L.213,6.09a.727.727,0,0,1,.947-1.1l.082.07L5.576,9.4Z" transform="translate(0 2)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/check-heavy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Check Heavy background" width="24" height="24" fill="none"/>
+                          <path d="M5.434,11.7.234,6.5a.8.8,0,0,1,0-1.131L1.366,4.234a.8.8,0,0,1,1.131,0L6,7.737l7.5-7.5a.8.8,0,0,1,1.131,0l1.131,1.131a.8.8,0,0,1,0,1.131l-9.2,9.2a.8.8,0,0,1-1.131,0Z" transform="translate(0 2.003)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Chevron Left background" width="24" height="24" fill="none"/>
+                          <path d="M-.26.26A.889.889,0,0,0-1.418.174l-.1.086L-8.629,7.371a.889.889,0,0,0-.086,1.157l.086.1,7.111,7.111a.889.889,0,0,0,1.257,0,.889.889,0,0,0,.086-1.157l-.086-.1L-6.743,8-.26,1.517A.889.889,0,0,0-.174.36Z" transform="translate(12.889)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/chevron down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Chevron Down background" width="24" height="24" fill="none"/>
+                          <path d="M.264.26A.909.909,0,0,1,1.435.174l.1.086,7.2,7.111a.881.881,0,0,1,.087,1.157l-.087.1-7.2,7.111a.908.908,0,0,1-1.273,0,.881.881,0,0,1-.087-1.157l.087-.1L6.827,8,.264,1.517A.881.881,0,0,1,.176.36Z" transform="translate(16 4) rotate(90)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/chevron right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Chevron Right background" width="24" height="24" fill="none"/>
+                          <path d="M.26.26A.889.889,0,0,1,1.418.174l.1.086L8.629,7.371a.889.889,0,0,1,.086,1.157l-.086.1L1.517,15.74A.889.889,0,0,1,.174,14.582l.086-.1L6.743,8,.26,1.517A.889.889,0,0,1,.174.36Z" transform="translate(4)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/chevron-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Chevron Up background" width="24" height="24" fill="none"/>
+                          <path d="M.264.26A.909.909,0,0,1,1.435.174l.1.086,7.2,7.111a.881.881,0,0,1,.087,1.157l-.087.1-7.2,7.111a.908.908,0,0,1-1.273,0,.881.881,0,0,1-.087-1.157l.087-.1L6.827,8,.264,1.517A.881.881,0,0,1,.176.36Z" transform="translate(0 12.444) rotate(-90)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/chevrons-button" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16.36">
+                          <rect data-name="Icons/Tabler/Chevrons Buttom background" width="24" height="24" fill="none"/>
+                          <path d="M14.468,14.531l-.107-.093-6.4-6.4a.961.961,0,0,1-.094-1.25l.094-.107,6.4-6.4a.96.96,0,0,1,1.451,1.25l-.094.108L10,7.36l5.72,5.721a.961.961,0,0,1,.094,1.25l-.094.107a.96.96,0,0,1-1.25.093Zm-7.68,0-.107-.093-6.4-6.4a.961.961,0,0,1-.093-1.25l.093-.107,6.4-6.4a.96.96,0,0,1,1.45,1.25l-.093.108L2.318,7.36l5.72,5.721a.96.96,0,0,1,.093,1.25l-.093.107a.96.96,0,0,1-1.25.093Z" transform="translate(0.64 16.36) rotate(-90)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <g data-name="icons/tabler/chevrons-left" transform="translate(0)">
+                            <rect data-name="Icons/Tabler/Chevrons Left background" width="24" height="24" fill="none"/>
+                            <path d="M14.468,14.531l-.107-.093-6.4-6.4a.961.961,0,0,1-.094-1.25l.094-.107,6.4-6.4a.96.96,0,0,1,1.451,1.25l-.094.108L10,7.36l5.72,5.721a.961.961,0,0,1,.094,1.25l-.094.107a.96.96,0,0,1-1.25.093Zm-7.68,0-.107-.093-6.4-6.4a.961.961,0,0,1-.093-1.25l.093-.107,6.4-6.4a.96.96,0,0,1,1.45,1.25l-.093.108L2.318,7.36l5.72,5.721a.96.96,0,0,1,.093,1.25l-.093.107a.96.96,0,0,1-1.25.093Z" transform="translate(0 1)" fill="#1e1e1e"/>
+                          </g>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/chevrons-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Chevrons Right background" width="24" height="24" fill="none"/>
+                          <path d="M-14.468,14.531l.107-.093,6.4-6.4a.961.961,0,0,0,.094-1.25l-.094-.107-6.4-6.4a.96.96,0,0,0-1.357,0,.961.961,0,0,0-.094,1.25l.094.108L-10,7.36l-5.72,5.721a.961.961,0,0,0-.094,1.25l.094.107a.955.955,0,0,0,.678.281A.959.959,0,0,0-14.468,14.531Zm7.68,0,.107-.093,6.4-6.4a.961.961,0,0,0,.093-1.25l-.093-.107-6.4-6.4a.96.96,0,0,0-1.357,0,.96.96,0,0,0-.093,1.25l.093.108,5.72,5.721-5.72,5.721a.96.96,0,0,0-.093,1.25l.093.107a.956.956,0,0,0,.678.281A.958.958,0,0,0-6.789,14.531Z" transform="translate(16 1)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/chevrons-top" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16.36">
+                          <rect data-name="Icons/Tabler/Chevrons Top background" width="24" height="24" fill="none"/>
+                          <path d="M14.468,14.531l-.107-.093-6.4-6.4a.961.961,0,0,1-.094-1.25l.094-.107,6.4-6.4a.96.96,0,0,1,1.451,1.25l-.094.108L10,7.36l5.72,5.721a.961.961,0,0,1,.094,1.25l-.094.107a.96.96,0,0,1-1.25.093Zm-7.68,0-.107-.093-6.4-6.4a.961.961,0,0,1-.093-1.25l.093-.107,6.4-6.4a.96.96,0,0,1,1.45,1.25l-.093.108L2.318,7.36l5.72,5.721a.96.96,0,0,1,.093,1.25l-.093.107a.96.96,0,0,1-1.25.093Z" transform="translate(15.36 0.36) rotate(90)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Close background" width="24" height="24" fill="none"/>
+                          <path d="M.82.1l.058.05L6,5.272,11.122.151A.514.514,0,0,1,11.9.82l-.05.058L6.728,6l5.122,5.122a.514.514,0,0,1-.67.777l-.058-.05L6,6.728.878,11.849A.514.514,0,0,1,.1,11.18l.05-.058L5.272,6,.151.878A.514.514,0,0,1,.75.057Z" transform="translate(2 2)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <g data-name="icons/tabler/code" transform="translate(0)">
+                            <rect data-name="Icons/Tabler/Code background" width="24" height="24" fill="none"/>
+                            <path d="M6.21,13.982a.6.6,0,0,1-.463-.647l.014-.08L9.044.455A.617.617,0,0,1,9.79.018a.6.6,0,0,1,.463.647l-.014.08-3.282,12.8a.612.612,0,0,1-.6.455A.629.629,0,0,1,6.21,13.982Zm5.458-3.357a.588.588,0,0,1-.059-.781l.059-.067L14.514,7,11.668,4.225a.588.588,0,0,1-.059-.781l.059-.068a.627.627,0,0,1,.8-.059l.069.059,3.282,3.2a.59.59,0,0,1,.059.781l-.059.068-3.282,3.2a.627.627,0,0,1-.87,0Zm-8.136.058-.069-.058L.18,7.424a.589.589,0,0,1-.059-.781L.18,6.575l3.282-3.2a.627.627,0,0,1,.87,0,.588.588,0,0,1,.059.781l-.059.068L1.486,7,4.333,9.776a.588.588,0,0,1,.059.781l-.059.068a.627.627,0,0,1-.8.058Z" transform="translate(0 1)" fill="#1e1e1e"/>
+                          </g>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/docs" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Docs background" width="24" height="24" fill="none"/>
+                          <path data-name="Combined Shape" d="M3.429,16A3.426,3.426,0,0,1,0,12.754l0-.183V1.6A1.607,1.607,0,0,1,1.469.005L1.6,0h9.143a1.607,1.607,0,0,1,1.594,1.469l.005.131v.229H14.4A1.607,1.607,0,0,1,15.995,3.3L16,3.429V13.486A2.517,2.517,0,0,1,13.639,16l-.153,0Zm8.914-2.515a1.143,1.143,0,0,0,2.28.117l.006-.117V3.429a.23.23,0,0,0-.176-.223L14.4,3.2H12.343ZM1.378,1.548,1.372,1.6V12.571a2.062,2.062,0,0,0,1.916,2.053l.141,0h7.817a2.493,2.493,0,0,1-.269-.99l-.005-.153V1.6a.227.227,0,0,0-.176-.222l-.052-.006H1.6A.227.227,0,0,0,1.378,1.548ZM4.343,12.343a.686.686,0,0,1-.093-1.365l.093-.006H8a.686.686,0,0,1,.093,1.365L8,12.343Zm0-3.657A.686.686,0,0,1,4.25,7.321l.093-.006H8A.686.686,0,0,1,8.093,8.68L8,8.686Zm0-3.658A.686.686,0,0,1,4.25,3.663l.093-.006H8a.686.686,0,0,1,.093,1.365L8,5.028Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/dots" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Dots background" width="24" height="24" fill="none"/>
+                          <path d="M0,12.4A1.6,1.6,0,1,1,1.6,14,1.6,1.6,0,0,1,0,12.4Zm1.372,0a.229.229,0,1,0,.229-.229A.229.229,0,0,0,1.372,12.4ZM0,7A1.6,1.6,0,1,1,1.6,8.6,1.6,1.6,0,0,1,0,7ZM1.372,7A.229.229,0,1,0,1.6,6.772.229.229,0,0,0,1.372,7ZM0,1.6A1.6,1.6,0,1,1,1.6,3.2,1.6,1.6,0,0,1,0,1.6Zm1.372,0A.229.229,0,1,0,1.6,1.372.229.229,0,0,0,1.372,1.6Z" transform="translate(6 1)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/tablet" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Tablet background" width="24" height="24" fill="none"/>
+                          <path d="M1.355,16A1.4,1.4,0,0,1,0,14.564V1.436A1.4,1.4,0,0,1,1.355,0h9.291A1.4,1.4,0,0,1,12,1.436V14.564A1.4,1.4,0,0,1,10.645,16ZM1.161,1.436V14.564a.2.2,0,0,0,.194.205h9.291a.2.2,0,0,0,.193-.205V1.436a.2.2,0,0,0-.193-.2H1.355A.2.2,0,0,0,1.161,1.436ZM5,12.25A1.25,1.25,0,1,1,6.25,13.5,1.249,1.249,0,0,1,5,12.25Z" transform="translate(2)" fill="#1e1e1e"/>
+                        </svg>                       
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/fire" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Fire background" width="24" height="24" fill="none"/>
+                          <path d="M6.75.746A.751.751,0,0,0,5.37.338C1.5,6,7,6.25,7,9a2,2,0,1,1-4-.03V6.3a.75.75,0,0,0-1.295-.516A6.248,6.248,0,0,0,0,10a6,6,0,0,0,12,0C12,4.678,6.75,3.969,6.75.746Z" transform="translate(2)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/gift" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Gift background" width="24" height="24" fill="none"/>
+                          <path d="M3.9,16a2.257,2.257,0,0,1-2.252-2.12l0-.137V8.616H1.436A1.438,1.438,0,0,1,0,7.18V5.539A1.437,1.437,0,0,1,1.436,4.1H2.06A2.667,2.667,0,0,1,4.3,0C5.756-.025,7.052.993,7.9,2.645l.1.212.009-.019C8.816,1.138,10.087.057,11.525,0l.167,0a2.667,2.667,0,0,1,2.247,4.1h.624A1.437,1.437,0,0,1,16,5.539V7.18a1.438,1.438,0,0,1-1.435,1.435h-.205v5.128A2.256,2.256,0,0,1,12.24,16L12.1,16ZM12.1,14.769a1.026,1.026,0,0,0,1.021-.921l.005-.1V8.616H8.615v6.153Zm-9.23-1.025a1.025,1.025,0,0,0,.921,1.02l.1.005H7.385V8.616H2.872ZM14.564,7.385a.206.206,0,0,0,.205-.205V5.539a.205.205,0,0,0-.205-.205H8.615V7.385h5.949Zm-7.179,0V5.333H1.436a.205.205,0,0,0-.205.205V7.18a.206.206,0,0,0,.205.205H7.385ZM11.692,4.1a1.436,1.436,0,1,0-.011-2.872C10.555,1.211,9.442,2.3,8.82,4.1ZM7.18,4.1C6.557,2.3,5.443,1.211,4.307,1.231A1.436,1.436,0,0,0,4.19,4.1l.118.005Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Hamburger background" width="24" height="24" fill="none"/>
+                          <path d="M15.314,8H.686A.661.661,0,0,1,0,7.368a.653.653,0,0,1,.593-.625l.093-.006H15.314A.661.661,0,0,1,16,7.368a.653.653,0,0,1-.593.626Zm0-6.737H.686A.661.661,0,0,1,0,.632.654.654,0,0,1,.593.005L.686,0H15.314A.661.661,0,0,1,16,.632a.653.653,0,0,1-.593.625Z" transform="translate(0 4)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <g data-name="icons/tabler/login" transform="translate(0)">
+                            <rect data-name="Icons/Tabler/Login background" width="24" height="24" fill="none"/>
+                            <path d="M-2.256,14.358A2.256,2.256,0,0,0,0,12.239L0,12.1V2.256A2.256,2.256,0,0,0-2.119,0l-.138,0H-8a2.257,2.257,0,0,0-2.253,2.119l0,.138V3.9a.615.615,0,0,0,.616.616.615.615,0,0,0,.609-.532l.005-.084V2.256A1.027,1.027,0,0,1-8.1,1.236L-8,1.23h5.743a1.027,1.027,0,0,1,1.021.921l.005.105V12.1a1.026,1.026,0,0,1-.921,1.021l-.105.005H-8a1.027,1.027,0,0,1-1.021-.921l-.005-.105V10.461a.615.615,0,0,0-.615-.616.616.616,0,0,0-.61.532l-.005.084V12.1a2.257,2.257,0,0,0,2.119,2.253l.138,0Zm-10.23-4.282a.617.617,0,0,0,.059-.8l-.059-.069L-13.9,7.794h10a.616.616,0,0,0,.616-.615.616.616,0,0,0-.532-.61L-3.9,6.564h-10l1.411-1.411a.617.617,0,0,0,.059-.8l-.059-.069a.618.618,0,0,0-.718-.112l-.084.052-.068.059-2.462,2.461a.606.606,0,0,0-.146.64l.049.1a.618.618,0,0,0,.073.1l2.486,2.486a.613.613,0,0,0,.435.18A.613.613,0,0,0-12.487,10.076Z" transform="translate(16 1)" fill="#1e1e1e"/>
+                          </g>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/logout" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Logout background" width="24" height="24" fill="none"/>
+                          <path d="M2.256,14.358A2.256,2.256,0,0,1,0,12.239L0,12.1V2.256A2.256,2.256,0,0,1,2.119,0l.138,0H8a2.257,2.257,0,0,1,2.253,2.119l0,.138V3.9a.615.615,0,0,1-1.225.084L9.025,3.9V2.256A1.027,1.027,0,0,0,8.1,1.236L8,1.23H2.256a1.027,1.027,0,0,0-1.021.921l-.005.105V12.1a1.026,1.026,0,0,0,.921,1.021l.105.005H8a1.027,1.027,0,0,0,1.021-.921l.005-.105V10.461a.615.615,0,0,1,1.225-.084l.005.084V12.1a2.257,2.257,0,0,1-2.119,2.253l-.138,0Zm10.23-4.282a.617.617,0,0,1-.059-.8l.059-.069L13.9,7.794H3.9a.615.615,0,0,1-.084-1.225L3.9,6.564h10L12.487,5.153a.617.617,0,0,1-.059-.8l.059-.069a.618.618,0,0,1,.718-.112l.084.052.068.059,2.462,2.461a.606.606,0,0,1,.146.64l-.049.1a.618.618,0,0,1-.073.1l-2.486,2.486a.615.615,0,0,1-.87,0Z" transform="translate(0 1)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <g data-name="icons/tabler/mail" transform="translate(0)">
+                            <rect data-name="Icons/Tabler/Mail background" width="24" height="24" fill="none"/>
+                            <path d="M2.256,12.718A2.259,2.259,0,0,1,0,10.462V2.274c0-.013,0-.026,0-.038A2.259,2.259,0,0,1,2.256,0H13.744A2.259,2.259,0,0,1,16,2.256v8.205a2.259,2.259,0,0,1-2.256,2.256ZM1.231,10.462a1.027,1.027,0,0,0,1.025,1.026H13.744a1.027,1.027,0,0,0,1.025-1.026V3.406L8.341,7.691a.613.613,0,0,1-.6.045l-.08-.045L1.231,3.407ZM8,6.439l6.724-4.482a1.027,1.027,0,0,0-.98-.726H2.256a1.027,1.027,0,0,0-.98.726Z" transform="translate(0 2)" fill="#1e1e1e"/>
+                          </g>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/map" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Map background" width="24" height="24" fill="none"/>
+                          <path d="M5.45,15.356l-3.4-3.4a7.005,7.005,0,1,1,9.907,0l-3.4,3.4a2.2,2.2,0,0,1-3.112,0ZM2.9,2.9a5.812,5.812,0,0,0,0,8.209l3.4,3.4a1,1,0,0,0,1.415,0l3.4-3.4a5.8,5.8,0,0,0,0-8.209l-.153-.148A5.8,5.8,0,0,0,2.9,2.9ZM4,7.006a3,3,0,1,1,3,3A3.005,3.005,0,0,1,4,7.006Zm1.2,0a1.8,1.8,0,1,0,1.8-1.8A1.8,1.8,0,0,0,5.2,7.006Z" transform="translate(1)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/message" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Message background" width="24" height="24" fill="none"/>
+                          <path d="M.638,16l-.045,0L.5,15.976l-.085-.03-.057-.028-.088-.058a.628.628,0,0,1-.093-.083l-.047-.056-.053-.084-.027-.058L.024,15.5l-.018-.089,0-.045,0-.048V3.429A3.426,3.426,0,0,1,3.246,0l.183,0h9.142a3.426,3.426,0,0,1,3.424,3.246L16,3.429V8.915a3.426,3.426,0,0,1-3.246,3.424l-.183,0H4.626L1.138,15.829l-.045.036-.084.053-.058.028-.085.03-.089.018L.734,16,.686,16ZM1.376,3.288l0,.141V13.658l2.487-2.486a.672.672,0,0,1,.376-.193l.108-.009h8.229a2.062,2.062,0,0,0,2.053-1.916l0-.14V3.429a2.062,2.062,0,0,0-1.916-2.053l-.141,0H3.429A2.062,2.062,0,0,0,1.376,3.288Zm9.6,2.986-.006-.1a.686.686,0,0,1,1.365-.093l.006.1a.686.686,0,0,1-1.365.094Zm-3.657,0-.006-.1A.686.686,0,0,1,8.68,6.079l.006.1a.686.686,0,0,1-1.365.094Zm-3.658,0-.006-.1a.686.686,0,0,1,1.365-.093l.006.1a.686.686,0,0,1-1.365.094Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Minus background" width="24" height="24" fill="none"/>
+                          <path d="M15.226,0A.762.762,0,0,1,16,.75a.759.759,0,0,1-.669.743l-.105.007H.774A.762.762,0,0,1,0,.75.759.759,0,0,1,.669.007L.774,0Z" transform="translate(0 7)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/money" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Money background" width="24" height="24" fill="none"/>
+                          <path d="M3.077,13A3.115,3.115,0,0,1,0,9.855V3.146A3.116,3.116,0,0,1,3.077,0h9.846A3.116,3.116,0,0,1,16,3.146v6.71A3.115,3.115,0,0,1,12.923,13ZM1.231,9.855a1.869,1.869,0,0,0,1.846,1.887h9.846a1.869,1.869,0,0,0,1.846-1.887v-4.4H1.231ZM14.769,4.193V3.146a1.869,1.869,0,0,0-1.846-1.887H3.077A1.869,1.869,0,0,0,1.231,3.146V4.193ZM7.179,9.645A.63.63,0,0,1,7.1,8.392l.084-.005H8.821A.63.63,0,0,1,8.9,9.639l-.083.006Zm-3.9-.629a.625.625,0,0,1,.532-.624l.092-.005a.63.63,0,0,1,.083,1.252L3.9,9.645A.622.622,0,0,1,3.282,9.016Z" transform="translate(0 2)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/notification" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Notification background" width="24" height="24" fill="none"/>
+                          <path d="M4.108,13.087l0-.164v-.205H.617a.616.616,0,0,1-.3-1.151,2.668,2.668,0,0,0,1.3-1.773l.024-.153V7.151A6.328,6.328,0,0,1,4.861,1.915l.1-.053,0-.012A2.246,2.246,0,0,1,7.043,0L7.18,0A2.252,2.252,0,0,1,9.372,1.715l.03.147.1.053a6.371,6.371,0,0,1,3.2,5.027l.015.237,0,2.388a2.677,2.677,0,0,0,1.334,2,.616.616,0,0,1-.22,1.146l-.084.005H10.257v.205a3.077,3.077,0,0,1-6.15.164Zm1.227-.164a1.846,1.846,0,0,0,3.688.126l0-.126v-.205H5.334ZM6.161,2.152l-.008.158,0,.03-.016.08L6.107,2.5l-.036.071L6.047,2.6,6,2.667l-.024.025-.033.031-.066.049-.073.04A5.131,5.131,0,0,0,2.887,6.973l-.014.206,0,2.535a3.917,3.917,0,0,1-.626,1.694l-.056.079h9.991l0-.008a4,4,0,0,1-.655-1.634l-.029-.2V7.208a5.116,5.116,0,0,0-2.93-4.4.613.613,0,0,1-.346-.468l-.006-.088a1.026,1.026,0,0,0-2.046-.1Z" transform="translate(1)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/page" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Page background" width="24" height="24" fill="none"/>
+                          <path d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.614.614,0,0,1,.446.192l4.086,4.086a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821a1.437,1.437,0,0,1-1.428-1.28L7.385,3.9V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.205.205,0,0,0,.14.2l.065.01h1.8l-2-2Z" transform="translate(2)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/paperclip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Paperclip background" width="24" height="24" fill="none"/>
+                          <path d="M6.766,1.178A4.018,4.018,0,0,1,12.591,6.71l-.147.155-5.1,5.11A2.352,2.352,0,0,1,3.9,8.77l.114-.123,5.1-5.11a.685.685,0,0,1,1.035.893l-.066.077-5.1,5.11a.981.981,0,0,0,1.3,1.465l.086-.076,5.1-5.11A2.648,2.648,0,0,0,7.861,2.028l-.127.119-5.1,5.11a4.315,4.315,0,0,0,5.941,6.255l.156-.149,5.1-5.11a.685.685,0,0,1,1.035.893l-.066.077-5.1,5.11A5.685,5.685,0,0,1,1.5,6.457l.162-.169Z" transform="translate(1)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/phone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Phone background" width="24" height="24" fill="none"/>
+                          <path d="M1.6,16A1.6,1.6,0,0,1,0,14.4V1.6A1.6,1.6,0,0,1,1.6,0H8.915a1.6,1.6,0,0,1,1.6,1.6V14.4a1.6,1.6,0,0,1-1.6,1.6ZM1.372,1.6V14.4a.229.229,0,0,0,.229.229H8.915a.229.229,0,0,0,.229-.229V1.6a.229.229,0,0,0-.229-.229h-2.1a.686.686,0,0,1-.553.908l-.094.006H4.343A.686.686,0,0,1,3.7,1.372H1.6A.229.229,0,0,0,1.372,1.6ZM4.577,12.674l-.006-.1a.686.686,0,0,1,1.365-.093l.006.1a.686.686,0,0,1-1.365.094Z" transform="translate(3)" fill="#1e1e1e"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <g data-name="icons/tabler/play" transform="translate(0 0)">
+                            <rect data-name="Icons/Tabler/Play background" width="24" height="24" fill="none"/>
+                            <path d="M.674,16A.681.681,0,0,1,0,15.314V.687A.681.681,0,0,1,.674,0a.661.661,0,0,1,.351.1L12.68,7.416a.693.693,0,0,1,0,1.168L1.025,15.9A.661.661,0,0,1,.674,16Zm.67-14.087V14.086L11.044,8Z" transform="translate(3)" fill="#1e1e1e"/>
+                          </g>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/play-fill" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Play Fill background" width="24" height="24" fill="none"/>
+                          <path d="M0,.687V15.313a.672.672,0,0,0,1.025.584L12.68,8.584a.693.693,0,0,0,0-1.168L1.025.1A.672.672,0,0,0,0,.687Z" transform="translate(3)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/plug" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Plug background" width="24" height="24" fill="none"/>
+                          <path d="M6.7,16a2.378,2.378,0,0,1-2.373-2.234l0-.145V12.541H3.244A3.241,3.241,0,0,1,0,9.47L0,9.3V4.109a.649.649,0,0,1,.561-.643L.649,3.46H1.73V.649A.649.649,0,0,1,3.021.561l.005.088V3.46H6.919V.649A.649.649,0,0,1,8.211.561l.005.088V3.46H9.3a.649.649,0,0,1,.643.561l.006.088V9.3a3.241,3.241,0,0,1-3.071,3.239l-.173,0H5.621v1.081A1.081,1.081,0,0,0,6.593,14.7l.11.005H9.3a.649.649,0,0,1,.088,1.292L9.3,16Zm0-4.757A1.951,1.951,0,0,0,8.644,9.431l0-.134V4.757H1.3V9.3A1.951,1.951,0,0,0,3.11,11.239l.133,0H6.7Z" transform="translate(3)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Settings background" width="24" height="24" fill="none"/>
+                          <path data-name="Combined Shape" d="M6.027,14.449a.8.8,0,0,0-1.193-.494,2.025,2.025,0,0,1-1.063.31,2.086,2.086,0,0,1-1.779-1.069,1.961,1.961,0,0,1,.051-2.03.8.8,0,0,0-.493-1.193,2.03,2.03,0,0,1,0-3.945.8.8,0,0,0,.494-1.193,1.962,1.962,0,0,1-.052-2.03,2.086,2.086,0,0,1,1.78-1.071,2.022,2.022,0,0,1,1.062.31.8.8,0,0,0,1.193-.493,2.03,2.03,0,0,1,3.945,0,.808.808,0,0,0,.472.551.788.788,0,0,0,.305.06.8.8,0,0,0,.417-.117,2.024,2.024,0,0,1,1.062-.31,2.087,2.087,0,0,1,1.78,1.07,1.963,1.963,0,0,1-.052,2.03.8.8,0,0,0,.494,1.192,2.03,2.03,0,0,1,0,3.946.8.8,0,0,0-.494,1.193,1.962,1.962,0,0,1,.052,2.03,2.086,2.086,0,0,1-1.779,1.07,2.025,2.025,0,0,1-1.063-.31.8.8,0,0,0-.722-.056.8.8,0,0,0-.471.55,2.03,2.03,0,0,1-3.945,0Zm0-1.687a2.03,2.03,0,0,1,1.2,1.4.8.8,0,0,0,1.553,0A2.029,2.029,0,0,1,11.8,12.9l.077.042a.78.78,0,0,0,.341.08.822.822,0,0,0,.7-.421.773.773,0,0,0-.02-.8l-.078-.141a2.03,2.03,0,0,1,1.333-2.889.8.8,0,0,0,0-1.552A2.031,2.031,0,0,1,12.9,4.195l.042-.076a.768.768,0,0,0-.042-.757.813.813,0,0,0-.68-.387.793.793,0,0,0-.418.122l-.141.078a2.038,2.038,0,0,1-.916.219,2.02,2.02,0,0,1-.777-.155,2.039,2.039,0,0,1-1.2-1.4l-.029-.1a.8.8,0,0,0-1.524.1A2.027,2.027,0,0,1,4.195,3.1l-.076-.041a.78.78,0,0,0-.341-.08.822.822,0,0,0-.7.422.772.772,0,0,0,.021.8l.078.141A2.029,2.029,0,0,1,1.841,7.223a.8.8,0,0,0,0,1.553A2.029,2.029,0,0,1,3.1,11.8l-.041.077a.768.768,0,0,0,.042.757.815.815,0,0,0,.68.387.791.791,0,0,0,.418-.122l.141-.078a2.027,2.027,0,0,1,1.693-.064ZM4.923,8A3.077,3.077,0,1,1,8,11.077,3.081,3.081,0,0,1,4.923,8ZM6.154,8A1.846,1.846,0,1,0,8,6.154,1.848,1.848,0,0,0,6.154,8Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/users" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Users background" width="24" height="24" fill="none"/>
+                          <path d="M14.774,15.468l-.005-.084V13.748a2.666,2.666,0,0,0-2-2.567.615.615,0,1,1,.308-1.192,3.9,3.9,0,0,1,2.918,3.572l.005.183v1.641a.616.616,0,0,1-1.226.084Zm-4.923,0-.005-.084V13.744a2.667,2.667,0,0,0-2.516-2.663l-.151,0H3.9a2.667,2.667,0,0,0-2.662,2.516l0,.151v1.641a.616.616,0,0,1-1.226.084L0,15.385V13.744A3.9,3.9,0,0,1,3.719,9.851l.178,0H7.179a3.9,3.9,0,0,1,3.893,3.719l0,.179v1.641a.616.616,0,0,1-1.226.084ZM1.641,3.9a3.9,3.9,0,1,1,3.9,3.9A3.9,3.9,0,0,1,1.641,3.9Zm1.231,0A2.666,2.666,0,1,0,5.538,1.231,2.669,2.669,0,0,0,2.872,3.9Zm7.814,3.336a.616.616,0,0,1,.444-.749,2.666,2.666,0,0,0,0-5.166A.615.615,0,0,1,11.435.126a3.9,3.9,0,0,1,0,7.551.614.614,0,0,1-.749-.444Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/user" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/User background" width="24" height="24" fill="none"/>
+                          <path d="M11.334,16H.667a.665.665,0,0,1-.661-.568L0,15.343v-1.75A4.179,4.179,0,0,1,4.029,9.44l.193,0H7.778A4.186,4.186,0,0,1,12,13.4l0,.191v1.75a.661.661,0,0,1-.576.651ZM4.222,10.749a2.869,2.869,0,0,0-2.884,2.683l-.005.162v1.094h9.334V13.594A2.857,2.857,0,0,0,8.1,10.767l-.162-.013-.164,0ZM6,8.314A4.2,4.2,0,0,1,1.778,4.157a4.223,4.223,0,0,1,8.445,0A4.2,4.2,0,0,1,6,8.314Zm0-7A2.87,2.87,0,0,0,3.111,4.157a2.889,2.889,0,0,0,5.778,0A2.87,2.87,0,0,0,6,1.313Z" transform="translate(2)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <g data-name="icons/tabler/trend-up" transform="translate(0)">
+                            <rect data-name="Icons/Tabler/Trend background" width="24" height="24" fill="none"/>
+                            <path d="M.249,9.315.18,9.256a.616.616,0,0,1-.059-.8L.18,8.385,5.1,3.462A.616.616,0,0,1,5.9,3.4l.068.059L8.821,6.309,13.9,1.231H9.641A.616.616,0,0,1,9.031.7L9.025.616a.617.617,0,0,1,.532-.61L9.641,0h5.728a.614.614,0,0,1,.569.346h0l0,.008,0,.008h0a.613.613,0,0,1,.048.168V.541A.621.621,0,0,1,16,.61V6.359a.616.616,0,0,1-1.226.083l-.005-.083V2.1L9.256,7.615a.616.616,0,0,1-.8.059l-.069-.059L5.539,4.768,1.05,9.256a.615.615,0,0,1-.8.059Z" transform="translate(0 3)" fill="#1e1e1e"/>
+                          </g>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/truck" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Truck background" width="24" height="24" fill="none"/>
+                          <path d="M9.931,11.077H6.068a2.257,2.257,0,0,1-4.342,0H.616a.619.619,0,0,1-.61-.532L0,10.462V1.436A1.444,1.444,0,0,1,1.319,0l.117,0H8.821A.616.616,0,0,1,9.43.532l.005.084V.821h3.488a.609.609,0,0,1,.474.223l.053.076,2.462,4.1a.608.608,0,0,1,.082.233L16,5.531v4.93a.617.617,0,0,1-.532.609l-.084.006H14.273a2.257,2.257,0,0,1-4.342,0Zm1.146-.616A1.026,1.026,0,1,0,12.1,9.437,1.027,1.027,0,0,0,11.077,10.462Zm-8.205,0A1.026,1.026,0,1,0,3.9,9.437,1.027,1.027,0,0,0,2.872,10.462Zm11.9-.616V6.154H9.436V9.846h.5a2.257,2.257,0,0,1,4.342,0Zm-6.564,0V1.231H1.436a.205.205,0,0,0-.2.158l-.005.047V9.846h.495a2.257,2.257,0,0,1,4.342,0Zm1.23-4.923H14.3L12.574,2.051H9.436Z" transform="translate(0 2)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <g data-name="icons/tabler/tv" transform="translate(0 0)">
+                            <rect data-name="Icons/Tabler/TV background" width="24" height="24" fill="none"/>
+                            <path d="M2.256,15.179A2.259,2.259,0,0,1,0,12.923V5.539A2.259,2.259,0,0,1,2.256,3.282H6.514L4.283,1.05a.615.615,0,0,1,.8-.93L5.153.18,8,3.027,10.847.18a.616.616,0,0,1,.8-.059l.069.059a.616.616,0,0,1,.059.8l-.059.068L9.485,3.282h4.259A2.259,2.259,0,0,1,16,5.539v7.385a2.259,2.259,0,0,1-2.256,2.256ZM1.231,5.539v7.385a1.027,1.027,0,0,0,1.025,1.026H13.744a1.027,1.027,0,0,0,1.025-1.026V5.539a1.026,1.026,0,0,0-1.025-1.025H2.256A1.026,1.026,0,0,0,1.231,5.539Z" fill="#1e1e1e"/>
+                          </g>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/tag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Tag background" width="24" height="24" fill="none"/>
+                          <path d="M7.935,15.593l-.122-.1L.186,7.865a.628.628,0,0,1-.178-.349L0,7.416V4.026A4.017,4.017,0,0,1,3.841,0l.184,0h3.39L7.46,0l.042,0,.083.017L7.664.05l.053.025L7.8.132l.061.054L15.518,7.84a1.92,1.92,0,0,1,.076,2.447l-.1.121-5.111,5.11A1.894,1.894,0,0,1,9.121,16,1.931,1.931,0,0,1,7.935,15.593ZM1.275,3.869l0,.157V7.151L8.687,14.57a.649.649,0,0,0,.434.165.6.6,0,0,0,.32-.089l.069-.051,5.061-5.06a.639.639,0,0,0,.076-.752l-.051-.069L7.151,1.272H4.026A2.755,2.755,0,0,0,1.275,3.869ZM3.39,5.721a2.331,2.331,0,1,1,2.331,2.33A2.334,2.334,0,0,1,3.39,5.721Zm1.272,0A1.059,1.059,0,1,0,5.721,4.662,1.06,1.06,0,0,0,4.662,5.721Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/facebook" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Facebook background" width="24" height="24" fill="none"/>
+                          <path d="M6.359,16H3.077a.618.618,0,0,1-.61-.532l-.005-.084V10.256H.616a.618.618,0,0,1-.61-.532L0,9.641V6.359a.617.617,0,0,1,.532-.61l.084-.005H2.462V4.718A4.7,4.7,0,0,1,7,0l.181,0H9.641a.618.618,0,0,1,.61.532l.005.084V3.9a.617.617,0,0,1-.532.61l-.084.005H7.179a.2.2,0,0,0-.2.158l-.005.047V5.744H9.641a.615.615,0,0,1,.611.687l-.013.077L9.418,9.79a.614.614,0,0,1-.5.459l-.092.007H6.974v5.128a.618.618,0,0,1-.532.61ZM1.231,6.974V9.025H3.077a.617.617,0,0,1,.609.532l.006.084v5.128H5.744V9.641a.616.616,0,0,1,.532-.609l.084-.006h1.98l.513-2.051H6.359a.617.617,0,0,1-.61-.532l-.005-.083V4.718A1.443,1.443,0,0,1,7.061,3.287l.118,0H9.025V1.231H7.179A3.481,3.481,0,0,0,3.7,4.549l0,.169V6.359a.617.617,0,0,1-.532.609l-.084.005Z" transform="translate(3)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/dribbble" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Dribbble background" width="24" height="24" fill="none"/>
+                          <path d="M0,8a8,8,0,1,1,12.071,6.885.613.613,0,0,1-.148.086A8,8,0,0,1,0,8Zm8,6.769a6.729,6.729,0,0,0,3.04-.722A18.964,18.964,0,0,0,10.085,9.7a11.826,11.826,0,0,0-4.847,3.087l-.385.379-.522.524A6.728,6.728,0,0,0,8,14.769Zm4.193-1.458a6.774,6.774,0,0,0,2.486-4.2,18.649,18.649,0,0,0-3.393.293A19.879,19.879,0,0,1,12.193,13.311ZM1.231,8a6.751,6.751,0,0,0,2.126,4.921l.814-.815A13.357,13.357,0,0,1,9.638,8.547a20.668,20.668,0,0,0-1.049-2.1,20.8,20.8,0,0,1-7.345,1.14Q1.231,7.792,1.231,8Zm9.611.234a19.647,19.647,0,0,1,3.926-.359A6.737,6.737,0,0,0,13.224,3.7a18.084,18.084,0,0,1-3.5,2.258A21.639,21.639,0,0,1,10.842,8.234ZM1.434,6.354A19.65,19.65,0,0,0,7.94,5.372,37.065,37.065,0,0,0,5.305,1.791,6.8,6.8,0,0,0,1.434,6.354ZM9.093,4.893a16.545,16.545,0,0,0,3.261-2.073A6.767,6.767,0,0,0,6.562,1.385,36.568,36.568,0,0,1,9.093,4.893Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/instagram" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Instagram background" width="24" height="24" fill="none"/>
+                          <path d="M4.343,16A4.348,4.348,0,0,1,0,11.657V4.343A4.347,4.347,0,0,1,4.343,0h7.314A4.348,4.348,0,0,1,16,4.343v7.314A4.348,4.348,0,0,1,11.657,16ZM1.372,4.343v7.314a2.975,2.975,0,0,0,2.971,2.972h7.314a2.975,2.975,0,0,0,2.972-2.972V4.343a2.975,2.975,0,0,0-2.972-2.971H4.343A2.974,2.974,0,0,0,1.372,4.343ZM4.571,8A3.429,3.429,0,1,1,8,11.428,3.434,3.434,0,0,1,4.571,8ZM5.943,8A2.057,2.057,0,1,0,8,5.943,2.06,2.06,0,0,0,5.943,8Zm5.492-4.02-.006-.094a.686.686,0,0,1,1.365-.094l.006.093a.686.686,0,0,1-1.365.094Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Linkedin background" width="24" height="24" fill="none"/>
+                          <path d="M2.515,16A2.517,2.517,0,0,1,0,13.486V2.515A2.517,2.517,0,0,1,2.515,0H13.486A2.517,2.517,0,0,1,16,2.515V13.486A2.517,2.517,0,0,1,13.486,16ZM1.372,2.515V13.486a1.145,1.145,0,0,0,1.143,1.143H13.486a1.145,1.145,0,0,0,1.143-1.143V2.515a1.145,1.145,0,0,0-1.143-1.143H2.515A1.145,1.145,0,0,0,1.372,2.515Zm9.606,9.236-.006-.094V8.915A1.143,1.143,0,0,0,8.691,8.8l-.005.117v2.742a.686.686,0,0,1-1.365.094l-.006-.094V7.086a.686.686,0,0,1,1.271-.357,2.515,2.515,0,0,1,3.753,2.033l0,.153v2.742a.686.686,0,0,1-1.365.094Zm-7.314,0-.006-.094V7.086a.686.686,0,0,1,1.365-.093l.006.093v4.571a.686.686,0,0,1-1.365.094Zm0-7.305-.006-.1A.686.686,0,0,1,5.022,4.25l.006.1a.686.686,0,0,1-1.365.093Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/twitter" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Twitter background" width="24" height="24" fill="none"/>
+                          <path d="M14.355,3.239c.01.142.01.284.01.426a9.266,9.266,0,0,1-9.33,9.33A9.267,9.267,0,0,1,0,11.523a6.784,6.784,0,0,0,.792.041,6.567,6.567,0,0,0,4.071-1.4A3.285,3.285,0,0,1,1.8,7.888a4.135,4.135,0,0,0,.619.051,3.468,3.468,0,0,0,.863-.112A3.28,3.28,0,0,1,.65,4.609V4.569a3.3,3.3,0,0,0,1.482.416A3.284,3.284,0,0,1,1.117.6,9.321,9.321,0,0,0,7.878,4.03,3.7,3.7,0,0,1,7.8,3.279a3.282,3.282,0,0,1,5.675-2.244A6.456,6.456,0,0,0,15.553.244a3.27,3.27,0,0,1-1.442,1.807A6.574,6.574,0,0,0,16,1.543,7.049,7.049,0,0,1,14.355,3.239Z" transform="translate(0 2)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19.333" height="19.334" viewBox="0 0 19.333 19.334">
+                          <g data-name="icons/tabler/active" transform="translate(0 3.333)">
+                            <g data-name="icon/active" transform="translate(0 -3.333)">
+                              <g data-name="Icons/tabler/notification" transform="translate(0 3.333)">
+                                <rect data-name="Icons/Tabler/Notification background" width="24" height="24" fill="none"/>
+                                <path d="M4.108,13.087l0-.164v-.205H.617a.616.616,0,0,1-.3-1.151,2.668,2.668,0,0,0,1.3-1.773l.024-.153V7.151A6.328,6.328,0,0,1,4.861,1.915l.1-.053,0-.012A2.246,2.246,0,0,1,7.044,0l.137,0A2.252,2.252,0,0,1,9.372,1.715l.03.147.1.053a6.371,6.371,0,0,1,3.2,5.027l.015.237,0,2.388a2.677,2.677,0,0,0,1.334,2,.616.616,0,0,1-.22,1.146l-.084.005H10.258v.205a3.077,3.077,0,0,1-6.15.164Zm1.227-.164a1.846,1.846,0,0,0,3.688.126l0-.126v-.205H5.335ZM6.161,2.152l-.008.158,0,.03-.016.08L6.107,2.5l-.036.071L6.048,2.6,6,2.667l-.024.025-.033.031-.066.049-.073.04A5.131,5.131,0,0,0,2.888,6.973l-.014.206,0,2.535a3.917,3.917,0,0,1-.626,1.694l-.056.079h9.991l0-.008a4,4,0,0,1-.655-1.634l-.029-.2V7.208a5.116,5.116,0,0,0-2.93-4.4.613.613,0,0,1-.346-.468l-.006-.088a1.026,1.026,0,0,0-2.046-.1Z" transform="translate(0.999)" fill="#1e1e1e"/>
+                              </g>
+                              <circle cx="2.333" cy="2.333" r="2.333" transform="translate(14.667)" fill="#0d6efd"/>
+                            </g>
+                          </g>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="icons/tabler/share" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Share background" width="24" height="24" fill="none"/>
+                          <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="Icons/Tabler/Close Heavy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Close Heavy background" width="24" height="24" fill="none"/>
+                          <path d="M11.106,13.44,6.793,9.126,2.48,13.44a.5.5,0,0,1-.707,0L.147,11.813a.5.5,0,0,1,0-.707L4.46,6.793.147,2.48a.5.5,0,0,1,0-.707L1.773.147a.5.5,0,0,1,.707,0L6.793,4.46,11.106.147a.5.5,0,0,1,.707,0L13.44,1.773a.5.5,0,0,1,0,.707L9.126,6.793l4.313,4.313a.5.5,0,0,1,0,.707L11.813,13.44a.5.5,0,0,1-.707,0Z" transform="translate(1.207 1.207)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Circle background" width="16" height="16" fill="none"/>
+                          <path d="M6,12a6,6,0,1,1,6-6A6.007,6.007,0,0,1,6,12ZM6,1.384A4.616,4.616,0,1,0,10.616,6,4.621,4.621,0,0,0,6,1.384Z" transform="translate(2 2)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18.047 18.047">
+                          <g data-name="Icons/Tabler/Paperclip Copy" transform="translate(0.047 0.047)">
+                            <rect data-name="Icons/Tabler/Adjustments background" width="18" height="18" fill="none"/>
+                            <path d="M14.4,17.3l0-.074V6.579a2.829,2.829,0,0,1,0-5.443V.772A.772.772,0,0,1,15.94.7l0,.074v.364a2.829,2.829,0,0,1,0,5.443v10.65A.771.771,0,0,1,14.4,17.3ZM13.885,3.858a1.285,1.285,0,1,0,1.286-1.286A1.287,1.287,0,0,0,13.885,3.858ZM8.232,17.3l0-.074V15.836a2.829,2.829,0,0,1,0-5.443V.772A.771.771,0,0,1,9.768.7l0,.074v9.621a2.829,2.829,0,0,1,0,5.443v1.393a.772.772,0,0,1-1.54.074Zm-.517-4.188A1.285,1.285,0,1,0,9,11.829,1.287,1.287,0,0,0,7.714,13.115ZM2.06,17.3l0-.074V9.664a2.829,2.829,0,0,1,0-5.443V.772A.771.771,0,0,1,3.6.7l0,.074V4.221a2.829,2.829,0,0,1,0,5.443v7.565a.772.772,0,0,1-1.54.074ZM1.543,6.943A1.285,1.285,0,1,0,2.829,5.657,1.287,1.287,0,0,0,1.543,6.943Z" transform="translate(-0.047 -0.047)" fill="#1e1e1e"/>
+                          </g>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20">
+                          <rect data-name="Icons/Tabler/Video background" width="20" height="20" fill="none"/>
+                          <path d="M2.82,13.847A2.824,2.824,0,0,1,0,11.026V2.82A2.824,2.824,0,0,1,2.82,0h8.206a2.824,2.824,0,0,1,2.82,2.82v.807L17.4,1.85A1.8,1.8,0,0,1,20,3.455v6.938a1.795,1.795,0,0,1-1.794,1.793A1.805,1.805,0,0,1,17.4,12l-3.556-1.778v.807a2.824,2.824,0,0,1-2.82,2.82ZM1.539,2.82v8.206A1.283,1.283,0,0,0,2.82,12.308h8.206a1.283,1.283,0,0,0,1.281-1.281V2.82a1.283,1.283,0,0,0-1.281-1.281H2.82A1.283,1.283,0,0,0,1.539,2.82Zm16.551,7.8a.271.271,0,0,0,.115.026.257.257,0,0,0,.088-.015l.047-.023a.259.259,0,0,0,.122-.217V3.455a.253.253,0,0,0-.122-.217A.249.249,0,0,0,18.2,3.2a.258.258,0,0,0-.115.028L13.847,5.347V8.5Z" transform="translate(0 2.5)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/File background" width="16" height="16" fill="none"/>
+                          <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2ZM3.9,12.718a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.282a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.281a.616.616,0,0,1-.059-1.228l.059,0h.821a.615.615,0,0,1,.059,1.228l-.059,0Z" transform="translate(2)" fill="#1e1e1e"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <g data-name="Icons/Tabler/Paperclip" transform="translate(0 0)">
+                            <rect data-name="Icons/Tabler/apps background" width="16" height="16" fill="none"/>
+                            <path d="M10.743,16a1.6,1.6,0,0,1-1.6-1.6V10.743a1.6,1.6,0,0,1,1.6-1.6H14.4a1.6,1.6,0,0,1,1.6,1.6V14.4A1.6,1.6,0,0,1,14.4,16Zm-.229-5.257V14.4a.229.229,0,0,0,.229.229H14.4a.229.229,0,0,0,.229-.229V10.743a.229.229,0,0,0-.229-.229H10.743A.229.229,0,0,0,10.515,10.743ZM1.6,16A1.6,1.6,0,0,1,0,14.4V10.743a1.6,1.6,0,0,1,1.6-1.6H5.257a1.6,1.6,0,0,1,1.6,1.6V14.4a1.6,1.6,0,0,1-1.6,1.6Zm-.229-5.257V14.4a.229.229,0,0,0,.229.229H5.257a.229.229,0,0,0,.229-.229V10.743a.229.229,0,0,0-.229-.229H1.6A.229.229,0,0,0,1.372,10.743Zm9.372-3.886a1.6,1.6,0,0,1-1.6-1.6V1.6a1.6,1.6,0,0,1,1.6-1.6H14.4A1.6,1.6,0,0,1,16,1.6V5.257a1.6,1.6,0,0,1-1.6,1.6ZM10.515,1.6V5.257a.229.229,0,0,0,.229.229H14.4a.229.229,0,0,0,.229-.229V1.6a.229.229,0,0,0-.229-.229H10.743A.229.229,0,0,0,10.515,1.6ZM1.6,6.857A1.6,1.6,0,0,1,0,5.257V1.6A1.6,1.6,0,0,1,1.6,0H5.257a1.6,1.6,0,0,1,1.6,1.6V5.257a1.6,1.6,0,0,1-1.6,1.6ZM1.372,1.6V5.257a.229.229,0,0,0,.229.229H5.257a.229.229,0,0,0,.229-.229V1.6a.229.229,0,0,0-.229-.229H1.6A.229.229,0,0,0,1.372,1.6Z" transform="translate(0 0)" fill="#1e1e1e"/>
+                          </g>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20.001 20">
+                          <rect data-name="Icons/Tabler/Call background" width="20" height="20" fill="none"/>
+                          <path d="M16.982,20h0A18.076,18.076,0,0,1,5.272,14.723,18.172,18.172,0,0,1,0,2.973,2.966,2.966,0,0,1,2.844,0l.129,0H7.3a.81.81,0,0,1,.719.435L8.05.51l2.162,5.406a.811.811,0,0,1-.27.953l-.065.044L7.837,8.136l.018.033A11.113,11.113,0,0,0,11.6,12.006l.264.159,1.225-2.041a.811.811,0,0,1,.922-.361l.074.026,5.406,2.162a.8.8,0,0,1,.505.67l0,.082v4.325a2.935,2.935,0,0,1-.876,2.1A3.025,3.025,0,0,1,16.982,20ZM2.973,1.622a1.349,1.349,0,0,0-1.353,1.3A16.481,16.481,0,0,0,17.028,18.38a1.354,1.354,0,0,0,1.349-1.259l0-.093V13.253l-4.254-1.7-1.267,2.111a.81.81,0,0,1-.978.343l-.076-.033A12.768,12.768,0,0,1,6.03,8.2.809.809,0,0,1,6.271,7.19l.07-.047L8.451,5.876l-1.7-4.254Z" transform="translate(0 0)" fill="#1e1e1e"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <g data-name="Icons/Tabler/Settings" transform="translate(0 0)">
+                            <rect data-name="Icons/Tabler/Message background" width="24" height="24" fill="none"/>
+                            <path d="M1.029,24H.976l-.046,0-.1-.014L.74,23.958l-.089-.03-.082-.038-.095-.053-.089-.065-.05-.043-.066-.065-.042-.05-.065-.089a.943.943,0,0,1-.054-.095L.072,23.35l-.016-.045-.022-.073-.015-.065-.007-.039L0,23.07l0-.1V5.144A5.122,5.122,0,0,1,4.967,0l.177,0H18.857A5.122,5.122,0,0,1,24,4.967l0,.177v8.228a5.121,5.121,0,0,1-4.967,5.139l-.177,0H6.939L1.723,23.73l-.072.061-.076.051-.04.024-.046.024-.1.043-.073.024-.093.023-.1.014-.046,0ZM5.144,2.057A3.081,3.081,0,0,0,2.061,4.988l0,.155V20.488l3.73-3.729a1.032,1.032,0,0,1,.61-.3l.116-.007H18.857a3.081,3.081,0,0,0,3.082-2.931l0-.154V5.144a3.081,3.081,0,0,0-2.932-3.082l-.154,0Z" transform="translate(0 0)" fill="#1e1e1e"/>
+                          </g>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14">
+                          <rect data-name="Icons/Tabler/Time background" width="14" height="14" fill="none"/>
+                          <path d="M0,7a7,7,0,1,1,7,7A7.008,7.008,0,0,1,0,7ZM1.077,7A5.923,5.923,0,1,0,7,1.077,5.93,5.93,0,0,0,1.077,7Zm7.74,2.574-.044-.039L6.619,7.38a.54.54,0,0,1-.154-.32l0-.061V3.41a.539.539,0,0,1,1.075-.051l0,.051V6.776l2,2a.538.538,0,0,1,.039.718l-.039.043a.537.537,0,0,1-.717.039Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 15.999 15.999">
+                          <path d="M6.171,16a2.517,2.517,0,0,1-2.515-2.514V12.343H2.515A2.514,2.514,0,0,1,0,9.938l0-.109V2.515A2.514,2.514,0,0,1,2.4,0l.11,0H9.829a2.515,2.515,0,0,1,2.512,2.4l0,.11V3.657h1.143A2.517,2.517,0,0,1,16,6.171v7.314A2.515,2.515,0,0,1,13.486,16ZM5.028,13.486a1.144,1.144,0,0,0,1.143,1.142h7.314a1.143,1.143,0,0,0,1.142-1.142V6.171a1.144,1.144,0,0,0-1.142-1.143H6.171A1.145,1.145,0,0,0,5.028,6.171v7.314ZM1.374,2.436l0,.078V9.829a1.143,1.143,0,0,0,1.065,1.14l.078,0H3.657v-4.8A2.518,2.518,0,0,1,6.171,3.657h4.8V2.515a1.142,1.142,0,0,0-1.064-1.14l-.078,0H2.515A1.143,1.143,0,0,0,1.374,2.436Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="Icons/Tabler/Edit" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 12.003 12">
+                          <rect data-name="Icons/Tabler/Edit background" width="12" height="12" fill="none"/>
+                          <path d="M.535,12A.532.532,0,0,1,0,11.517l0-.052V8.613A.538.538,0,0,1,.116,8.28l.041-.045L7.644.747a2.552,2.552,0,0,1,3.678,3.536l-.069.072-.713.713L3.765,11.844A.538.538,0,0,1,3.447,12l-.06,0ZM1.07,8.834v2.1h2.1L9.405,4.691l-2.1-2.1Zm9.092-4.9L10.5,3.6a1.482,1.482,0,0,0,.058-2.035L10.5,1.5a1.483,1.483,0,0,0-2.035-.058L8.4,1.5l-.335.335Z" fill="#1e1e1e"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg data-name="Icons/Tabler/Emoji" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <rect data-name="Icons/Tabler/Emoji background" width="24" height="24" fill="none"/>
+                          <path data-name="Combined Shape" d="M0,12A12,12,0,1,1,12,24,12.014,12.014,0,0,1,0,12Zm1.847,0A10.153,10.153,0,1,0,12,1.847,10.165,10.165,0,0,0,1.847,12Zm6.417,4.338a.923.923,0,0,1,1.319-1.292,3.384,3.384,0,0,0,4.836,0,.923.923,0,0,1,1.318,1.292,5.23,5.23,0,0,1-7.472,0Zm6.506-6.8A.923.923,0,0,1,15.6,8.62l.1,0a.923.923,0,0,1,.089,1.841l-.1,0A.923.923,0,0,1,14.769,9.539Zm-7.385,0a.923.923,0,0,1,.834-.919l.1,0a.923.923,0,0,1,.089,1.841l-.1,0A.923.923,0,0,1,7.385,9.539Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Export background" width="16" height="16" fill="none"/>
+                          <path d="M10.318,15.828a.585.585,0,0,1-.042-.78L10.318,15l1.342-1.342H7.61a.585.585,0,0,1-.056-1.168l.056,0h4.05l-1.342-1.342a.583.583,0,0,1-.042-.78l.042-.048a.587.587,0,0,1,.734-.076l.047.034.048.042,2.367,2.369.034.042.021.031.024.042.027.059.022.067.01.049.006.053,0,.044v.04l-.006.054-.014.06-.019.058-.014.032a.625.625,0,0,1-.05.087l-.032.043-.035.039-2.342,2.341a.584.584,0,0,1-.828,0ZM2.147,15.22A2.14,2.14,0,0,1,0,13.166l0-.093V2.147A2.14,2.14,0,0,1,2.053,0l.094,0H7.708l.012,0h0l.01,0h0l.01,0h0l.012,0h0A.573.573,0,0,1,7.929.1l0,0h0a.589.589,0,0,1,.083.068l0,0,3.882,3.883a.583.583,0,0,1,.187.353v.017a.592.592,0,0,1,0,.064v3.9a.585.585,0,0,1-1.168.057l0-.057V5.073H8.39A1.367,1.367,0,0,1,7.026,3.785l0-.077V1.171H2.147a.978.978,0,0,0-.974.909l0,.067V13.073a.978.978,0,0,0,.909.973l.067,0H5.658a.585.585,0,0,1,.057,1.168l-.057,0ZM8.2,3.707a.2.2,0,0,0,.16.193l.034,0H10.1L8.2,2Z" transform="translate(1)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 26 26">
+                          <g transform="translate(2.476 0)">
+                            <path d="M0,14.207c0-5.17,3.229-7.882,6.258-7.882,1.97,0,3.5,1.136,4.521,1.136.879,0,2.51-1.208,4.633-1.208a5.8,5.8,0,0,1,5.092,2.6,5.645,5.645,0,0,0-2.812,4.926,5.789,5.789,0,0,0,3.5,5.291s-2.449,6.891-5.756,6.891c-1.519,0-2.7-1.023-4.3-1.023C9.508,24.937,7.89,26,6.836,26,3.815,26,0,19.462,0,14.207Zm10.562-8.23a4.828,4.828,0,0,1,1.132-3.714A5.565,5.565,0,0,1,15.778,0a5.551,5.551,0,0,1-1.344,4.156A4.61,4.61,0,0,1,10.9,6,2.212,2.212,0,0,1,10.562,5.977Z" fill="#1e1e1e"/>
+                          </g>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Code02 background" width="16" height="16" fill="none"/>
+                          <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2Zm-.891,8.756a.615.615,0,0,1-.3-.768l.025-.058.683-1.366L7.449,9.1A.616.616,0,0,1,7.67,8.3l.055-.031a.615.615,0,0,1,.795.22l.031.055.821,1.641a.617.617,0,0,1,.029.484l-.029.067L8.55,12.378a.614.614,0,0,1-.825.275ZM4.2,12.433l-.031-.055-.821-1.641a.617.617,0,0,1-.029-.484l.029-.067.821-1.641a.615.615,0,0,1,1.126.492L5.269,9.1l-.684,1.366.684,1.366a.615.615,0,0,1-.22.794l-.055.031a.615.615,0,0,1-.795-.22Z" transform="translate(2)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="Icons/Tabler/Check Heavy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Key background" width="16" height="16" fill="none"/>
+                          <path d="M0,10.742A4.341,4.341,0,0,1,6.889,7.227L13,1.119l0,0,0,0,.91-.91a.686.686,0,0,1,1.02.914l-.05.056-.429.429L15.8,2.944a.686.686,0,0,1-.914,1.02l-.056-.05L13.486,2.57,11.713,4.343l1.344,1.343a.686.686,0,0,1-.914,1.02l-.055-.049L10.743,5.312,7.859,8.2A4.342,4.342,0,1,1,0,10.742Zm1.372,0A2.971,2.971,0,1,0,4.343,7.772,2.975,2.975,0,0,0,1.372,10.742Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <g transform="translate(0)">
+                            <rect data-name="Icons/Tabler/Link background" width="16" height="16" fill="none"/>
+                            <path d="M1.143,14.857a3.9,3.9,0,0,1-.1-5.421l.1-.1L4.781,5.7a3.87,3.87,0,0,1,5.528,0,.683.683,0,1,1-.976.956,2.5,2.5,0,0,0-3.491-.083l-.091.088L2.109,10.3a2.537,2.537,0,0,0,3.5,3.672l.089-.085.455-.455a.683.683,0,0,1,1.015.91l-.049.056-.455.455a3.9,3.9,0,0,1-5.519,0ZM5.691,10.3a.683.683,0,1,1,.976-.956,2.5,2.5,0,0,0,3.491.084l.092-.088L13.892,5.7a2.537,2.537,0,0,0-3.5-3.672l-.089.085-.455.455a.683.683,0,0,1-1.015-.911l.05-.055.455-.455a3.9,3.9,0,0,1,5.614,5.42l-.1.1L11.219,10.3a3.869,3.869,0,0,1-5.529,0Z" fill="#1e1e1e"/>
+                          </g>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16.027 16">
+                          <g data-name="Icons/Tabler/Refresh" transform="translate(0 0)">
+                            <rect data-name="Icons/Tabler/Refresh background" width="16" height="16" fill="none"/>
+                            <path d="M7,15.933A8.105,8.105,0,0,1,.006,9.011a.687.687,0,0,1,1.361-.19A6.731,6.731,0,0,0,13.76,11.435H11.677a.687.687,0,0,1-.684-.621l0-.066a.687.687,0,0,1,.621-.684l.066,0H15.34a.687.687,0,0,1,.684.621l0,.067v3.663a.686.686,0,0,1-1.37.066l0-.066V12.573A8.1,8.1,0,0,1,7,15.933Zm7.662-8.754A6.731,6.731,0,0,0,2.267,4.565H4.351a.687.687,0,0,1,.683.621l0,.066a.687.687,0,0,1-.621.684l-.066,0H.687A.686.686,0,0,1,0,5.319l0-.067V1.589a.687.687,0,0,1,1.371-.067l0,.067V3.426A8.105,8.105,0,0,1,16.02,6.989a.687.687,0,1,1-1.361.189Z" fill="#1e1e1e"/>
+                          </g>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg data-name="Icons/Tabler/Lock Closed" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                          <rect data-name="Icons/Tabler/Lock Closed background" width="16" height="16" fill="none"/>
+                          <path d="M2.164,16A2.214,2.214,0,0,1,0,13.743V8.82A2.215,2.215,0,0,1,2.164,6.564h.2V3.9A3.821,3.821,0,0,1,6.1,0,3.815,3.815,0,0,1,9.837,3.78l0,.117V6.564h.2A2.215,2.215,0,0,1,12.2,8.82v4.923A2.214,2.214,0,0,1,10.036,16ZM1.181,8.82v4.923a1.006,1.006,0,0,0,.984,1.026h7.871a1.006,1.006,0,0,0,.984-1.026V8.82a1.006,1.006,0,0,0-.984-1.025H2.164A1.006,1.006,0,0,0,1.181,8.82ZM8.658,6.564V3.9A2.613,2.613,0,0,0,6.1,1.231,2.609,2.609,0,0,0,3.543,3.8l0,.1V6.564ZM4.722,11.281A1.409,1.409,0,0,1,6.1,9.846a1.437,1.437,0,0,1,0,2.872A1.41,1.41,0,0,1,4.722,11.281Zm1.181,0a.2.2,0,1,0,.2-.2A.2.2,0,0,0,5.9,11.281Z" transform="translate(2)" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <g data-name="Icons/Tabler/Photo" transform="translate(0)">
+                            <rect data-name="Icons/Tabler/Photo background" width="24" height="24" fill="none"/>
+                            <path data-name="Combined Shape" d="M5.144,24A5.149,5.149,0,0,1,0,18.857v-2.73c0-.008,0-.016,0-.024V5.144A5.149,5.149,0,0,1,5.144,0H18.857A5.149,5.149,0,0,1,24,5.144V18.857A5.149,5.149,0,0,1,18.857,24ZM2.057,18.857a3.09,3.09,0,0,0,3.086,3.086H18.857a3.09,3.09,0,0,0,3.086-3.086V16.54l-2.427-2.427A1.722,1.722,0,0,0,16.949,14l-.108.1-.644.643,2.016,2.016a1.029,1.029,0,0,1-1.372,1.53l-.082-.076L14.016,15.47l-4.1-4.1a1.724,1.724,0,0,0-2.566-.113l-.108.1L2.057,16.54Zm18.757-6.344.142.131.987.987V5.144a3.09,3.09,0,0,0-3.086-3.086H5.144A3.09,3.09,0,0,0,2.057,5.144v8.487L5.8,9.887a3.774,3.774,0,0,1,5.414-.117l.142.131,3.387,3.387.658-.658a3.773,3.773,0,0,1,5.414-.117Zm-5.728-6a1.028,1.028,0,0,1,.929-1.023l.113-.005a1.029,1.029,0,0,1,.1,2.053l-.112,0A1.028,1.028,0,0,1,15.086,6.514Z" transform="translate(0)" fill="#1e1e1e"/>
+                          </g>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 28.417 17.417">
+                          <path d="M18.736,17.014a1.375,1.375,0,0,1-.1-1.832l.1-.112,4.986-4.986H1.375a1.375,1.375,0,0,1-.132-2.744l.132-.006H23.722L18.736,2.347A1.375,1.375,0,0,1,20.569.3l.112.1,7.334,7.334h0l.021.021,0,0,0,0,.013.014.006.007.006.007.006.007.01.011.009.011.013.015.009.011.012.016.008.011.012.016.008.011.012.016.007.011.012.017.007.01.012.018.006.01L28.222,8l.006.009.012.021,0,.007.014.026,0,0a1.364,1.364,0,0,1,.061.134h0l.01.026,0,.007,0,.014.006.019,0,.01.007.022,0,.007.007.025v0q.008.028.015.056v0l.006.028v0l.005.028v0l0,.027v0l0,.023v.01l0,.019,0,.014,0,.017,0,.016h0a1.384,1.384,0,0,1,0,.221v0c0,.01,0,.019,0,.029v.005l0,.026v.007l0,.023v.01l0,.02,0,.012,0,.016,0,.016,0,.014,0,.017,0,.015,0,.016,0,.016,0,.014-.006.023,0,.008V9.1l-.008.027,0,.008-.007.022,0,.013-.006.017-.006.015-.006.014-.007.017-.005.012-.008.019,0,.009-.01.021,0,.006-.011.023v0a1.371,1.371,0,0,1-.254.351L20.68,17.014a1.374,1.374,0,0,1-1.944,0Z" transform="translate(0 0)" fill="#1e1e1e"/>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14">
+                          <rect data-name="Icons/Tabler/Search background" width="14" height="14" fill="none"/>
+                          <path data-name="Combined Shape" d="M13.141,13.895l-.06-.052L9.1,9.859A5.569,5.569,0,1,1,9.859,9.1l3.983,3.983a.539.539,0,0,1-.7.813ZM1.077,5.564A4.487,4.487,0,1,0,5.564,1.077,4.492,4.492,0,0,0,1.077,5.564Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+                      <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14.001 14.001">
+                          <g transform="translate(0 0)">
+                            <rect data-name="Icons/Tabler/Send background" width="14" height="14" fill="none"/>
+                            <path d="M7.728,13.537,5.306,8.694.535,6.309A.919.919,0,0,1,0,5.541l0-.067a.918.918,0,0,1,.476-.8l.06-.03.041-.017L13.291.031l.026-.009.012,0,.032-.008L13.4.005H13.4l.03,0h.076l.03,0h.008l.009,0a.531.531,0,0,1,.089.022h0l0,0a.528.528,0,0,1,.316.316h0a.53.53,0,0,1,.025.1v0h0A.534.534,0,0,1,14,.529c0,.01,0,.019,0,.029v0q0,.02,0,.039v0c0,.017-.006.035-.01.053v0a.53.53,0,0,1-.017.055L9.378,13.424l-.017.041a.919.919,0,0,1-1.633.072Zm.776-.814L12.165,2.585,6.345,8.4ZM1.278,5.5,5.6,7.655l5.819-5.82Z" transform="translate(0 0)" fill="#1e1e1e"/>
+                          </g>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg data-name="Icons/Tabler/Security" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14">
+                          <rect data-name="Icons/Tabler/Public background" width="14" height="14" fill="none"/>
+                          <path data-name="Combined Shape" d="M6.718,13.995a.54.54,0,0,1-.21-.011,7,7,0,0,1,0-13.966.54.54,0,0,1,.21-.011C6.811,0,6.906,0,7,0s.189,0,.282.006a.54.54,0,0,1,.21.012,7,7,0,0,1,0,13.966.54.54,0,0,1-.21.011C7.189,14,7.095,14,7,14S6.811,14,6.718,13.995ZM7,12.923h.056a11.655,11.655,0,0,0,1.3-3.23H5.643a11.655,11.655,0,0,0,1.3,3.23Zm1.371-.16a5.948,5.948,0,0,0,3.9-3.07H9.461A12.722,12.722,0,0,1,8.371,12.763Zm-2.742,0a12.719,12.719,0,0,1-1.09-3.07H1.725A5.947,5.947,0,0,0,5.629,12.763ZM12.7,8.615a5.939,5.939,0,0,0,0-3.23H9.645a12.762,12.762,0,0,1,0,3.23Zm-4.14,0a11.683,11.683,0,0,0,0-3.23H5.441a11.683,11.683,0,0,0,0,3.23Zm-4.2,0a12.759,12.759,0,0,1,0-3.23H1.3a5.939,5.939,0,0,0,0,3.23Zm7.92-4.308a5.948,5.948,0,0,0-3.9-3.07,12.722,12.722,0,0,1,1.09,3.07Zm-3.918,0a11.655,11.655,0,0,0-1.3-3.23H6.944a11.655,11.655,0,0,0-1.3,3.23Zm-3.818,0a12.719,12.719,0,0,1,1.09-3.07,5.947,5.947,0,0,0-3.9,3.07Z" fill="#1e1e1e"/>
+                        </svg>                        
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-2" role="tabpanel" aria-labelledby="pills-html-tab-2">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;img src="assets/img/svg/plus.svg" alt="Plus"&gt;
+                      &lt;img src="assets/img/svg/back-arrow.svg" alt="Back Arrow"&gt;
+                      &lt;img src="assets/img/svg/power-outline.svg" alt="Power"&gt;
+                      &lt;img src="assets/img/svg/save-outline.svg" alt="Save"&gt;
+                      &lt;img src="assets/img/svg/box-outline.svg" alt="Box"&gt;
+                      &lt;img src="assets/img/svg/browser-outline.svg" alt="Browser"&gt;
+                      &lt;img src="assets/img/svg/calendar-outline.svg" alt="Calendar"&gt;
+                      &lt;img src="assets/img/svg/cart-outline.svg" alt="Cart"&gt;
+                      &lt;img src="assets/img/svg/chart-outline.svg" alt="Chart"&gt;
+                      &lt;img src="assets/img/svg/right-check.svg" alt="Right Check"&gt;
+                      &lt;img src="assets/img/svg/check-heavy.svg" alt="Check Heavy"&gt;
+                      &lt;img src="assets/img/svg/chevron.svg" alt="Chevron"&gt;
+                      &lt;img src="assets/img/svg/chevron-down.svg" alt="Chevron Down"&gt;
+                      &lt;img src="assets/img/svg/chevron-right.svg" alt="Chevron Right"&gt;
+                      &lt;img src="assets/img/svg/chevron-up.svg" alt="Chevron Up"&gt;
+                      &lt;img src="assets/img/svg/chevrons-button.svg" alt="Chevrons Button"&gt;
+                      &lt;img src="assets/img/svg/chevrons-left.svg" alt="Chevrons Left"&gt;
+                      &lt;img src="assets/img/svg/chevrons-right.svg" alt="Chevrons Right"&gt;
+                      &lt;img src="assets/img/svg/chevrons-up.svg" alt="Chevrons Up"&gt;
+                      &lt;img src="assets/img/svg/close1.svg" alt="Close"&gt;
+                      &lt;img src="assets/img/svg/code.svg" alt="Code"&gt;
+                      &lt;img src="assets/img/svg/docs.svg" alt="Docs"&gt;
+                      &lt;img src="assets/img/svg/dots.svg" alt="Dots"&gt;
+                      &lt;img src="assets/img/svg/tablet.svg" alt="Tablet"&gt;
+                      &lt;img src="assets/img/svg/fire.svg" alt="Fire"&gt;
+                      &lt;img src="assets/img/svg/gift.svg" alt="Gift"&gt;
+                      &lt;img src="assets/img/svg/hamburger.svg" alt="Hamburger"&gt;
+                      &lt;img src="assets/img/svg/login.svg" alt="Login"&gt;
+                      &lt;img src="assets/img/svg/logout.svg" alt="Logout"&gt;
+                      &lt;img src="assets/img/svg/mail.svg" alt="Mail"&gt;
+                      &lt;img src="assets/img/svg/map.svg" alt="Map"&gt;
+                      &lt;img src="assets/img/svg/message.svg" alt="Message"&gt;
+                      &lt;img src="assets/img/svg/minus.svg" alt="Minus"&gt;
+                      &lt;img src="assets/img/svg/money.svg" alt="Money"&gt;
+                      &lt;img src="assets/img/svg/notification.svg" alt="Notification"&gt;
+                      &lt;img src="assets/img/svg/page.svg" alt="Page"&gt;
+                      &lt;img src="assets/img/svg/paperclip.svg" alt="Paperclip"&gt;
+                      &lt;img src="assets/img/svg/phone.svg" alt="Phone"&gt;
+                      &lt;img src="assets/img/svg/play.svg" alt="Play"&gt;
+                      &lt;img src="assets/img/svg/play-fill.svg" alt="Play Fill"&gt;
+                      &lt;img src="assets/img/svg/plug.svg" alt="Plug"&gt;
+                      &lt;img src="assets/img/svg/setting.svg" alt="Setting"&gt;
+                      &lt;img src="assets/img/svg/users.svg" alt="Users"&gt;
+                      &lt;img src="assets/img/svg/user.svg" alt="User"&gt;
+                      &lt;img src="assets/img/svg/trend-up.svg" alt="Trend Up"&gt;
+                      &lt;img src="assets/img/svg/truck.svg" alt="Truck"&gt;
+                      &lt;img src="assets/img/svg/tv.svg" alt="Tv"&gt;
+                      &lt;img src="assets/img/svg/tag.svg" alt="Tag"&gt;
+                      &lt;img src="assets/img/svg/facebook.svg" alt="Facebook"&gt;
+                      &lt;img src="assets/img/svg/dribbble.svg" alt="Dribbble"&gt;
+                      &lt;img src="assets/img/svg/instagram.svg" alt="Instagram"&gt;
+                      &lt;img src="assets/img/svg/linkedin.svg" alt="Linkedin"&gt;
+                      &lt;img src="assets/img/svg/twitter.svg" alt="Twitter"&gt;
+                      &lt;img src="assets/img/svg/active.svg" alt="Active"&gt;
+                      &lt;img src="assets/img/svg/share.svg" alt="Share"&gt;
+                      &lt;img src="assets/img/svg/close-heavy.svg" alt="Close Heavy"&gt;
+                      &lt;img src="assets/img/svg/status@16.svg" alt="Status"&gt;
+                      &lt;img src="assets/img/svg/tio-tune.svg" alt="Tio Tune"&gt;
+                      &lt;img src="assets/img/svg/video.svg" alt="Video"&gt;
+                      &lt;img src="assets/img/svg/xls.svg" alt="xls"&gt;
+                      &lt;img src="assets/img/svg/apps.svg" alt="Apps"&gt;
+                      &lt;img src="assets/img/svg/call.svg" alt="Call"&gt;
+                      &lt;img src="assets/img/svg/chat@24.svg" alt="Chat"&gt;
+                      &lt;img src="assets/img/svg/clock.svg" alt="Clock"&gt;
+                      &lt;img src="assets/img/svg/copy.svg" alt="Copy"&gt;
+                      &lt;img src="assets/img/svg/edit.svg" alt="Edit"&gt;
+                      &lt;img src="assets/img/svg/emoji.svg" alt="Emoji"&gt;
+                      &lt;img src="assets/img/svg/export@16.svg" alt="Export"&gt;
+                      &lt;img src="assets/img/svg/ios.svg" alt="Ios"&gt;
+                      &lt;img src="assets/img/svg/json.svg" alt="json"&gt;
+                      &lt;img src="assets/img/svg/key.svg" alt="Key"&gt;
+                      &lt;img src="assets/img/svg/link.svg" alt="Link"&gt;
+                      &lt;img src="assets/img/svg/load.svg" alt="Load"&gt;
+                      &lt;img src="assets/img/svg/login.svg" alt="Login"&gt;
+                      &lt;img src="assets/img/svg/photo.svg" alt="Photo"&gt;
+                      &lt;img src="assets/img/svg/right-arrow.svg" alt="Photo"&gt;
+                      &lt;img src="assets/img/svg/search@16.svg" alt="Search"&gt;
+                      &lt;img src="assets/img/svg/send.svg" alt="Send"&gt;
+                      &lt;img src="assets/img/svg/server@14.svg" alt="Server"&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JS Global Compulsory -->
+<script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Muze Javascript Plugins -->
+<script src="assets/vendor/prism/prism.js"></script>
+<script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+
+<script> 
+  //Muze Sidebar Toggle JavaScript
+  var elem = document.body;
+  function toggleClass(){
+    elem.classList.toggle("sidebar-show");  // Toggle hide class
+  }
+</script>
+</body>
+</html>

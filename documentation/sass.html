@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Sass - Muze Documentation | Muze - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+  <link href="../assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
+
+  <!-- CSS Muze Template -->
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+
+  <!-- CSS Muze Doc -->
+  <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body>
+  <!-- Muze Documentation -->
+<div class="muze-documentation">
+	<header class="doc-header bg-white px-3 px-md-4 shadow-sm position-fixed">
+    <nav class="navbar navbar-expand-lg has-header-inner py-0">
+      <a class="navbar-brand" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="21" viewBox="0 0 102 21">
+          <g data-name="Group 5" transform="translate(0 -14)">
+            <path d="M38.591,21a12.83,12.83,0,0,1-4-.588,8.284,8.284,0,0,1-3.046-1.736,7.742,7.742,0,0,1-1.93-2.8,9.914,9.914,0,0,1-.677-3.772V0h5.281V12.393a4.5,4.5,0,0,0,1.117,3.127,4.177,4.177,0,0,0,3.25,1.234,4.176,4.176,0,0,0,3.249-1.234,4.5,4.5,0,0,0,1.118-3.127V0h5.28V12.107a9.317,9.317,0,0,1-.677,3.586,8.03,8.03,0,0,1-1.93,2.812,8.9,8.9,0,0,1-3.047,1.836A11.55,11.55,0,0,1,38.591,21ZM5.218,20.518H0V0H5.218l6.913,10.03h.339L19.383,0H24.6V20.516H19.383V11.434l.338-3.439h-.338L13.86,16.161H10.742L5.218,7.995H4.88l.338,3.439v9.084Zm83.782,0H73.081V0H89V4.241H78.342v3.9h9.579V12.38H78.342v3.9H89v4.24Zm-19.536,0H51.133v-4.47L63.149,4.241H51.676V0H69.328V4.47L57.515,16.277H69.464v4.24Z" transform="translate(0 14)" fill="#1e1e1e"></path>
+            <circle cx="4.5" cy="4.5" r="4.5" transform="translate(93 25)" fill="#ffc107"></circle>
+          </g>
+        </svg>
+      </a>
+      <div class="text-end d-block d-xl-none order-md-2 ms-auto">
+        <a href="javascript:void(0);" class="aside-toggle" onclick="toggleClass()">
+          <img src="../assets/svg/icons/hamburger@20.svg" class="menu-icon" alt="Menu">        
+          <img src="../assets/svg/icons/close@20.svg" class="menu-close" alt="Menu Close">
+        </a>
+      </div>
+      <ul class="nav nav-classic nav-sm border-0 nav-docs-space ms-auto">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+            <span class="d-none d-sm-block">Documentation</span>
+            <span class="d-sm-none">Docs</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/analytics.html">Templates</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container-fluid main-docs">
+    <div class="row justify-content-lg-end">
+      <nav class="col-lg-3 col-xl-2 muzesidebar navbar-expand-lg ms-2 px-0 muze-sidebar">
+        <div class="collapse navbar-collapse show" id="sidebar-nav">
+          <div id="sidebarNav" class="muzesidebar-scrollbar muzesidebar-sticky ps-2 ps-md-0 pe-2 accordion" data-simplebar>
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#getting-started-collapse" role="button" aria-expanded="false">Getting started</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="getting-started-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="index.html">Introduction</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="gulp.html">Gulp</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="contents.html">Contents</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="browsers-devices.html">Browsers &amp; devices</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="javascript.html">JavaScript</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="build-tools.html">Build tools</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="webpack.html">Webpack</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accessibility.html">Accessibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rfs.html">RFS</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rtl.html">RTL</a></li>
+            </ul>
+
+            <a class="muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#customize-collapse" role="button" aria-expanded="true">Customize</a>
+            <ul class="muzesidebar-nav collapse show mb-0" id="customize-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link active" href="sass.html">Sass</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="options.html">Options</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colors.html">Color</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="customize-components.html">Components</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="css-variables.html">CSS variables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="optimize.html">Optimize</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dark-mode.html">Dark mode</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="container.html">Container</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="headers.html">Headers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sidebar.html">Sidebar</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#content-collapse" role="button" aria-expanded="false">Content</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="content-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="typography.html">Typography</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="images.html">Images</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tables.html">Tables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="figures.html">Figures</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#forms-collapse" role="button" aria-expanded="false">Forms</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="forms-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-control.html">Form control</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="select.html">Select</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="checks.html">Checks</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="range.html">Range</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="input-group.html">Input group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="floating-labels.html">Floating labels</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-layout.html">Layout</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="validation.html">Validation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#components-collapse" role="button" aria-expanded="false">Components</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="components-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accordion.html">Accordion</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="alerts.html">Alerts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="avatars.html">Avatars</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="badge.html">Badge</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="buttons.html">Buttons</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="button-group.html">Button Group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="links.html">Links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="cards.html">Cards</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="carousel.html">Carousel</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="close-button.html">Close Button</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="collapse.html">Collapse</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dropdowns.html">Dropdowns</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="list-group.html">List group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="modal.html">Modal</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navbar.html">Navbar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navs.html">Navs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="pagination.html">Pagination</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="popovers.html">Popovers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="progress.html">Progress</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="scrollspy.html">Scrollspy</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spinners.html">Spinners</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabs.html">Tabs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="toasts.html">Toasts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#helpers-collapse" role="button" aria-expanded="false">Helpers</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="helpers-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="clearfix.html">Clearfix</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colored-links.html">Colored links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="embed.html">Embed</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="screen-readers.html">Screen readers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="stretched-link.html">Stretched link</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="text-truncation.html">Text truncation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#utilities-collapse" role="button" aria-expanded="false">Utilities</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="utilities-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="animations.html">Animations</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="borders.html">Borders</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="display.html">Display</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="flex.html">Flex</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="float.html">Float</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="overflow.html">Overflow</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="utilitie-position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="shadows.html">Shadows</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sizing.html">Sizing</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spacings.html">Spacings</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="ui.html">UI</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="vertical-align.html">Vertical align</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="visibility.html">Visibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="others.html">Others</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#extend-collapse" role="button" aria-expanded="false">Extend</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="extend-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="approach.html">Approach</a></li>
+              <li class="muzesidebar-item">
+                <span class="muzesidebar-link">Icons:</span>
+                <ul class="muzesidebar-nav ms-2">
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="bootstrap-icons.html">Bootstrap Icons</a></li>
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabler-icons.html">Tabler Icons</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#plugins-collapse" role="button" aria-expanded="false">Plugins</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="plugins-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="charts.html">Charts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link " href="fullcalendar.html">Fullcalendar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="quill.html">Quill</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#more-collapse" role="button" aria-expanded="false">More</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="more-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="credits.html">Credits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="col-xl-10 muze-docs-content"> 
+        <div class="p-0 p-md-4">
+          <div class="muzedocs-content-divider">
+            <h1>Sass</h1>
+            <p class="lead">Utilize our source Sass files to take advantage of variables, maps, mixins, and functions to help you build faster and customize your project.</p>
+          </div>
+
+          <div id="file-structure" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">File structure</h2>
+            <p>Whenever possible, avoid modifying Bootstrap’s core files. For Sass, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it. Assuming you’re using a package manager like npm, you’ll have a file structure that looks like this:</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                your-project/
+                ├── assets/
+                |   └──scss
+                │      └── theme.scss
+                └── node_modules/
+                    └── bootstrap
+                        ├── js
+                        └── scss
+              </code>
+            </pre>
+          </div>
+
+          <div id="importing" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Importing</h2>
+            <p>In your <code>custom.scss</code>, you’ll import Bootstrap’s source Sass files. You have two options: include all of Bootstrap, or pick the parts you need. We encourage the latter, though be aware there are some requirements and dependencies across our components. You also will need to include some JavaScript for our plugins.</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                // Custom.scss
+                // Option A: Include all of Bootstrap
+
+                @import "../node_modules/bootstrap/scss/bootstrap";
+              </code>
+            </pre>
+
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                // Custom.scss
+                // Option B: Include parts of Bootstrap
+
+                // Required
+                @import "../node_modules/bootstrap/scss/functions";
+                @import "../node_modules/bootstrap/scss/variables";
+                @import "../node_modules/bootstrap/scss/mixins";
+
+                // Optional
+                @import "../node_modules/bootstrap/scss/reboot";
+                @import "../node_modules/bootstrap/scss/type";
+                @import "../node_modules/bootstrap/scss/images";
+                @import "../node_modules/bootstrap/scss/code";
+                @import "../node_modules/bootstrap/scss/grid";
+              </code>
+            </pre>
+            <p>With that setup in place, you can begin to modify any of the Sass variables and maps in your <code>custom.scss</code>. You can also start to add parts of Bootstrap under the <code>// Optional</code> section as needed. We suggest using the full import stack from our <code>bootstrap.scss</code> file as your starting point.</p>
+          </div>
+
+          <div id="variable-defaults" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Variable defaults</h2>
+            <p>Every Sass variable in Bootstrap includes the <code>!default</code> flag allowing you to override the variable’s default value in your own Sass without modifying Bootstrap’s source code. Copy and paste variables as needed, modify their values, and remove the <code>!default</code> flag. If a variable has already been assigned, then it won’t be re-assigned by the default values in Bootstrap.</p>
+            <p>You will find the complete list of Bootstrap’s variables in <code>scss/muze/_variables.scss</code>. Some variables are set to <code>null</code>, these variables don’t output the property unless they are overridden in your configuration.</p>
+            <p>Variable overrides within the same Sass file can come before or after the default variables. However, when overriding across Sass files, your overrides must come before you import Bootstrap’s Sass files.</p>
+            <p>Here’s an example that changes the <code>background-color</code> and <code>color</code> for the <code>&lt;body&gt;</code> when importing and compiling Bootstrap via npm:</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                // Required
+                @import "../node_modules/bootstrap/scss/functions";
+                @import "../node_modules/bootstrap/scss/variables";
+                @import "../node_modules/bootstrap/scss/mixins";
+
+                // Your variable overrides
+                $body-bg: #000;
+                $body-color: #111;
+
+                // Bootstrap and its default variables
+
+                // Optional
+                @import "../node_modules/bootstrap/scss/root";
+                @import "../node_modules/bootstrap/scss/reboot";
+                @import "../node_modules/bootstrap/scss/type";
+                // etc
+              </code>
+            </pre>
+          </div>
+          <div class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Maps and loops</h2>
+            <p>Bootstrap includes a handful of Sass maps, key value pairs that make it easier to generate families of related CSS. We use Sass maps for our colors, grid breakpoints, and more. Just like Sass variables, all Sass maps include the <code>!default</code> flag and can be overridden and extended.</p>
+            <p>Some of our Sass maps are merged into empty ones by default. This is done to allow easy expansion of a given Sass map, but comes at the cost of making <em>removing</em> items from a map slightly more difficult.</p>
+          </div>
+          <div id="modify-map" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Modify map</h2>
+            <p>All variables in the <code>$theme-colors</code> map are defined as standalone variables. To modify an existing color in our <code>$theme-colors</code> map, add the following to your custom Sass file:</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                $primary: #0074d9;
+                $danger: #ff4136;
+              </code>
+            </pre>
+            <p>Later on, theses variables are set in Bootstrap’s <code>$theme-colors</code> map:</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                $theme-colors: (
+                  "primary": $primary,
+                  "danger": $danger
+                );
+              </code>
+            </pre>
+          </div>
+
+          <div id="add-to-map" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Add to map</h2>
+            <p>Add new colors to <code>$theme-colors</code>, or any other map, by creating a new Sass map with your custom values and merging it with the original map. In this case, we’ll create a new <code>$custom-colors</code> map and merge it with <code>$theme-colors</code>.</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                // Create your own map
+                $custom-colors: (
+                  "custom-color": #900
+                );
+
+                // Merge the maps
+                $theme-colors: map-merge($theme-colors, $custom-colors);
+              </code>
+            </pre>
+            
+          </div>
+          <div id="remove-from-map" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Remove from map</h2>
+            <p>To remove colors from <code>$theme-colors</code>, or any other map, use <code>map-remove</code>. Be aware you must insert it between our requirements and options:</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                // Required
+                @import "../node_modules/bootstrap/scss/functions";
+                @import "../node_modules/bootstrap/scss/variables";
+                @import "../node_modules/bootstrap/scss/mixins";
+
+                $theme-colors: map-remove($theme-colors, "info", "light", "dark");
+
+                // Optional
+                @import "../node_modules/bootstrap/scss/root";
+                @import "../node_modules/bootstrap/scss/reboot";
+                @import "../node_modules/bootstrap/scss/type";
+                ...
+              </code>
+            </pre>
+          </div>
+          <div id="required-keys" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Required keys</h2>
+            <p>Bootstrap assumes the presence of some specific keys within Sass maps as we used and extend these ourselves. As you customize the included maps, you may encounter errors where a specific Sass map’s key is being used.</p>
+            <p>For example, we use the <code>primary</code>, <code>success</code>, and <code>danger</code> keys from <code>$theme-colors</code> for links, buttons, and form states. Replacing the values of these keys should present no issues, but removing them may cause Sass compilation issues. In these instances, you’ll need to modify the Sass code that makes use of those values.</p>
+           
+          </div>
+          <div id="functions" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Functions</h2>
+            <h6>Colors</h6>
+            <p>Next to the <a href="https://getbootstrap.com/docs/5.0/customize/color/#color-sass-maps">Sass maps</a> we have, theme colors can also be used as standalone variables, like <code>$primary</code>.</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                .custom-element {
+                  color: $gray-100;
+                  background-color: $dark;
+                }                
+              </code>
+            </pre>
+            <p>You can lighten or darken colors with Bootstrap’s <code>tint-color()</code> and <code>shade-color()</code> functions. These functions will mix colors with black or white, unlike Sass' native <code>lighten()</code> and <code>darken()</code> functions which will change the lightness by a fixed amount, which often doesn’t lead to the desired effect.</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                // Tint a color: mix a color with white
+                @function tint-color($color, $weight) {
+                  @return mix(white, $color, $weight);
+                }
+
+                // Shade a color: mix a color with black
+                @function shade-color($color, $weight) {
+                  @return mix(black, $color, $weight);
+                }
+
+                // Shade the color if the weight is positive, else tint it
+                @function shift-color($color, $weight) {
+                  @return if($weight > 0, shade-color($color, $weight), tint-color($color, -$weight));
+                }
+              </code>
+            </pre>
+            <p>In practice, you’d call the function and pass in the color and weight parameters.</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                .custom-element {
+                  color: tint-color($primary, 10%);
+                }
+                
+                .custom-element-2 {
+                  color: shade-color($danger, 30%);
+                }                
+              </code>
+            </pre>
+          </div>
+          <div id="color-contrast" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Color contrast</h2>
+            <p>In order to meet <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">WCAG 2.0 accessibility standards for color contrast</a>, authors <strong>must</strong> provide <a href="https://www.w3.org/WAI/WCAG20/quickref/20160105/Overview.php#visual-audio-contrast-contrast">a contrast ratio of at least 4.5:1</a>, with very few exceptions.</p>
+            <p>An additional function we include in Bootstrap is the color contrast function, <code>color-contrast</code>. It utilizes the <a href="https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-tests">WCAG 2.0 algorithm</a> for calculating contrast thresholds based on <a href="https://www.w3.org/WAI/GL/wiki/Relative_luminance">relative luminance</a> in a <code>sRGB</code> colorspace to automatically return a light (<code>#fff</code>), dark (<code>#212529</code>) or black (<code>#000</code>) contrast color based on the specified base color. This function is especially useful for mixins or loops where you’re generating multiple classes.</p>
+            <p>For example, to generate color swatches from our <code>$theme-colors</code> map:</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                @each $color, $value in $theme-colors {
+                  .swatch-#{$color} {
+                    color: color-contrast($value);
+                  }
+                }
+              </code>
+            </pre>
+            <p>It can also be used for one-off contrast needs:</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                .custom-element {
+                  color: color-contrast(#000); // returns `color: #fff`
+                }
+              </code>
+            </pre>
+            <p>You can also specify a base color with our color map functions:</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                .custom-element {
+                  color: color-contrast($dark); // returns `color: #fff`
+                }
+              </code>
+            </pre>
+          </div>
+          <div id="escape-svg" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Escape SVG</h2>
+            <p>We use the <code>escape-svg</code> function to escape the <code>&lt;</code>, <code>&gt;</code> and <code>#</code> characters for SVG background images.</p>
+          </div>
+          <div id="add-and-subtract-functions" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Add and Subtract functions</h2>
+            <p>We use the <code>add</code> and <code>subtract</code> functions to wrap the CSS <code>calc</code> function. The primary purpose of these functions is to avoid errors when a “unitless” <code>0</code> value is passed into a <code>calc</code> expression. Expressions like <code>calc(10px - 0)</code> will return an error in all browsers, despite being mathematically correct.</p>
+            <p>Example where the calc is valid:</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                $border-radius: .25rem;
+                $border-width: 1px;
+                
+                .element {
+                  // Output calc(.25rem - 1px) is valid
+                  border-radius: calc($border-radius - $border-width);
+                }
+                
+                .element {
+                  // Output the same calc(.25rem - 1px) as above
+                  border-radius: subtract($border-radius, $border-width);
+                }
+              </code>
+            </pre>
+            <p>Example where the calc is invalid:</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                $border-radius: .25rem;
+                $border-width: 0;
+
+                .element {
+                  // Output calc(.25rem - 0) is invalid
+                  border-radius: calc($border-radius - $border-width);
+                }
+
+                .element {
+                  // Output .25rem
+                  border-radius: subtract($border-radius, $border-width);
+                }
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JS Global Compulsory -->
+<script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Muze Javascript Plugins -->
+<script src="assets/vendor/prism/prism.js"></script>
+<script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+<script>
+  //Muze Sidebar Toggle JavaScript
+  var elem = document.body;
+  function toggleClass(){
+    elem.classList.toggle("sidebar-show");  // Toggle hide class
+  }
+</script>
+</body>
+</html>

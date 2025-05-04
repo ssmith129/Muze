@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Carousel - Muze Documentation | Muze - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+  <link href="../assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
+
+  <!-- CSS Muze Template -->
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+
+  <!-- CSS Muze Doc -->
+  <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body>
+  <!-- Muze Documentation -->
+<div class="muze-documentation">
+	<header class="doc-header bg-white px-3 px-md-4 shadow-sm position-fixed">
+    <nav class="navbar navbar-expand-lg has-header-inner py-0">
+      <a class="navbar-brand" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="21" viewBox="0 0 102 21">
+          <g data-name="Group 5" transform="translate(0 -14)">
+            <path d="M38.591,21a12.83,12.83,0,0,1-4-.588,8.284,8.284,0,0,1-3.046-1.736,7.742,7.742,0,0,1-1.93-2.8,9.914,9.914,0,0,1-.677-3.772V0h5.281V12.393a4.5,4.5,0,0,0,1.117,3.127,4.177,4.177,0,0,0,3.25,1.234,4.176,4.176,0,0,0,3.249-1.234,4.5,4.5,0,0,0,1.118-3.127V0h5.28V12.107a9.317,9.317,0,0,1-.677,3.586,8.03,8.03,0,0,1-1.93,2.812,8.9,8.9,0,0,1-3.047,1.836A11.55,11.55,0,0,1,38.591,21ZM5.218,20.518H0V0H5.218l6.913,10.03h.339L19.383,0H24.6V20.516H19.383V11.434l.338-3.439h-.338L13.86,16.161H10.742L5.218,7.995H4.88l.338,3.439v9.084Zm83.782,0H73.081V0H89V4.241H78.342v3.9h9.579V12.38H78.342v3.9H89v4.24Zm-19.536,0H51.133v-4.47L63.149,4.241H51.676V0H69.328V4.47L57.515,16.277H69.464v4.24Z" transform="translate(0 14)" fill="#1e1e1e"></path>
+            <circle cx="4.5" cy="4.5" r="4.5" transform="translate(93 25)" fill="#ffc107"></circle>
+          </g>
+        </svg>
+      </a>
+      <div class="text-end d-block d-xl-none order-md-2 ms-auto">
+        <a href="javascript:void(0);" class="aside-toggle" onclick="toggleClass()">
+          <img src="../assets/svg/icons/hamburger@20.svg" class="menu-icon" alt="Menu">        
+          <img src="../assets/svg/icons/close@20.svg" class="menu-close" alt="Menu Close">
+        </a>
+      </div>
+      <ul class="nav nav-classic nav-sm border-0 nav-docs-space ms-auto">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+            <span class="d-none d-sm-block">Documentation</span>
+            <span class="d-sm-none">Docs</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/analytics.html">Templates</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container-fluid main-docs">
+    <div class="row justify-content-lg-end">
+      <nav class="col-lg-3 col-xl-2 muzesidebar navbar-expand-lg ms-2 px-0 muze-sidebar">
+        <div class="collapse navbar-collapse show" id="sidebar-nav">
+          <div id="sidebarNav" class="muzesidebar-scrollbar muzesidebar-sticky ps-2 ps-md-0 pe-2 accordion" data-simplebar>
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#getting-started-collapse" role="button" aria-expanded="false">Getting started</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="getting-started-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="index.html">Introduction</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="gulp.html">Gulp</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="contents.html">Contents</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="browsers-devices.html">Browsers &amp; devices</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="javascript.html">JavaScript</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="build-tools.html">Build tools</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="webpack.html">Webpack</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accessibility.html">Accessibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rfs.html">RFS</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rtl.html">RTL</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#customize-collapse" role="button" aria-expanded="false">Customize</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="customize-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sass.html">Sass</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="options.html">Options</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colors.html">Color</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="customize-components.html">Components</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="css-variables.html">CSS variables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="optimize.html">Optimize</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dark-mode.html">Dark mode</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="container.html">Container</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="headers.html">Headers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sidebar.html">Sidebar</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#content-collapse" role="button" aria-expanded="false">Content</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="content-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="typography.html">Typography</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="images.html">Images</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tables.html">Tables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="figures.html">Figures</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#forms-collapse" role="button" aria-expanded="false">Forms</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="forms-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-control.html">Form control</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="select.html">Select</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="checks.html">Checks</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="range.html">Range</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="input-group.html">Input group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="floating-labels.html">Floating labels</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-layout.html">Layout</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="validation.html">Validation</a></li>
+            </ul>
+
+            <a class="muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#components-collapse" role="button" aria-expanded="true">Components</a>
+            <ul class="muzesidebar-nav collapse show mb-0" id="components-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accordion.html">Accordion</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="alerts.html">Alerts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="avatars.html">Avatars</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="badge.html">Badge</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="buttons.html">Buttons</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="button-group.html">Button Group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="links.html">Links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="cards.html">Cards</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link active" href="carousel.html">Carousel</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="close-button.html">Close Button</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="collapse.html">Collapse</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dropdowns.html">Dropdowns</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="list-group.html">List group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="modal.html">Modal</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navbar.html">Navbar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navs.html">Navs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="pagination.html">Pagination</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="popovers.html">Popovers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="progress.html">Progress</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="scrollspy.html">Scrollspy</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spinners.html">Spinners</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabs.html">Tabs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="toasts.html">Toasts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#helpers-collapse" role="button" aria-expanded="false">Helpers</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="helpers-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="clearfix.html">Clearfix</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colored-links.html">Colored links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="embed.html">Embed</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="screen-readers.html">Screen readers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="stretched-link.html">Stretched link</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="text-truncation.html">Text truncation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#utilities-collapse" role="button" aria-expanded="false">Utilities</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="utilities-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="animations.html">Animations</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="borders.html">Borders</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="display.html">Display</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="flex.html">Flex</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="float.html">Float</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="overflow.html">Overflow</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="utilitie-position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="shadows.html">Shadows</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sizing.html">Sizing</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spacings.html">Spacings</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="ui.html">UI</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="vertical-align.html">Vertical align</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="visibility.html">Visibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="others.html">Others</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#extend-collapse" role="button" aria-expanded="false">Extend</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="extend-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="approach.html">Approach</a></li>
+              <li class="muzesidebar-item">
+                <span class="muzesidebar-link">Icons:</span>
+                <ul class="muzesidebar-nav ms-2">
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="bootstrap-icons.html">Bootstrap Icons</a></li>
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabler-icons.html">Tabler Icons</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#plugins-collapse" role="button" aria-expanded="false">Plugins</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="plugins-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="charts.html">Charts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link " href="fullcalendar.html">Fullcalendar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="quill.html">Quill</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#more-collapse" role="button" aria-expanded="false">More</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="more-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="credits.html">Credits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="col-xl-10 muze-docs-content"> 
+        <div class="p-0 p-md-4">
+          <div class="muzedocs-content-divider">
+            <h1>Carousel</h1>
+            <p class="lead">A slideshow component for cycling through elements—images or slides of text—like a carousel.</p>
+            
+          </div>
+
+          <div id="how-it-works" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">How it works</h2>
+            <p>The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators.</p>
+            <p>In browsers where the <a href="https://www.w3.org/TR/page-visibility/">Page Visibility API</a> is supported, the carousel will avoid sliding when the webpage is not visible to the user (such as when the browser tab is inactive, the browser window is minimized, etc.).</p>
+          </div>
+
+          <div id="example" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Example</h2>
+            <p>Carousels don’t automatically normalize slide dimensions. As such, you may need to use additional utilities or custom styles to appropriately size content. While carousels support previous/next controls and indicators, they’re not explicitly required. Add and customize as you see fit.</p>
+            <p><strong>The <code>.active</code> class needs to be added to one of the slides</strong> otherwise the carousel will not be visible. Also be sure to set a unique id on the <code>.carousel</code> for optional controls, especially if you’re using multiple carousels on a single page. Control and indicator elements must have a <code>data-target</code> attribute (or <code>href</code> for links) that matches the id of the <code>.carousel</code> element.</p>
+          </div>
+
+          <div id="slides-only" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Slides only</h2>
+            <p>Here’s a carousel with slides only. Note the presence of the <code>.d-block</code> and <code>.w-100</code> on carousel images to prevent browser default image alignment.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-2" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-2" data-bs-toggle="pill" href="#pills-result-2" role="tab" aria-controls="pills-result-2" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-2" data-bs-toggle="pill" href="#pills-html-2" role="tab" aria-controls="pills-html-2" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-2">
+                <div class="tab-pane fade p-4 show active" id="pills-result-2" role="tabpanel" aria-labelledby="pills-result-tab-2">
+                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">Second slide</text></svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">Third slide</text></svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-2" role="tabpanel" aria-labelledby="pills-html-tab-2">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"&gt;
+                        &lt;div class="carousel-inner"&gt;
+                          &lt;div class="carousel-item active"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="with-controls" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">With controls</h2>
+            <p>Adding in the previous and next controls:</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-3" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-3" data-bs-toggle="pill" href="#pills-result-3" role="tab" aria-controls="pills-result-3" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-3" data-bs-toggle="pill" href="#pills-html-3" role="tab" aria-controls="pills-html-3" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-3">
+                <div class="tab-pane fade p-4 show active" id="pills-result-3" role="tabpanel" aria-labelledby="pills-result-tab-3">
+                  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">Second slide</text></svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">Third slide</text></svg>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-3" role="tabpanel" aria-labelledby="pills-html-tab-3">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div id="carouselExampleControls" class="carousel slide" data-ride="carousel"&gt;
+                        &lt;div class="carousel-inner"&gt;
+                          &lt;div class="carousel-item active"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"&gt;
+                          &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="sr-only"&gt;Previous&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"&gt;
+                          &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="sr-only"&gt;Next&lt;/span&gt;
+                        &lt;/a&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="with-indicators" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">With indicators</h2>
+            <p>You can also add the indicators to the carousel, alongside the controls, too.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-4" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-4" data-bs-toggle="pill" href="#pills-result-4" role="tab" aria-controls="pills-result-4" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-4" data-bs-toggle="pill" href="#pills-html-4" role="tab" aria-controls="pills-html-4" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-4">
+                <div class="tab-pane fade p-4 show active" id="pills-result-4" role="tabpanel" aria-labelledby="pills-result-tab-4">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-bs-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-bs-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-bs-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">Second slide</text></svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">Third slide</text></svg>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-4" role="tabpanel" aria-labelledby="pills-html-tab-4">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"&gt;
+                        &lt;ol class="carousel-indicators"&gt;
+                          &lt;li data-bs-target="#carouselExampleIndicators" data-slide-to="0" class="active"&gt;&lt;/li&gt;
+                          &lt;li data-bs-target="#carouselExampleIndicators" data-slide-to="1"&gt;&lt;/li&gt;
+                          &lt;li data-bs-target="#carouselExampleIndicators" data-slide-to="2"&gt;&lt;/li&gt;
+                        &lt;/ol&gt;
+                        &lt;div class="carousel-inner"&gt;
+                          &lt;div class="carousel-item active"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"&gt;
+                          &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="sr-only"&gt;Previous&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"&gt;
+                          &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="sr-only"&gt;Next&lt;/span&gt;
+                        &lt;/a&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="with-captions" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">With captions</h2>
+            <p>Add captions to your slides easily with the <code>.carousel-caption</code> element within any <code>.carousel-item</code>. They can be easily hidden on smaller viewports, as shown below, with optional <a href="/docs/5.0/utilities/display/">display utilities</a>. We hide them initially with <code>.d-none</code> and bring them back on medium-sized devices with <code>.d-md-block</code>.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-5" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-5" data-bs-toggle="pill" href="#pills-result-5" role="tab" aria-controls="pills-result-5" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-5" data-bs-toggle="pill" href="#pills-html-5" role="tab" aria-controls="pills-html-5" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-5">
+                <div class="tab-pane fade px-4 pt-4 pb-5 show active" id="pills-result-5" role="tabpanel" aria-labelledby="pills-result-tab-5">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-bs-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                      <li data-bs-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                      <li data-bs-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect></svg>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="text-white">First slide label</h5>
+                          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect></svg>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="text-white">Second slide label</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect></svg>
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 class="text-white">Third slide label</h5>
+                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-5" role="tabpanel" aria-labelledby="pills-html-tab-5">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel"&gt;
+                        &lt;ol class="carousel-indicators"&gt;
+                          &lt;li data-bs-target="#carouselExampleCaptions" data-slide-to="0" class="active"&gt;&lt;/li&gt;
+                          &lt;li data-bs-target="#carouselExampleCaptions" data-slide-to="1"&gt;&lt;/li&gt;
+                          &lt;li data-bs-target="#carouselExampleCaptions" data-slide-to="2"&gt;&lt;/li&gt;
+                        &lt;/ol&gt;
+                        &lt;div class="carousel-inner"&gt;
+                          &lt;div class="carousel-item active"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                            &lt;div class="carousel-caption d-none d-md-block"&gt;
+                              &lt;h5&gt;First slide label&lt;/h5&gt;
+                              &lt;p&gt;Nulla vitae elit libero, a pharetra augue mollis interdum.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                            &lt;div class="carousel-caption d-none d-md-block"&gt;
+                              &lt;h5&gt;Second slide label&lt;/h5&gt;
+                              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                            &lt;div class="carousel-caption d-none d-md-block"&gt;
+                              &lt;h5&gt;Third slide label&lt;/h5&gt;
+                              &lt;p&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev"&gt;
+                          &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="sr-only"&gt;Previous&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next"&gt;
+                          &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="sr-only"&gt;Next&lt;/span&gt;
+                        &lt;/a&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="crossfade" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Crossfade</h2>
+            <p>Add <code>.carousel-fade</code> to your carousel to animate slides with a fade transition instead of a slide.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-6" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-6" data-bs-toggle="pill" href="#pills-result-6" role="tab" aria-controls="pills-result-6" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-6" data-bs-toggle="pill" href="#pills-html-6" role="tab" aria-controls="pills-html-6" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-6">
+                <div class="tab-pane fade p-4 show active" id="pills-result-6" role="tabpanel" aria-labelledby="pills-result-tab-6">
+                  <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#444" dy=".3em">First slide</text></svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Third slide</text></svg>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-6" role="tabpanel" aria-labelledby="pills-html-tab-6">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel"&gt;
+                        &lt;div class="carousel-inner"&gt;
+                          &lt;div class="carousel-item active"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev"&gt;
+                          &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="sr-only"&gt;Previous&lt;/span&gt;
+                        &lt;/a&gt;
+                        &lt;a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next"&gt;
+                          &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="sr-only"&gt;Next&lt;/span&gt;
+                        &lt;/a&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Individual <code>.carousel-item</code> interval</h2>
+            <p>Add <code>data-bs-interval=""</code> to a <code>.carousel-item</code> to change the amount of time to delay between automatically cycling to the next item.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-69" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-69" data-bs-toggle="pill" href="#pills-result-69" role="tab" aria-controls="pills-result-69" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-69" data-bs-toggle="pill" href="#pills-html-69" role="tab" aria-controls="pills-html-69" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-69">
+                <div class="tab-pane fade p-4 show active" id="pills-result-69" role="tabpanel" aria-labelledby="pills-result-tab-69">
+                  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#444" dy=".3em">First slide</text></svg>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#444" dy=".3em">First slide</text></svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#444" dy=".3em">First slide</text></svg>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-69" role="tabpanel" aria-labelledby="pills-html-tab-69">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"&gt;
+                        &lt;div class="carousel-inner"&gt;
+                          &lt;div class="carousel-item active" data-bs-interval="10000"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item" data-bs-interval="2000"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev"&gt;
+                          &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+                        &lt;/button&gt;
+                        &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="next"&gt;
+                          &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+                        &lt;/button&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Disable touch swiping</h2>
+            <p>Carousels support swiping left/right on touchscreen devices to move between slides. This can be disabled using the <code>data-bs-touch</code> attribute. The example below also does not include the <code>data-bs-ride</code> attribute and has <code>data-bs-interval="false"</code> so it doesn’t autoplay.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-70" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-70" data-bs-toggle="pill" href="#pills-result-70" role="tab" aria-controls="pills-result-70" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-70" data-bs-toggle="pill" href="#pills-html-70" role="tab" aria-controls="pills-html-70" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-70">
+                <div class="tab-pane fade p-4 show active" id="pills-result-70" role="tabpanel" aria-labelledby="pills-result-tab-70">
+                  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#444" dy=".3em">First slide</text></svg>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" role="img" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Third slide</text></svg>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"  data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"  data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-70" role="tabpanel" aria-labelledby="pills-html-tab-70">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false"&gt;
+                        &lt;div class="carousel-inner"&gt;
+                          &lt;div class="carousel-item active"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev"&gt;
+                          &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+                        &lt;/button&gt;
+                        &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next"&gt;
+                          &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+                        &lt;/button&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Dark variant</h2>
+            <p>Add <code>.carousel-dark</code> to the <code>.carousel</code> for darker controls, indicators, and captions. Controls have been inverted from their default white fill with the <code>filter</code> CSS property. Captions and controls have additional Sass variables that customize the <code>color</code> and <code>background-color</code>.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-708" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-708" data-bs-toggle="pill" href="#pills-result-708" role="tab" aria-controls="pills-result-708" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-708" data-bs-toggle="pill" href="#pills-html-708" role="tab" aria-controls="pills-html-708" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-708">
+                <div class="tab-pane fade p-4 show active" id="pills-result-708" role="tabpanel" aria-labelledby="pills-result-tab-708">
+                  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#f5f5f5"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">First slide</text></svg>
+                  
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#bbb" dy=".3em">Second slide</text></svg>
+                  
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#e5e5e5"></rect><text x="50%" y="50%" fill="#999" dy=".3em">Third slide</text></svg>
+                  
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-708" role="tabpanel" aria-labelledby="pills-html-tab-708">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"&gt;
+                        &lt;div class="carousel-indicators"&gt;
+                          &lt;button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"&gt;&lt;/button&gt;
+                          &lt;button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"&gt;&lt;/button&gt;
+                          &lt;button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"&gt;&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class="carousel-inner"&gt;
+                          &lt;div class="carousel-item active" data-bs-interval="10000"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                            &lt;div class="carousel-caption d-none d-md-block"&gt;
+                              &lt;h5&gt;First slide label&lt;/h5&gt;
+                              &lt;p&gt;Some representative placeholder content for the first slide.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item" data-bs-interval="2000"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                            &lt;div class="carousel-caption d-none d-md-block"&gt;
+                              &lt;h5&gt;Second slide label&lt;/h5&gt;
+                              &lt;p&gt;Some representative placeholder content for the second slide.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;div class="carousel-item"&gt;
+                            &lt;img src="..." class="d-block w-100" alt="..."&gt;
+                            &lt;div class="carousel-caption d-none d-md-block"&gt;
+                              &lt;h5&gt;Third slide label&lt;/h5&gt;
+                              &lt;p&gt;Some representative placeholder content for the third slide.&lt;/p&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev"&gt;
+                          &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="visually-hidden"&gt;Previous&lt;/span&gt;
+                        &lt;/button&gt;
+                        &lt;button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next"&gt;
+                          &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+                          &lt;span class="visually-hidden"&gt;Next&lt;/span&gt;
+                        &lt;/button&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="usage" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Usage</h2>
+            <h6>Via data attributes</h6>
+            <p>Use data attributes to easily control the position of the carousel. <code>data-slide</code> accepts the keywords <code>prev</code> or <code>next</code>, which alters the slide position relative to its current position. Alternatively, use <code>data-slide-to</code> to pass a raw slide index to the carousel <code>data-slide-to="2"</code>, which shifts the slide position to a particular index beginning with <code>0</code>.</p>
+            <p>The <code>data-ride="carousel"</code> attribute is used to mark a carousel as animating starting at page load. If you don’t use <code>data-ride="carousel"</code> to initialize your carousel, you have to initialize it yourself. <strong>It cannot be used in combination with (redundant and unnecessary) explicit JavaScript initialization of the same carousel.</strong></p>
+          </div>
+
+          <div id="via-javaScript" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Via JavaScript</h2>
+            <p>Call carousel manually with:</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                var myCarousel = document.querySelector('#myCarousel')
+                var carousel = new bootstrap.Carousel(myCarousel)
+              </code>
+            </pre>
+          </div>
+
+          <div id="options" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Options</h2>
+            <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-interval=""</code>.</p>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 100px;">Name</th>
+                    <th style="width: 50px;">Type</th>
+                    <th style="width: 50px;">Default</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>interval</td>
+                    <td>number</td>
+                    <td>5000</td>
+                    <td>The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.</td>
+                  </tr>
+                  <tr>
+                    <td>keyboard</td>
+                    <td>boolean</td>
+                    <td>true</td>
+                    <td>Whether the carousel should react to keyboard events.</td>
+                  </tr>
+                  <tr>
+                    <td>pause</td>
+                    <td>string | boolean</td>
+                    <td>"hover"</td>
+                    <td><p>If set to <code>"hover"</code>, pauses the cycling of the carousel on <code>mouseenter</code> and resumes the cycling of the carousel on <code>mouseleave</code>. If set to <code>false</code>, hovering over the carousel won't pause it.</p>
+                    <p>On touch-enabled devices, when set to <code>"hover"</code>, cycling will pause on <code>touchend</code> (once the user finished interacting with the carousel) for two intervals, before automatically resuming. Note that this is in addition to the above mouse behavior.</p></td>
+                  </tr>
+                  <tr>
+                    <td>slide</td>
+                    <td>string | boolean</td>
+                    <td>false</td>
+                    <td>Autoplays the carousel after the user manually cycles the first item. If "carousel", autoplays the carousel on load.</td>
+                  </tr>
+                  <tr>
+                    <td>wrap</td>
+                    <td>boolean</td>
+                    <td>true</td>
+                    <td>Whether the carousel should cycle continuously or have hard stops.</td>
+                  </tr>
+                  <tr>
+                    <td>touch</td>
+                    <td>boolean</td>
+                    <td>true</td>
+                    <td>Whether the carousel should support left/right swipe interactions on touchscreen devices.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div id="methods" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Methods</h2>
+            <blockquote class="callout callout-danger">
+              <h5 id="asynchronous-methods-and-transitions">Asynchronous methods and transitions</h5>
+              <p>All API methods are <strong>asynchronous</strong> and start a <strong>transition</strong>. They return to the caller as soon as the transition is started but <strong>before it ends</strong>. In addition, a method call on a <strong>transitioning component will be ignored</strong>.</p>
+              <p><a href="https://v5.getbootstrap.com/docs/5.0/getting-started/javascript/">See our JavaScript documentation for more information</a>.</p>
+            </blockquote>
+            <p>You can create a carousel instance with the carousel constructor, for example, to initialize with additional options and start cycling through items:</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                var myCarousel = document.querySelector('#myCarousel')
+                var carousel = new bootstrap.Carousel(myCarousel, {
+                  interval: 2000,
+                  wrap: false
+                })
+              </code>
+            </pre>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Method</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>cycle</code></td>
+                    <td>Cycles through the carousel items from left to right.</td>
+                  </tr>
+                  <tr>
+                    <td><code>pause</code></td>
+                    <td>Stops the carousel from cycling through items.</td>
+                  </tr>
+                  <tr>
+                    <td><code>prev</code></td>
+                    <td>Cycles to the previous item. <strong>Returns to the caller before the previous item has been shown</strong> (e.g., before the <code>slid.bs.carousel</code> event occurs).</td>
+                  </tr>
+                  <tr>
+                    <td><code>next</code></td>
+                    <td>Cycles to the next item. <strong>Returns to the caller before the next item has been shown</strong> (e.g., before the <code>slid.bs.carousel</code> event occurs).</td>
+                  </tr>
+                  <tr>
+                    <td><code>nextWhenVisible</code></td>
+                    <td>Cycles the carousel to a particular frame (0 based, similar to an array). <strong>Returns to the caller before the target item has been shown</strong> (e.g., before the <code>slid.bs.carousel</code> event occurs).</td>
+                  </tr>
+                  <tr>
+                    <td><code>dispose</code></td>
+                    <td>Destroys an element's carousel.</td>
+                  </tr>
+                  <tr>
+                    <td><code>getInstance</code></td>
+                    <td>Static method which allows you to get the carousel instance associated with a DOM element.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Events</h2>
+            <p>Bootstrap’s carousel class exposes two events for hooking into carousel functionality. Both events have the following additional properties:</p>
+            <ul>
+              <li><code>direction</code>: The direction in which the carousel is sliding (either <code>"left"</code> or <code>"right"</code>).</li>
+              <li><code>relatedTarget</code>: The DOM element that is being slid into place as the active item.</li>
+              <li><code>from</code>: The index of the current item</li>
+              <li><code>to</code>: The index of the next item</li>
+            </ul>
+            <p>All carousel events are fired at the carousel itself (i.e. at the <code>&lt;div class="carousel"&gt;</code>).</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th style="width: 150px;">Event type</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>slide.bs.carousel</code></td>
+                  <td>Fires immediately when the <code>slide</code> instance method is invoked.</td>
+                </tr>
+                <tr>
+                  <td><code>slid.bs.carousel</code></td>
+                  <td>Fired when the carousel has completed its slide transition.</td>
+                </tr>
+              </tbody>
+            </table>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                var myCarousel = document.getElementById('myCarousel')
+
+                myCarousel.addEventListener('slide.bs.carousel', function () {
+                  // do something...
+                })
+              </code>
+            </pre>
+          </div>
+          <div id="change-transition-duration" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Change transition duration</h2>
+            <p>The transition duration of <code>.carousel-item</code> can be changed with the <code>$carousel-transition</code> Sass variable before compiling or custom styles if you’re using the compiled CSS. If multiple transitions are applied, make sure the transform transition is defined first (eg. <code>transition: transform 2s ease, opacity .5s ease-out</code>).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JS Global Compulsory -->
+<script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Muze Javascript Plugins -->
+<script src="assets/vendor/prism/prism.js"></script>
+<script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+<script>
+  //Muze Sidebar Toggle JavaScript
+  var elem = document.body;
+  function toggleClass(){
+    elem.classList.toggle("sidebar-show");  // Toggle hide class
+  }
+</script>
+</body>
+</html>

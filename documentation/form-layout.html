@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Form Layout - Muze Documentation | Muze - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+  <link href="../assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
+
+  <!-- CSS Muze Template -->
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+
+  <!-- CSS Muze Doc -->
+  <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body>
+  <!-- Muze Documentation -->
+<div class="muze-documentation">
+	<header class="doc-header bg-white px-3 px-md-4 shadow-sm position-fixed">
+    <nav class="navbar navbar-expand-lg has-header-inner py-0">
+      <a class="navbar-brand" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="21" viewBox="0 0 102 21">
+          <g data-name="Group 5" transform="translate(0 -14)">
+            <path d="M38.591,21a12.83,12.83,0,0,1-4-.588,8.284,8.284,0,0,1-3.046-1.736,7.742,7.742,0,0,1-1.93-2.8,9.914,9.914,0,0,1-.677-3.772V0h5.281V12.393a4.5,4.5,0,0,0,1.117,3.127,4.177,4.177,0,0,0,3.25,1.234,4.176,4.176,0,0,0,3.249-1.234,4.5,4.5,0,0,0,1.118-3.127V0h5.28V12.107a9.317,9.317,0,0,1-.677,3.586,8.03,8.03,0,0,1-1.93,2.812,8.9,8.9,0,0,1-3.047,1.836A11.55,11.55,0,0,1,38.591,21ZM5.218,20.518H0V0H5.218l6.913,10.03h.339L19.383,0H24.6V20.516H19.383V11.434l.338-3.439h-.338L13.86,16.161H10.742L5.218,7.995H4.88l.338,3.439v9.084Zm83.782,0H73.081V0H89V4.241H78.342v3.9h9.579V12.38H78.342v3.9H89v4.24Zm-19.536,0H51.133v-4.47L63.149,4.241H51.676V0H69.328V4.47L57.515,16.277H69.464v4.24Z" transform="translate(0 14)" fill="#1e1e1e"></path>
+            <circle cx="4.5" cy="4.5" r="4.5" transform="translate(93 25)" fill="#ffc107"></circle>
+          </g>
+        </svg>
+      </a>
+      <div class="text-end d-block d-xl-none order-md-2 ms-auto">
+        <a href="javascript:void(0);" class="aside-toggle" onclick="toggleClass()">
+          <img src="../assets/svg/icons/hamburger@20.svg" class="menu-icon" alt="Menu">        
+          <img src="../assets/svg/icons/close@20.svg" class="menu-close" alt="Menu Close">
+        </a>
+      </div>
+      <ul class="nav nav-classic nav-sm border-0 nav-docs-space ms-auto">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+            <span class="d-none d-sm-block">Documentation</span>
+            <span class="d-sm-none">Docs</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/analytics.html">Templates</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container-fluid main-docs">
+    <div class="row justify-content-lg-end">
+      <nav class="col-lg-3 col-xl-2 muzesidebar navbar-expand-lg ms-2 px-0 muze-sidebar">
+        <div class="collapse navbar-collapse show" id="sidebar-nav">
+          <div id="sidebarNav" class="muzesidebar-scrollbar muzesidebar-sticky ps-2 ps-md-0 pe-2 accordion" data-simplebar>
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#getting-started-collapse" role="button" aria-expanded="false">Getting started</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="getting-started-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="index.html">Introduction</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="gulp.html">Gulp</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="contents.html">Contents</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="browsers-devices.html">Browsers &amp; devices</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="javascript.html">JavaScript</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="build-tools.html">Build tools</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="webpack.html">Webpack</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accessibility.html">Accessibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rfs.html">RFS</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rtl.html">RTL</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#customize-collapse" role="button" aria-expanded="false">Customize</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="customize-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sass.html">Sass</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="options.html">Options</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colors.html">Color</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="customize-components.html">Components</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="css-variables.html">CSS variables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="optimize.html">Optimize</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dark-mode.html">Dark mode</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="container.html">Container</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="headers.html">Headers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sidebar.html">Sidebar</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#content-collapse" role="button" aria-expanded="false">Content</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="content-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="typography.html">Typography</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="images.html">Images</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tables.html">Tables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="figures.html">Figures</a></li>
+            </ul>
+
+            <a class="muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#forms-collapse" role="button" aria-expanded="true">Forms</a>
+            <ul class="muzesidebar-nav collapse show mb-0" id="forms-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-control.html">Form control</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="select.html">Select</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="checks.html">Checks</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="range.html">Range</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="input-group.html">Input group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="floating-labels.html">Floating labels</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link active" href="form-layout.html">Layout</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="validation.html">Validation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#components-collapse" role="button" aria-expanded="false">Components</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="components-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accordion.html">Accordion</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="alerts.html">Alerts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="avatars.html">Avatars</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="badge.html">Badge</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="buttons.html">Buttons</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="button-group.html">Button Group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="links.html">Links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="cards.html">Cards</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="carousel.html">Carousel</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="close-button.html">Close Button</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="collapse.html">Collapse</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dropdowns.html">Dropdowns</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="list-group.html">List group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="modal.html">Modal</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navbar.html">Navbar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navs.html">Navs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="pagination.html">Pagination</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="popovers.html">Popovers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="progress.html">Progress</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="scrollspy.html">Scrollspy</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spinners.html">Spinners</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabs.html">Tabs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="toasts.html">Toasts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#helpers-collapse" role="button" aria-expanded="false">Helpers</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="helpers-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="clearfix.html">Clearfix</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colored-links.html">Colored links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="embed.html">Embed</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="screen-readers.html">Screen readers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="stretched-link.html">Stretched link</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="text-truncation.html">Text truncation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#utilities-collapse" role="button" aria-expanded="false">Utilities</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="utilities-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="animations.html">Animations</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="borders.html">Borders</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="display.html">Display</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="flex.html">Flex</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="float.html">Float</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="overflow.html">Overflow</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="utilitie-position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="shadows.html">Shadows</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sizing.html">Sizing</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spacings.html">Spacings</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="ui.html">UI</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="vertical-align.html">Vertical align</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="visibility.html">Visibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="others.html">Others</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#extend-collapse" role="button" aria-expanded="false">Extend</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="extend-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="approach.html">Approach</a></li>
+              <li class="muzesidebar-item">
+                <span class="muzesidebar-link">Icons:</span>
+                <ul class="muzesidebar-nav ms-2">
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="bootstrap-icons.html">Bootstrap Icons</a></li>
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabler-icons.html">Tabler Icons</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#plugins-collapse" role="button" aria-expanded="false">Plugins</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="plugins-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="charts.html">Charts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link " href="fullcalendar.html">Fullcalendar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="quill.html">Quill</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#more-collapse" role="button" aria-expanded="false">More</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="more-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="credits.html">Credits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="col-xl-10 muze-docs-content"> 
+        <div class="p-0 p-md-4">
+          <div class="muzedocs-content-divider">
+            <h1>Layout</h1>
+            <p class="bd-lead">Give your forms some structure—from inline to horizontal to custom grid implementations—with our form layout options.</p>
+          </div>
+
+          <div id="forms" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Forms</h2>
+            <p>Every group of form fields should reside in a <code>&lt;form&gt;</code> element. Bootstrap provides no default styling for the <code>&lt;form&gt;</code> element, but there are some powerful browser features that are provided by default.</p>
+            <ul>
+              <li>New to browser forms? Consider reviewing <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">the MDN form docs</a> for an overview and complete list of available attributes.</li>
+              <li><code>&lt;button&gt;</code>s within a <code>&lt;form&gt;</code> default to <code>type="submit"</code>, so strive to be specific and always include a <code>type</code>.</li>
+              <li>You can disable every form element within a form with the <code>disabled</code> attribute on the <code>&lt;form&gt;</code>.</li>
+            </ul>
+            <p>Since Bootstrap applies <code>display: block</code> and <code>width: 100%</code> to almost all our form controls, forms will by default stack vertically. Additional classes can be used to vary this layout on a per-form basis.</p>
+          </div>
+
+          <div id="utilities" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Utilities</h2>
+            <p><a href="https://v5.getbootstrap.com/docs/5.0/utilities/spacing/">Margin utilities</a> are the easiest way to add some structure to forms. They provide basic grouping of labels, controls, optional form text, and form validation messaging. We recommend sticking to <code>margin-bottom</code> utilities, and using a single direction throughout the form for consistency.</p>
+            <p>Feel free to build your forms however you like, with <code>&lt;fieldset&gt;</code>s, <code>&lt;div&gt;</code>s, or nearly any other element.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-1" data-bs-toggle="pill" href="#pills-result-1" role="tab" aria-controls="pills-result-1" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-1" data-bs-toggle="pill" href="#pills-html-1" role="tab" aria-controls="pills-html-1" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-1">
+                <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Example label</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Another label</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="mb-3"&gt;
+                        &lt;label for="formGroupExampleInput" class="form-label"&gt;Example label&lt;/label&gt;
+                        &lt;input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder"&gt;
+                      &lt;/div&gt;
+                      &lt;div class="mb-3"&gt;
+                        &lt;label for="formGroupExampleInput2" class="form-label"&gt;Another label&lt;/label&gt;
+                        &lt;input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder"&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="form-grid" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Form grid</h2>
+            <p>More complex forms can be built using our grid classes. Use these for form layouts that require multiple columns, varied widths, and additional alignment options. <strong>Requires the <code>$enable-grid-classes</code> Sass variable to be enabled</strong> (on by default).</p>
+            
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-2" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-2" data-bs-toggle="pill" href="#pills-result-2" role="tab" aria-controls="pills-result-2" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-2" data-bs-toggle="pill" href="#pills-html-2" role="tab" aria-controls="pills-html-2" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-2">
+                <div class="tab-pane fade p-4 show active" id="pills-result-2" role="tabpanel" aria-labelledby="pills-result-tab-2">
+                  <div class="bd-example">
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-2" role="tabpanel" aria-labelledby="pills-html-tab-2">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="row"&gt;
+                        &lt;div class="col"&gt;
+                          &lt;input type="text" class="form-control" placeholder="First name" aria-label="First name"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col"&gt;
+                          &lt;input type="text" class="form-control" placeholder="Last name" aria-label="Last name"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+          
+          <div id="gutters" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Gutters</h2>
+            <p>By adding <a href="https://v5.getbootstrap.com/docs/5.0/layout/grid/#gutters">gutter modifier classes</a>, you can have control over the gutter width in as well the inline as block direction. <strong>Also requires the <code>$enable-grid-classes</code> Sass variable to be enabled</strong> (on by default).</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-3" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-3" data-bs-toggle="pill" href="#pills-result-3" role="tab" aria-controls="pills-result-3" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-3" data-bs-toggle="pill" href="#pills-html-3" role="tab" aria-controls="pills-html-3" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-3">
+                <div class="tab-pane fade p-4 show active" id="pills-result-3" role="tabpanel" aria-labelledby="pills-result-tab-3">
+                  <div class="bd-example">
+                    <div class="row g-3">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-3" role="tabpanel" aria-labelledby="pills-html-tab-3">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="row g-3"&gt;
+                        &lt;div class="col"&gt;
+                          &lt;input type="text" class="form-control" placeholder="First name" aria-label="First name"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col"&gt;
+                          &lt;input type="text" class="form-control" placeholder="Last name" aria-label="Last name"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <p>More complex layouts can also be created with the grid system.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-32" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-32" data-bs-toggle="pill" href="#pills-result-32" role="tab" aria-controls="pills-result-32" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-32" data-bs-toggle="pill" href="#pills-html-32" role="tab" aria-controls="pills-html-32" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-32">
+                <div class="tab-pane fade p-4 show active" id="pills-result-32" role="tabpanel" aria-labelledby="pills-result-tab-32">
+                  <div class="bd-example">
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-32" role="tabpanel" aria-labelledby="pills-html-tab-32">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;form class="row g-3"&gt;
+                        &lt;div class="col-md-6"&gt;
+                          &lt;label for="inputEmail4" class="form-label"&gt;Email&lt;/label&gt;
+                          &lt;input type="email" class="form-control" id="inputEmail4"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-md-6"&gt;
+                          &lt;label for="inputPassword4" class="form-label"&gt;Password&lt;/label&gt;
+                          &lt;input type="password" class="form-control" id="inputPassword4"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-12"&gt;
+                          &lt;label for="inputAddress" class="form-label"&gt;Address&lt;/label&gt;
+                          &lt;input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-12"&gt;
+                          &lt;label for="inputAddress2" class="form-label"&gt;Address 2&lt;/label&gt;
+                          &lt;input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-md-6"&gt;
+                          &lt;label for="inputCity" class="form-label"&gt;City&lt;/label&gt;
+                          &lt;input type="text" class="form-control" id="inputCity"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-md-4"&gt;
+                          &lt;label for="inputState" class="form-label"&gt;State&lt;/label&gt;
+                          &lt;select id="inputState" class="form-select"&gt;
+                            &lt;option selected&gt;Choose...&lt;/option&gt;
+                            &lt;option&gt;...&lt;/option&gt;
+                          &lt;/select&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-md-2"&gt;
+                          &lt;label for="inputZip" class="form-label"&gt;Zip&lt;/label&gt;
+                          &lt;input type="text" class="form-control" id="inputZip"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-12"&gt;
+                          &lt;div class="form-check"&gt;
+                            &lt;input class="form-check-input" type="checkbox" id="gridCheck"&gt;
+                            &lt;label class="form-check-label" for="gridCheck"&gt;
+                              Check me out
+                            &lt;/label&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-12"&gt;
+                          &lt;button type="submit" class="btn btn-primary"&gt;Sign in&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/form&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="horizontal-form" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Horizontal form</h2>
+            <p>Create horizontal forms with the grid by adding the <code>.row</code> class to form groups and using the <code>.col-*-*</code> classes to specify the width of your labels and controls. Be sure to add <code>.col-form-label</code> to your <code>&lt;label&gt;</code>s as well so they’re vertically centered with their associated form controls.</p>
+            <p>At times, you maybe need to use margin or padding utilities to create that perfect alignment you need. For example, we’ve removed the <code>padding-top</code> on our stacked radio inputs label to better align the text baseline.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-4" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-4" data-bs-toggle="pill" href="#pills-result-4" role="tab" aria-controls="pills-result-4" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-4" data-bs-toggle="pill" href="#pills-html-4" role="tab" aria-controls="pills-html-4" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-4">
+                <div class="tab-pane fade p-4 show active" id="pills-result-4" role="tabpanel" aria-labelledby="pills-result-tab-4">
+                  <div class="bd-example">
+                    <form>
+                      <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="inputEmail3">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword3">
+                        </div>
+                      </div>
+                      <fieldset>
+                        <div class="row mb-3">
+                          <label class="col-form-label col-sm-2 pt-0">Radios</label>
+                          <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                First radio
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                              <label class="form-check-label" for="gridRadios2">
+                                Second radio
+                              </label>
+                            </div>
+                            <div class="form-check disabled">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                              <label class="form-check-label" for="gridRadios3">
+                                Third disabled radio
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <div class="row mb-3">
+                        <div class="col-form-label col-sm-2 pt-0">Checkbox</div>
+                        <div class="col-sm-10">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                              Example checkbox
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-4" role="tabpanel" aria-labelledby="pills-html-tab-4">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;form&gt;
+                        &lt;div class="row mb-3"&gt;
+                          &lt;label for="inputEmail3" class="col-sm-2 col-form-label"&gt;Email&lt;/label&gt;
+                          &lt;div class="col-sm-10"&gt;
+                            &lt;input type="email" class="form-control" id="inputEmail3"&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="row mb-3"&gt;
+                          &lt;label for="inputPassword3" class="col-sm-2 col-form-label"&gt;Password&lt;/label&gt;
+                          &lt;div class="col-sm-10"&gt;
+                            &lt;input type="password" class="form-control" id="inputPassword3"&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;fieldset&gt;
+                          &lt;div class="row mb-3"&gt;
+                            &lt;label class="col-form-label col-sm-2 pt-0"&gt;Radios&lt;/label&gt;
+                            &lt;div class="col-sm-10"&gt;
+                              &lt;div class="form-check"&gt;
+                                &lt;input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked&gt;
+                                &lt;label class="form-check-label" for="gridRadios1"&gt;
+                                  First radio
+                                &lt;/label&gt;
+                              &lt;/div&gt;
+                              &lt;div class="form-check"&gt;
+                                &lt;input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2"&gt;
+                                &lt;label class="form-check-label" for="gridRadios2"&gt;
+                                  Second radio
+                                &lt;/label&gt;
+                              &lt;/div&gt;
+                              &lt;div class="form-check disabled"&gt;
+                                &lt;input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled&gt;
+                                &lt;label class="form-check-label" for="gridRadios3"&gt;
+                                  Third disabled radio
+                                &lt;/label&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/fieldset&gt;
+                        &lt;div class="row mb-3"&gt;
+                          &lt;div class="col-form-label col-sm-2 pt-0"&gt;Checkbox&lt;/div&gt;
+                          &lt;div class="col-sm-10"&gt;
+                            &lt;div class="form-check"&gt;
+                              &lt;input class="form-check-input" type="checkbox" id="gridCheck1"&gt;
+                              &lt;label class="form-check-label" for="gridCheck1"&gt;
+                                Example checkbox
+                              &lt;/label&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;button type="submit" class="btn btn-primary"&gt;Sign in&lt;/button&gt;
+                      &lt;/form&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="horizontal-form-label-sizing" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Horizontal form label sizing</h2>
+            <p>Be sure to use <code>.col-form-label-sm</code> or <code>.col-form-label-lg</code> to your <code>&lt;label&gt;</code>s or <code>&lt;legend&gt;</code>s to correctly follow the size of <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-5" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-5" data-bs-toggle="pill" href="#pills-result-5" role="tab" aria-controls="pills-result-5" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-5" data-bs-toggle="pill" href="#pills-html-5" role="tab" aria-controls="pills-html-5" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-5">
+                <div class="tab-pane fade p-4 show active" id="pills-result-5" role="tabpanel" aria-labelledby="pills-result-tab-5">
+                  <div class="bd-example">
+                    <div class="row mb-3">
+                      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-5" role="tabpanel" aria-labelledby="pills-html-tab-5">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="row mb-3"&gt;
+                        &lt;label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm"&gt;Email&lt;/label&gt;
+                        &lt;div class="col-sm-10"&gt;
+                          &lt;input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class="row mb-3"&gt;
+                        &lt;label for="colFormLabel" class="col-sm-2 col-form-label"&gt;Email&lt;/label&gt;
+                        &lt;div class="col-sm-10"&gt;
+                          &lt;input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class="row"&gt;
+                        &lt;label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg"&gt;Email&lt;/label&gt;
+                        &lt;div class="col-sm-10"&gt;
+                          &lt;input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Column sizing</h2>
+            <p>As shown in the previous examples, our grid system allows you to place any number of <code>.col</code>s within a <code>.row</code>. They’ll split the available width equally between them. You may also pick a subset of your columns to take up more or less space, while the remaining <code>.col</code>s equally split the rest, with specific column classes like <code>.col-sm-7</code>.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-69" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-69" data-bs-toggle="pill" href="#pills-result-69" role="tab" aria-controls="pills-result-69" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-69" data-bs-toggle="pill" href="#pills-html-69" role="tab" aria-controls="pills-html-69" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-69">
+                <div class="tab-pane fade p-4 show active" id="pills-result-69" role="tabpanel" aria-labelledby="pills-result-tab-69">
+                  <div class="bd-example">
+                    <div class="row g-3">
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" placeholder="City" aria-label="City">
+                      </div>
+                      <div class="col-sm">
+                        <input type="text" class="form-control" placeholder="State" aria-label="State">
+                      </div>
+                      <div class="col-sm">
+                        <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-69" role="tabpanel" aria-labelledby="pills-html-tab-69">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="row g-3"&gt;
+                        &lt;div class="col-sm-7"&gt;
+                          &lt;input type="text" class="form-control" placeholder="City" aria-label="City"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-sm"&gt;
+                          &lt;input type="text" class="form-control" placeholder="State" aria-label="State"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-sm"&gt;
+                          &lt;input type="text" class="form-control" placeholder="Zip" aria-label="Zip"&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="auto-sizing" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Auto-sizing</h2>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-6" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-6" data-bs-toggle="pill" href="#pills-result-6" role="tab" aria-controls="pills-result-6" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-6" data-bs-toggle="pill" href="#pills-html-6" role="tab" aria-controls="pills-html-6" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-6">
+                <div class="tab-pane fade p-4 show active" id="pills-result-6" role="tabpanel" aria-labelledby="pills-result-tab-6">
+                  <div class="bd-example">
+                    <form class="row gy-2 gx-3 align-items-center">
+                      <div class="col-auto">
+                        <label class="sr-only" for="autoSizingInput">Name</label>
+                        <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+                      </div>
+                      <div class="col-auto">
+                        <label class="sr-only" for="autoSizingInputGroup">Username</label>
+                        <div class="input-group">
+                          <div class="input-group-text btn-primary">@</div>
+                          <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <label class="sr-only" for="autoSizingSelect">Preference</label>
+                        <select class="form-select" id="autoSizingSelect">
+                          <option selected>Choose...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-auto">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                          <label class="form-check-label" for="autoSizingCheck">
+                            Remember me
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-6" role="tabpanel" aria-labelledby="pills-html-tab-6">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;form class="row gy-2 gx-3 align-items-center"&gt;
+                        &lt;div class="col-auto"&gt;
+                          &lt;label class="sr-only" for="autoSizingInput"&gt;Name&lt;/label&gt;
+                          &lt;input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-auto"&gt;
+                          &lt;label class="sr-only" for="autoSizingInputGroup"&gt;Username&lt;/label&gt;
+                          &lt;div class="input-group"&gt;
+                            &lt;div class="input-group-text btn-primary"&gt;@&lt;/div&gt;
+                            &lt;input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username"&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-auto"&gt;
+                          &lt;label class="sr-only" for="autoSizingSelect"&gt;Preference&lt;/label&gt;
+                          &lt;select class="form-select" id="autoSizingSelect"&gt;
+                            &lt;option selected&gt;Choose...&lt;/option&gt;
+                            &lt;option value="1"&gt;One&lt;/option&gt;
+                            &lt;option value="2"&gt;Two&lt;/option&gt;
+                            &lt;option value="3"&gt;Three&lt;/option&gt;
+                          &lt;/select&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-auto"&gt;
+                          &lt;div class="form-check"&gt;
+                            &lt;input class="form-check-input" type="checkbox" id="autoSizingCheck"&gt;
+                            &lt;label class="form-check-label" for="autoSizingCheck"&gt;
+                              Remember me
+                            &lt;/label&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="col-auto"&gt;
+                          &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/form&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="inline-forms" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Inline forms</h2>
+            <p>Use the <code>.col-auto</code> class to create horizontal layouts. By adding <a href="/docs/5.0/layout/grid/#gutters">gutter modifier classes</a>, we’ll have gutters in horizontal and vertical directions. The <code>.align-items-center</code> aligns the form elements to the middle, making the <code>.form-checkbox</code> align properly.</p>
+            <p>Be sure to always include a <code>&lt;label&gt;</code> with each form control, even if you need to hide it from non-screenreader visitors with <code>.sr-only</code>.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-8" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-8" data-bs-toggle="pill" href="#pills-result-8" role="tab" aria-controls="pills-result-8" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-8" data-bs-toggle="pill" href="#pills-html-8" role="tab" aria-controls="pills-html-8" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-8">
+                <div class="tab-pane fade p-4 show active" id="pills-result-8" role="tabpanel" aria-labelledby="pills-result-tab-8">
+                  <div class="bd-example">
+                    <form class="row row-cols-md-auto g-3 align-items-center">
+                      <div class="col-12">
+                        <label class="sr-only" for="inlineFormInputName">Name</label>
+                        <input type="text" class="form-control" id="inlineFormInputName" placeholder="Jane Doe">
+                      </div>
+                    
+                      <div class="col-12">
+                        <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+                        <div class="input-group">
+                          <div class="input-group-text btn-primary">@</div>
+                          <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                        </div>
+                      </div>
+                    
+                      <div class="col-12">
+                        <label class="sr-only" for="inlineFormSelectPref">Preference</label>
+                        <select class="form-select" id="inlineFormSelectPref">
+                          <option selected>Choose...</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                          <label class="form-check-label" for="inlineFormCheck">
+                            Remember me
+                          </label>
+                        </div>
+                      </div>
+                    
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-8" role="tabpanel" aria-labelledby="pills-html-tab-8">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;form class="row row-cols-md-auto g-3 align-items-center"&gt;
+                        &lt;div class="col-12"&gt;
+                          &lt;label class="sr-only" for="inlineFormInputName"&gt;Name&lt;/label&gt;
+                          &lt;input type="text" class="form-control" id="inlineFormInputName" placeholder="Jane Doe"&gt;
+                        &lt;/div&gt;
+                      
+                        &lt;div class="col-12"&gt;
+                          &lt;label class="sr-only" for="inlineFormInputGroupUsername"&gt;Username&lt;/label&gt;
+                          &lt;div class="input-group"&gt;
+                            &lt;div class="input-group-text btn-primary"&gt;@&lt;/div&gt;
+                            &lt;input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username"&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      
+                        &lt;div class="col-12"&gt;
+                          &lt;label class="sr-only" for="inlineFormSelectPref"&gt;Preference&lt;/label&gt;
+                          &lt;select class="form-select" id="inlineFormSelectPref"&gt;
+                            &lt;option selected&gt;Choose...&lt;/option&gt;
+                            &lt;option value="1"&gt;One&lt;/option&gt;
+                            &lt;option value="2"&gt;Two&lt;/option&gt;
+                            &lt;option value="3"&gt;Three&lt;/option&gt;
+                          &lt;/select&gt;
+                        &lt;/div&gt;
+                      
+                        &lt;div class="col-12"&gt;
+                          &lt;div class="form-check"&gt;
+                            &lt;input class="form-check-input" type="checkbox" id="inlineFormCheck"&gt;
+                            &lt;label class="form-check-label" for="inlineFormCheck"&gt;
+                              Remember me
+                            &lt;/label&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      
+                        &lt;div class="col-12"&gt;
+                          &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+                        &lt;/div&gt;
+                      &lt;/form&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JS Global Compulsory -->
+<script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Muze Javascript Plugins -->
+<script src="assets/vendor/prism/prism.js"></script>
+<script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+<script>
+  //Muze Sidebar Toggle JavaScript
+  var elem = document.body;
+  function toggleClass(){
+    elem.classList.toggle("sidebar-show");  // Toggle hide class
+  }
+</script>
+</body>
+</html>

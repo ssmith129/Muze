@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Colors - Muze Documentation | Muze - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+  <link href="../assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
+
+  <!-- CSS Muze Template -->
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+
+  <!-- CSS Muze Doc -->
+  <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body>
+  <!-- Muze Documentation -->
+<div class="muze-documentation">
+	<header class="doc-header bg-white px-3 px-md-4 shadow-sm position-fixed">
+    <nav class="navbar navbar-expand-lg has-header-inner py-0">
+      <a class="navbar-brand" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="21" viewBox="0 0 102 21">
+          <g data-name="Group 5" transform="translate(0 -14)">
+            <path d="M38.591,21a12.83,12.83,0,0,1-4-.588,8.284,8.284,0,0,1-3.046-1.736,7.742,7.742,0,0,1-1.93-2.8,9.914,9.914,0,0,1-.677-3.772V0h5.281V12.393a4.5,4.5,0,0,0,1.117,3.127,4.177,4.177,0,0,0,3.25,1.234,4.176,4.176,0,0,0,3.249-1.234,4.5,4.5,0,0,0,1.118-3.127V0h5.28V12.107a9.317,9.317,0,0,1-.677,3.586,8.03,8.03,0,0,1-1.93,2.812,8.9,8.9,0,0,1-3.047,1.836A11.55,11.55,0,0,1,38.591,21ZM5.218,20.518H0V0H5.218l6.913,10.03h.339L19.383,0H24.6V20.516H19.383V11.434l.338-3.439h-.338L13.86,16.161H10.742L5.218,7.995H4.88l.338,3.439v9.084Zm83.782,0H73.081V0H89V4.241H78.342v3.9h9.579V12.38H78.342v3.9H89v4.24Zm-19.536,0H51.133v-4.47L63.149,4.241H51.676V0H69.328V4.47L57.515,16.277H69.464v4.24Z" transform="translate(0 14)" fill="#1e1e1e"></path>
+            <circle cx="4.5" cy="4.5" r="4.5" transform="translate(93 25)" fill="#ffc107"></circle>
+          </g>
+        </svg>
+      </a>
+      <div class="text-end d-block d-xl-none order-md-2 ms-auto">
+        <a href="javascript:void(0);" class="aside-toggle" onclick="toggleClass()">
+          <img src="../assets/svg/icons/hamburger@20.svg" class="menu-icon" alt="Menu">        
+          <img src="../assets/svg/icons/close@20.svg" class="menu-close" alt="Menu Close">
+        </a>
+      </div>
+      <ul class="nav nav-classic nav-sm border-0 nav-docs-space ms-auto">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+            <span class="d-none d-sm-block">Documentation</span>
+            <span class="d-sm-none">Docs</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/analytics.html">Templates</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container-fluid main-docs">
+    <div class="row justify-content-lg-end">
+      <nav class="col-lg-3 col-xl-2 muzesidebar navbar-expand-lg ms-2 px-0 muze-sidebar">
+        <div class="collapse navbar-collapse show" id="sidebar-nav">
+          <div id="sidebarNav" class="muzesidebar-scrollbar muzesidebar-sticky ps-2 ps-md-0 pe-2 accordion" data-simplebar>
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#getting-started-collapse" role="button" aria-expanded="false">Getting started</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="getting-started-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="index.html">Introduction</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="gulp.html">Gulp</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="contents.html">Contents</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="browsers-devices.html">Browsers &amp; devices</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="javascript.html">JavaScript</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="build-tools.html">Build tools</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="webpack.html">Webpack</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accessibility.html">Accessibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rfs.html">RFS</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rtl.html">RTL</a></li>
+            </ul>
+
+            <a class="muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#customize-collapse" role="button" aria-expanded="true">Customize</a>
+            <ul class="muzesidebar-nav collapse show mb-0" id="customize-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sass.html">Sass</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="options.html">Options</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link active" href="colors.html">Color</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="customize-components.html">Components</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="css-variables.html">CSS variables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="optimize.html">Optimize</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dark-mode.html">Dark mode</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="container.html">Container</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="headers.html">Headers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sidebar.html">Sidebar</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#content-collapse" role="button" aria-expanded="false">Content</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="content-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="typography.html">Typography</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="images.html">Images</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tables.html">Tables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="figures.html">Figures</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#forms-collapse" role="button" aria-expanded="false">Forms</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="forms-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-control.html">Form control</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="select.html">Select</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="checks.html">Checks</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="range.html">Range</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="input-group.html">Input group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="floating-labels.html">Floating labels</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-layout.html">Layout</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="validation.html">Validation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#components-collapse" role="button" aria-expanded="false">Components</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="components-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accordion.html">Accordion</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="alerts.html">Alerts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="avatars.html">Avatars</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="badge.html">Badge</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="buttons.html">Buttons</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="button-group.html">Button Group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="links.html">Links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="cards.html">Cards</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="carousel.html">Carousel</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="close-button.html">Close Button</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="collapse.html">Collapse</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dropdowns.html">Dropdowns</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="list-group.html">List group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="modal.html">Modal</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navbar.html">Navbar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navs.html">Navs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="pagination.html">Pagination</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="popovers.html">Popovers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="progress.html">Progress</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="scrollspy.html">Scrollspy</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spinners.html">Spinners</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabs.html">Tabs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="toasts.html">Toasts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#helpers-collapse" role="button" aria-expanded="false">Helpers</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="helpers-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="clearfix.html">Clearfix</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colored-links.html">Colored links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="embed.html">Embed</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="screen-readers.html">Screen readers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="stretched-link.html">Stretched link</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="text-truncation.html">Text truncation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#utilities-collapse" role="button" aria-expanded="false">Utilities</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="utilities-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="animations.html">Animations</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="borders.html">Borders</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="display.html">Display</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="flex.html">Flex</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="float.html">Float</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="overflow.html">Overflow</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="utilitie-position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="shadows.html">Shadows</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sizing.html">Sizing</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spacings.html">Spacings</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="ui.html">UI</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="vertical-align.html">Vertical align</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="visibility.html">Visibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="others.html">Others</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#extend-collapse" role="button" aria-expanded="false">Extend</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="extend-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="approach.html">Approach</a></li>
+              <li class="muzesidebar-item">
+                <span class="muzesidebar-link">Icons:</span>
+                <ul class="muzesidebar-nav ms-2">
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="bootstrap-icons.html">Bootstrap Icons</a></li>
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabler-icons.html">Tabler Icons</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#plugins-collapse" role="button" aria-expanded="false">Plugins</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="plugins-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="charts.html">Charts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link " href="fullcalendar.html">Fullcalendar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="quill.html">Quill</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#more-collapse" role="button" aria-expanded="false">More</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="more-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="credits.html">Credits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="col-xl-10 muze-docs-content"> 
+        <div class="p-0 p-md-4">
+          <div class="muzedocs-content-divider">
+            <h1>Colors</h1>
+            <p class="lead">Bootstrap is supported by an extensive color system that themes our styles and components. This enables more comprehensive customization and extension for any project.</p>
+          </div>
+
+          <div id="theme-colors" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Theme colors</h2>
+            <p>We use a subset of all colors to create a smaller color palette for generating color schemes, also available as Sass variables and a Sass map in Bootstrap’s <code>scss/_variables.scss</code> file.</p>
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="rounded text-white p-3 mb-3 bg-primary">.bg-primary</div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="rounded text-white p-3 mb-3 bg-secondary">.bg-secondary</div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="rounded text-white p-3 mb-3 bg-success">.bg-success</div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="rounded text-white p-3 mb-3 bg-info">.bg-info</div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="rounded text-dark p-3 mb-3 bg-warning">.bg-warning</div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="rounded text-white p-3 mb-3 bg-danger">.bg-danger</div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="rounded text-white p-3 mb-3 bg-dark">.bg-dark</div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="rounded p-3 mb-3 bg-light">.bg-light</div>
+              </div>
+            </div>
+
+            <p>All these colors are available as a Sass map, <code>$theme-colors</code>.</p>
+
+            <pre class="rounded">
+              <code class="language-scss" data-lang="scss">
+                $theme-colors: (
+                  "primary":    $primary,
+                  "secondary":  $secondary,
+                  "success":    $success,
+                  "info":       $info,
+                  "warning":    $warning,
+                  "danger":     $danger,
+                  "light":      $light,
+                  "dark":       $dark
+                );
+              </code>
+            </pre>
+
+            <p>Check out <a href="https://v5.getbootstrap.com/docs/5.0/customize/sass/#maps-and-loops">our Sass maps and loops docs</a> for how to modify these colors.</p>
+          </div>
+
+          <div id="all-colors" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">All colors</h2>
+            <p>All Bootstrap colors are available as Sass variables and a Sass map in <code>scss/_variables.scss</code> file. To avoid increased file sizes, we don’t create text or background color classes for each of these variables. Instead, we choose a subset of these colors for a <a href="#theme-colors">theme palette</a>.</p>
+            <p>Be sure to monitor contrast ratios as you customize colors. As shown below, we’ve added three contrast ratios to each of the main colors—one for the swatch’s current colors, one for against white, and one for against black.</p>
+            <div class="row">
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-blue">
+                  <strong class="d-block">$blue</strong>
+                  #007bff
+                </div>
+                <div class="text-dark p-3 bg-blue-50">$blue-50</div>
+                <div class="text-dark p-3 bg-blue-100">$blue-100</div>
+                <div class="text-dark p-3 bg-blue-200">$blue-200</div>
+                <div class="text-dark p-3 bg-blue-300">$blue-300</div>
+                <div class="text-white p-3 bg-blue-400">$blue-400</div>
+                <div class="text-white p-3 bg-blue-500">$blue-500</div>
+                <div class="text-white p-3 bg-blue-600">$blue-600</div>
+                <div class="text-white p-3 bg-blue-700">$blue-700</div>
+                <div class="text-white p-3 bg-blue-800">$blue-800</div>
+                <div class="text-white p-3 bg-blue-900">$blue-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-indigo">
+                  <strong class="d-block">$indigo</strong>
+                  #6610f2
+                </div>
+                <div class="text-dark p-3 bg-indigo-50">$indigo-50</div>
+                <div class="text-dark p-3 bg-indigo-100">$indigo-100</div>
+                <div class="text-dark p-3 bg-indigo-200">$indigo-200</div>
+                <div class="text-white p-3 bg-indigo-300">$indigo-300</div>
+                <div class="text-white p-3 bg-indigo-400">$indigo-400</div>
+                <div class="text-white p-3 bg-indigo-500">$indigo-500</div>
+                <div class="text-white p-3 bg-indigo-600">$indigo-600</div>
+                <div class="text-white p-3 bg-indigo-700">$indigo-700</div>
+                <div class="text-white p-3 bg-indigo-800">$indigo-800</div>
+                <div class="text-white p-3 bg-indigo-900">$indigo-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-purple">
+                  <strong class="d-block">$purple</strong>
+                  #6f42c1
+                </div>
+                <div class="text-dark p-3 bg-purple-50">$purple-50</div>
+                <div class="text-dark p-3 bg-purple-100">$purple-100</div>
+                <div class="text-dark p-3 bg-purple-200">$purple-200</div>
+                <div class="text-white p-3 bg-purple-300">$purple-300</div>
+                <div class="text-white p-3 bg-purple-400">$purple-400</div>
+                <div class="text-white p-3 bg-purple-500">$purple-500</div>
+                <div class="text-white p-3 bg-purple-600">$purple-600</div>
+                <div class="text-white p-3 bg-purple-700">$purple-700</div>
+                <div class="text-white p-3 bg-purple-800">$purple-800</div>
+                <div class="text-white p-3 bg-purple-900">$purple-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-pink">
+                  <strong class="d-block">$pink</strong>
+                  #e83e8c
+                </div>
+                <div class="text-dark p-3 bg-pink-50">$pink-50</div>
+                <div class="text-dark p-3 bg-pink-100">$pink-100</div>
+                <div class="text-dark p-3 bg-pink-200">$pink-200</div>
+                <div class="text-dark p-3 bg-pink-300">$pink-300</div>
+                <div class="text-white p-3 bg-pink-400">$pink-400</div>
+                <div class="text-white p-3 bg-pink-500">$pink-500</div>
+                <div class="text-white p-3 bg-pink-600">$pink-600</div>
+                <div class="text-white p-3 bg-pink-700">$pink-700</div>
+                <div class="text-white p-3 bg-pink-800">$pink-800</div>
+                <div class="text-white p-3 bg-pink-900">$pink-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-red">
+                  <strong class="d-block">$red</strong>
+                  #dc3545
+                </div>
+                <div class="text-dark p-3 bg-red-50">$red-50</div>
+                <div class="text-dark p-3 bg-red-100">$red-100</div>
+                <div class="text-dark p-3 bg-red-200">$red-200</div>
+                <div class="text-dark p-3 bg-red-300">$red-300</div>
+                <div class="text-white p-3 bg-red-400">$red-400</div>
+                <div class="text-white p-3 bg-red-500">$red-500</div>
+                <div class="text-white p-3 bg-red-600">$red-600</div>
+                <div class="text-white p-3 bg-red-700">$red-700</div>
+                <div class="text-white p-3 bg-red-800">$red-800</div>
+                <div class="text-white p-3 bg-red-900">$red-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-orange">
+                  <strong class="d-block">$orange</strong>
+                  #fd7e14
+                </div>
+                <div class="text-dark p-3 bg-orange-50">$orange-50</div>
+                <div class="text-dark p-3 bg-orange-100">$orange-100</div>
+                <div class="text-dark p-3 bg-orange-200">$orange-200</div>
+                <div class="text-dark p-3 bg-orange-300">$orange-300</div>
+                <div class="text-dark p-3 bg-orange-400">$orange-400</div>
+                <div class="text-dark p-3 bg-orange-500">$orange-500</div>
+                <div class="text-dark p-3 bg-orange-600">$orange-600</div>
+                <div class="text-white p-3 bg-orange-700">$orange-700</div>
+                <div class="text-white p-3 bg-orange-800">$orange-800</div>
+                <div class="text-white p-3 bg-orange-900">$orange-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-yellow">
+                  <strong class="d-block">$yellow</strong>
+                  #ffc107
+                </div>
+                <div class="text-dark p-3 bg-yellow-50">$yellow-50</div>
+                <div class="text-dark p-3 bg-yellow-100">$yellow-100</div>
+                <div class="text-dark p-3 bg-yellow-200">$yellow-200</div>
+                <div class="text-dark p-3 bg-yellow-300">$yellow-300</div>
+                <div class="text-dark p-3 bg-yellow-400">$yellow-400</div>
+                <div class="text-dark p-3 bg-yellow-500">$yellow-500</div>
+                <div class="text-dark p-3 bg-yellow-600">$yellow-600</div>
+                <div class="text-white p-3 bg-yellow-700">$yellow-700</div>
+                <div class="text-white p-3 bg-yellow-800">$yellow-800</div>
+                <div class="text-white p-3 bg-yellow-900">$yellow-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-green">
+                  <strong class="d-block">$green</strong>
+                  #28a745
+                </div>
+                <div class="text-dark p-3 bg-green-50">$green-50</div>
+                <div class="text-dark p-3 bg-green-100">$green-100</div>
+                <div class="text-dark p-3 bg-green-200">$green-200</div>
+                <div class="text-dark p-3 bg-green-300">$green-300</div>
+                <div class="text-dark p-3 bg-green-400">$green-400</div>
+                <div class="text-white p-3 bg-green-500">$green-500</div>
+                <div class="text-white p-3 bg-green-600">$green-600</div>
+                <div class="text-white p-3 bg-green-700">$green-700</div>
+                <div class="text-white p-3 bg-green-800">$green-800</div>
+                <div class="text-white p-3 bg-green-900">$green-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-teal">
+                  <strong class="d-block">$teal</strong>
+                  #20c997
+                </div>
+                <div class="text-dark p-3 bg-teal-50">$teal-50</div>
+                <div class="text-dark p-3 bg-teal-100">$teal-100</div>
+                <div class="text-dark p-3 bg-teal-200">$teal-200</div>
+                <div class="text-dark p-3 bg-teal-300">$teal-300</div>
+                <div class="text-dark p-3 bg-teal-400">$teal-400</div>
+                <div class="text-dark p-3 bg-teal-500">$teal-500</div>
+                <div class="text-dark p-3 bg-teal-600">$teal-600</div>
+                <div class="text-white p-3 bg-teal-700">$teal-700</div>
+                <div class="text-white p-3 bg-teal-800">$teal-800</div>
+                <div class="text-white p-3 bg-teal-900">$teal-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-cyan">
+                  <strong class="d-block">$cyan</strong>
+                  #17a2b8
+                </div>
+                <div class="text-dark p-3 bg-cyan-50">$cyan-50</div>
+                <div class="text-dark p-3 bg-cyan-100">$cyan-100</div>
+                <div class="text-dark p-3 bg-cyan-200">$cyan-200</div>
+                <div class="text-dark p-3 bg-cyan-300">$cyan-300</div>
+                <div class="text-dark p-3 bg-cyan-400">$cyan-400</div>
+                <div class="text-white p-3 bg-cyan-500">$cyan-500</div>
+                <div class="text-white p-3 bg-cyan-600">$cyan-600</div>
+                <div class="text-white p-3 bg-cyan-700">$cyan-700</div>
+                <div class="text-white p-3 bg-cyan-800">$cyan-800</div>
+                <div class="text-white p-3 bg-cyan-900">$cyan-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-gray-500">
+                  <strong class="d-block">$gray-500</strong>
+                  #adb5bd
+                </div>
+                <div class="text-dark p-3 bg-gray-100">$gray-100</div>
+                <div class="text-dark p-3 bg-gray-200">$gray-200</div>
+                <div class="text-dark p-3 bg-gray-300">$gray-300</div>
+                <div class="text-dark p-3 bg-gray-400">$gray-400</div>
+                <div class="text-dark p-3 bg-gray-500">$gray-500</div>
+                <div class="text-white p-3 bg-gray-600">$gray-600</div>
+                <div class="text-white p-3 bg-gray-700">$gray-700</div>
+                <div class="text-white p-3 bg-gray-800">$gray-800</div>
+                <div class="text-white p-3 bg-gray-900">$gray-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-3">
+                <div class="p-3 mb-2 bg-black text-white">
+                  <strong class="d-block">$black</strong>
+                  #000
+                </div>
+                <div class="p-3 mb-2 bg-white border text-dark">
+                  <strong class="d-block">$white</strong>
+                  #fff
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="outline-colors" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Outline colors</h2>
+            <div class="row">
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-blue">
+                  <strong class="d-block">$blue</strong>
+                  #007bff
+                </div>
+                <div class="text-dark p-3 border border-blue-50">$blue-50</div>
+                <div class="text-dark p-3 border border-blue-100">$blue-100</div>
+                <div class="text-dark p-3 border border-blue-200">$blue-200</div>
+                <div class="text-dark p-3 border border-blue-300">$blue-300</div>
+                <div class="text-dark p-3 border border-blue-400">$blue-400</div>
+                <div class="text-dark p-3 border border-blue-500">$blue-500</div>
+                <div class="text-dark p-3 border border-blue-600">$blue-600</div>
+                <div class="text-dark p-3 border border-blue-700">$blue-700</div>
+                <div class="text-dark p-3 border border-blue-800">$blue-800</div>
+                <div class="text-dark p-3 border border-blue-900">$blue-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-indigo">
+                  <strong class="d-block">$indigo</strong>
+                  #6610f2
+                </div>
+                <div class="text-dark p-3 border border-indigo-50">$indigo-50</div>
+                <div class="text-dark p-3 border border-indigo-100">$indigo-100</div>
+                <div class="text-dark p-3 border border-indigo-200">$indigo-200</div>
+                <div class="text-dark p-3 border border-indigo-300">$indigo-300</div>
+                <div class="text-dark p-3 border border-indigo-400">$indigo-400</div>
+                <div class="text-dark p-3 border border-indigo-500">$indigo-500</div>
+                <div class="text-dark p-3 border border-indigo-600">$indigo-600</div>
+                <div class="text-dark p-3 border border-indigo-700">$indigo-700</div>
+                <div class="text-dark p-3 border border-indigo-800">$indigo-800</div>
+                <div class="text-dark p-3 border border-indigo-900">$indigo-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-purple">
+                  <strong class="d-block">$purple</strong>
+                  #6f42c1
+                </div>
+                <div class="text-dark p-3 border border-purple-50">$purple-50</div>
+                <div class="text-dark p-3 border border-purple-100">$purple-100</div>
+                <div class="text-dark p-3 border border-purple-200">$purple-200</div>
+                <div class="text-dark p-3 border border-purple-300">$purple-300</div>
+                <div class="text-dark p-3 border border-purple-400">$purple-400</div>
+                <div class="text-dark p-3 border border-purple-500">$purple-500</div>
+                <div class="text-dark p-3 border border-purple-600">$purple-600</div>
+                <div class="text-dark p-3 border border-purple-700">$purple-700</div>
+                <div class="text-dark p-3 border border-purple-800">$purple-800</div>
+                <div class="text-dark p-3 border border-purple-900">$purple-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-pink">
+                  <strong class="d-block">$pink</strong>
+                  #e83e8c
+                </div>
+                <div class="text-dark p-3 border border-pink-50">$pink-50</div>
+                <div class="text-dark p-3 border border-pink-100">$pink-100</div>
+                <div class="text-dark p-3 border border-pink-200">$pink-200</div>
+                <div class="text-dark p-3 border border-pink-300">$pink-300</div>
+                <div class="text-dark p-3 border border-pink-400">$pink-400</div>
+                <div class="text-dark p-3 border border-pink-500">$pink-500</div>
+                <div class="text-dark p-3 border border-pink-600">$pink-600</div>
+                <div class="text-dark p-3 border border-pink-700">$pink-700</div>
+                <div class="text-dark p-3 border border-pink-800">$pink-800</div>
+                <div class="text-dark p-3 border border-pink-900">$pink-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-red">
+                  <strong class="d-block">$red</strong>
+                  #dc3545
+                </div>
+                <div class="text-dark p-3 border border-red-50">$red-50</div>
+                <div class="text-dark p-3 border border-red-100">$red-100</div>
+                <div class="text-dark p-3 border border-red-200">$red-200</div>
+                <div class="text-dark p-3 border border-red-300">$red-300</div>
+                <div class="text-dark p-3 border border-red-400">$red-400</div>
+                <div class="text-dark p-3 border border-red-500">$red-500</div>
+                <div class="text-dark p-3 border border-red-600">$red-600</div>
+                <div class="text-dark p-3 border border-red-700">$red-700</div>
+                <div class="text-dark p-3 border border-red-800">$red-800</div>
+                <div class="text-dark p-3 border border-red-900">$red-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-orange">
+                  <strong class="d-block">$orange</strong>
+                  #fd7e14
+                </div>
+                <div class="text-dark p-3 border border-orange-50">$orange-50</div>
+                <div class="text-dark p-3 border border-orange-100">$orange-100</div>
+                <div class="text-dark p-3 border border-orange-200">$orange-200</div>
+                <div class="text-dark p-3 border border-orange-300">$orange-300</div>
+                <div class="text-dark p-3 border border-orange-400">$orange-400</div>
+                <div class="text-dark p-3 border border-orange-500">$orange-500</div>
+                <div class="text-dark p-3 border border-orange-600">$orange-600</div>
+                <div class="text-dark p-3 border border-orange-700">$orange-700</div>
+                <div class="text-dark p-3 border border-orange-800">$orange-800</div>
+                <div class="text-dark p-3 border border-orange-900">$orange-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-yellow">
+                  <strong class="d-block">$yellow</strong>
+                  #ffc107
+                </div>
+                <div class="text-dark p-3 border border-yellow-50">$yellow-50</div>
+                <div class="text-dark p-3 border border-yellow-100">$yellow-100</div>
+                <div class="text-dark p-3 border border-yellow-200">$yellow-200</div>
+                <div class="text-dark p-3 border border-yellow-300">$yellow-300</div>
+                <div class="text-dark p-3 border border-yellow-400">$yellow-400</div>
+                <div class="text-dark p-3 border border-yellow-500">$yellow-500</div>
+                <div class="text-dark p-3 border border-yellow-600">$yellow-600</div>
+                <div class="text-dark p-3 border border-yellow-700">$yellow-700</div>
+                <div class="text-dark p-3 border border-yellow-800">$yellow-800</div>
+                <div class="text-dark p-3 border border-yellow-900">$yellow-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-green">
+                  <strong class="d-block">$green</strong>
+                  #28a745
+                </div>
+                <div class="text-dark p-3 border border-green-50">$green-50</div>
+                <div class="text-dark p-3 border border-green-100">$green-100</div>
+                <div class="text-dark p-3 border border-green-200">$green-200</div>
+                <div class="text-dark p-3 border border-green-300">$green-300</div>
+                <div class="text-dark p-3 border border-green-400">$green-400</div>
+                <div class="text-dark p-3 border border-green-500">$green-500</div>
+                <div class="text-dark p-3 border border-green-600">$green-600</div>
+                <div class="text-dark p-3 border border-green-700">$green-700</div>
+                <div class="text-dark p-3 border border-green-800">$green-800</div>
+                <div class="text-dark p-3 border border-green-900">$green-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-teal">
+                  <strong class="d-block">$teal</strong>
+                  #20c997
+                </div>
+                <div class="text-dark p-3 border border-teal-50">$teal-50</div>
+                <div class="text-dark p-3 border border-teal-100">$teal-100</div>
+                <div class="text-dark p-3 border border-teal-200">$teal-200</div>
+                <div class="text-dark p-3 border border-teal-300">$teal-300</div>
+                <div class="text-dark p-3 border border-teal-400">$teal-400</div>
+                <div class="text-dark p-3 border border-teal-500">$teal-500</div>
+                <div class="text-dark p-3 border border-teal-600">$teal-600</div>
+                <div class="text-dark p-3 border border-teal-700">$teal-700</div>
+                <div class="text-dark p-3 border border-teal-800">$teal-800</div>
+                <div class="text-dark p-3 border border-teal-900">$teal-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-cyan">
+                  <strong class="d-block">$cyan</strong>
+                  #17a2b8
+                </div>
+                <div class="text-dark p-3 border border-cyan-50">$cyan-50</div>
+                <div class="text-dark p-3 border border-cyan-100">$cyan-100</div>
+                <div class="text-dark p-3 border border-cyan-200">$cyan-200</div>
+                <div class="text-dark p-3 border border-cyan-300">$cyan-300</div>
+                <div class="text-dark p-3 border border-cyan-400">$cyan-400</div>
+                <div class="text-dark p-3 border border-cyan-500">$cyan-500</div>
+                <div class="text-dark p-3 border border-cyan-600">$cyan-600</div>
+                <div class="text-dark p-3 border border-cyan-700">$cyan-700</div>
+                <div class="text-dark p-3 border border-cyan-800">$cyan-800</div>
+                <div class="text-dark p-3 border border-cyan-900">$cyan-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-4">
+                <div class="p-3 mb-2 position-relative swatch-gray-500">
+                  <strong class="d-block">$gray-500</strong>
+                  #adb5bd
+                </div>
+                <div class="text-dark p-3 border border-gray-100">$gray-100</div>
+                <div class="text-dark p-3 border border-gray-200">$gray-200</div>
+                <div class="text-dark p-3 border border-gray-300">$gray-300</div>
+                <div class="text-dark p-3 border border-gray-400">$gray-400</div>
+                <div class="text-dark p-3 border border-gray-500">$gray-500</div>
+                <div class="text-dark p-3 border border-gray-600">$gray-600</div>
+                <div class="text-dark p-3 border border-gray-700">$gray-700</div>
+                <div class="text-dark p-3 border border-gray-800">$gray-800</div>
+                <div class="text-dark p-3 border border-gray-900">$gray-900</div>
+              </div>
+              <div class="col-sm-6 col-md-4 mb-3">
+                <div class="p-3 mb-2 border border-black text-dark">
+                  <strong class="d-block">$black</strong>
+                  #000
+                </div>
+                <div class="bg-black p-3 mb-2">
+                  <div class="p-3 border border-white text-white">
+                    <strong class="d-block">$white</strong>
+                    #fff
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="color" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading mb-0">Color</h2>
+            <p>Colorize text with color utilities. If you want to colorize links, you can use the <a href="https://v5.getbootstrap.com/docs/5.0/helpers/colored-links/"><code>.link-*</code> helper classes</a> which have <code>:hover</code> and <code>:focus</code> states.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-27" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-27" data-bs-toggle="pill" href="#pills-result-27" role="tab" aria-controls="pills-result-27" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-27" data-bs-toggle="pill" href="#pills-html-27" role="tab" aria-controls="pills-html-27" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-27">
+                <div class="tab-pane fade p-4 show active" id="pills-result-27" role="tabpanel" aria-labelledby="pills-result-tab-27">
+                  <p class="text-primary">.text-primary</p>
+                  <p class="text-secondary">.text-secondary</p>
+                  <p class="text-success">.text-success</p>
+                  <p class="text-danger">.text-danger</p>
+                  <p class="text-warning bg-dark">.text-warning</p>
+                  <p class="text-info bg-dark">.text-info</p>
+                  <p class="text-light bg-dark">.text-light</p>
+                  <p class="text-dark">.text-dark</p>
+                  <p class="text-body">.text-body</p>
+                  <p class="text-muted">.text-muted</p>
+                  <p class="text-white bg-dark">.text-white</p>
+                  <p class="text-black-50">.text-black-50</p>
+                  <p class="text-white-50 bg-dark">.text-white-50</p>
+                </div>
+                <div class="tab-pane fade" id="pills-html-27" role="tabpanel" aria-labelledby="pills-html-tab-27">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;p class="text-primary">.text-primary&lt;/p&gt;
+                      &lt;p class="text-secondary"&gt;.text-secondary&lt;/p&gt;
+                      &lt;p class="text-success"&gt;.text-success&lt;/p&gt;
+                      &lt;p class="text-danger"&gt;.text-danger&lt;/p&gt;
+                      &lt;p class="text-warning bg-dark"&gt;.text-warning&lt;/p&gt;
+                      &lt;p class="text-info bg-dark"&gt;.text-info&lt;/p&gt;
+                      &lt;p class="text-light bg-dark"&gt;.text-light&lt;/p&gt;
+                      &lt;p class="text-dark"&gt;.text-dark&lt;/p&gt;
+                      &lt;p class="text-body"&gt;.text-body&lt;/p&gt;
+                      &lt;p class="text-muted"&gt;.text-muted&lt;/p&gt;
+                      &lt;p class="text-white bg-dark"&gt;.text-white&lt;/p&gt;
+                      &lt;p class="text-black-50"&gt;.text-black-50&lt;/p&gt;
+                      &lt;p class="text-white-50 bg-dark"&gt;.text-white-50&lt;/p&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="notes-on-sass" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Notes on Sass</h2>
+            <p>Sass cannot programmatically generate variables, so we manually created variables for every tint and shade ourselves. We specify the midpoint value (e.g., <code>$blue-500</code>) and use custom color functions to tint (lighten) or shade (darken) our colors via Sass’s <code>mix()</code> color function.</p>
+            <p>Using <code>mix()</code> is not the same as <code>lighten()</code> and <code>darken()</code>—the former blends the specified color with white or black, while the latter only adjusts the lightness value of each color. The result is a much more complete suite of colors, as <a href="https://codepen.io/emdeoh/pen/zYOQOPB">shown in this CodePen demo</a>.</p>
+            <p>Our <code>tint-color()</code> and <code>shade-color()</code> functions use <code>mix()</code> alongside our <code>$theme-color-interval</code> variable, which specifies a stepped percentage value for each mixed color we produce. See the <code>scss/_functions.scss</code> and <code>scss/_variables.scss</code> files for the full source code.</p>
+          </div>
+
+          <div id="color-sass-maps" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Color Sass maps</h2>
+            <p>Bootstrap’s source Sass files include three maps to help you quickly and easily loop over a list of colors and their hex values.</p>
+            <ul>
+              <li><code>$colors</code> lists all our available base (<code>500</code>) colors</li>
+              <li><code>$theme-colors</code> lists all semantically named theme colors (shown below)</li>
+              <li><code>$grays</code> lists all tins and shades of gray</li>
+            </ul>
+            <p>Within <code>scss/_variables.scss</code>, you’ll find Bootstrap’s color variables and Sass map. Here’s an example of the <code>$colors</code> Sass map:</p>
+
+            <pre class="rounded">
+              <code class="language-scss" data-lang="scss">
+                $colors: (
+                  "blue":       $blue,
+                  "indigo":     $indigo,
+                  "purple":     $purple,
+                  "pink":       $pink,
+                  "red":        $red,
+                  "orange":     $orange,
+                  "yellow":     $yellow,
+                  "green":      $green,
+                  "teal":       $teal,
+                  "cyan":       $cyan,
+                  "white":      $white,
+                  "gray":       $gray-600,
+                  "gray-dark":  $gray-800
+                );
+              </code>
+            </pre>
+            <p>Add, remove, or modify values within the map to update how they’re used in many other components. Unfortunately at this time, not <em>every</em> component utilizes this Sass map. Future updates will strive to improve upon this. Until then, plan on making use of the <code>${color}</code> variables and this Sass map.</p>
+          </div>
+
+          <div id="example" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Example</h2>
+            <p>Here’s how you can use these in your Sass:</p>
+            <pre class="rounded">
+              <code class="language-scss" data-lang="scss">
+                .alpha { color: $purple; }
+                .beta {
+                  color: $yellow-300;
+                  background-color: $indigo-900;
+                }
+              </code>
+            </pre>
+            <p><a href="https://v5.getbootstrap.com/docs/5.0/utilities/colors/">Color utility classes</a> are also available for setting <code>color</code> and <code>background-color</code> using the <code>500</code> color values.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JS Global Compulsory -->
+<script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Muze Javascript Plugins -->
+<script src="assets/vendor/prism/prism.js"></script>
+<script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+<script>
+  //Muze Sidebar Toggle JavaScript
+  var elem = document.body;
+  function toggleClass(){
+    elem.classList.toggle("sidebar-show");  // Toggle hide class
+  }
+</script>
+</body>
+</html>

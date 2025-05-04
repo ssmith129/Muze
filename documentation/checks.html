@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Checks - Muze Documentation | Muze - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+  <link href="../assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
+
+  <!-- CSS Muze Template -->
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+
+  <!-- CSS Muze Doc -->
+  <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body>
+  <!-- Muze Documentation -->
+<div class="muze-documentation">
+	<header class="doc-header bg-white px-3 px-md-4 shadow-sm position-fixed">
+    <nav class="navbar navbar-expand-lg has-header-inner py-0">
+      <a class="navbar-brand" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="21" viewBox="0 0 102 21">
+          <g data-name="Group 5" transform="translate(0 -14)">
+            <path d="M38.591,21a12.83,12.83,0,0,1-4-.588,8.284,8.284,0,0,1-3.046-1.736,7.742,7.742,0,0,1-1.93-2.8,9.914,9.914,0,0,1-.677-3.772V0h5.281V12.393a4.5,4.5,0,0,0,1.117,3.127,4.177,4.177,0,0,0,3.25,1.234,4.176,4.176,0,0,0,3.249-1.234,4.5,4.5,0,0,0,1.118-3.127V0h5.28V12.107a9.317,9.317,0,0,1-.677,3.586,8.03,8.03,0,0,1-1.93,2.812,8.9,8.9,0,0,1-3.047,1.836A11.55,11.55,0,0,1,38.591,21ZM5.218,20.518H0V0H5.218l6.913,10.03h.339L19.383,0H24.6V20.516H19.383V11.434l.338-3.439h-.338L13.86,16.161H10.742L5.218,7.995H4.88l.338,3.439v9.084Zm83.782,0H73.081V0H89V4.241H78.342v3.9h9.579V12.38H78.342v3.9H89v4.24Zm-19.536,0H51.133v-4.47L63.149,4.241H51.676V0H69.328V4.47L57.515,16.277H69.464v4.24Z" transform="translate(0 14)" fill="#1e1e1e"></path>
+            <circle cx="4.5" cy="4.5" r="4.5" transform="translate(93 25)" fill="#ffc107"></circle>
+          </g>
+        </svg>
+      </a>
+      <div class="text-end d-block d-xl-none order-md-2 ms-auto">
+        <a href="javascript:void(0);" class="aside-toggle" onclick="toggleClass()">
+          <img src="../assets/svg/icons/hamburger@20.svg" class="menu-icon" alt="Menu">        
+          <img src="../assets/svg/icons/close@20.svg" class="menu-close" alt="Menu Close">
+        </a>
+      </div>
+      <ul class="nav nav-classic nav-sm border-0 nav-docs-space ms-auto">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+            <span class="d-none d-sm-block">Documentation</span>
+            <span class="d-sm-none">Docs</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/analytics.html">Templates</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container-fluid main-docs">
+    <div class="row justify-content-lg-end">
+      <nav class="col-lg-3 col-xl-2 muzesidebar navbar-expand-lg ms-2 px-0 muze-sidebar">
+        <div class="collapse navbar-collapse show" id="sidebar-nav">
+          <div id="sidebarNav" class="muzesidebar-scrollbar muzesidebar-sticky ps-2 ps-md-0 pe-2 accordion" data-simplebar>
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#getting-started-collapse" role="button" aria-expanded="false">Getting started</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="getting-started-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="index.html">Introduction</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="gulp.html">Gulp</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="contents.html">Contents</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="browsers-devices.html">Browsers &amp; devices</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="javascript.html">JavaScript</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="build-tools.html">Build tools</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="webpack.html">Webpack</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accessibility.html">Accessibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rfs.html">RFS</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rtl.html">RTL</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#customize-collapse" role="button" aria-expanded="false">Customize</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="customize-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sass.html">Sass</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="options.html">Options</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colors.html">Color</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="customize-components.html">Components</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="css-variables.html">CSS variables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="optimize.html">Optimize</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dark-mode.html">Dark mode</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="container.html">Container</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="headers.html">Headers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sidebar.html">Sidebar</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#content-collapse" role="button" aria-expanded="false">Content</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="content-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="typography.html">Typography</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="images.html">Images</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tables.html">Tables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="figures.html">Figures</a></li>
+            </ul>
+
+            <a class="muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#forms-collapse" role="button" aria-expanded="true">Forms</a>
+            <ul class="muzesidebar-nav collapse show mb-0" id="forms-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-control.html">Form control</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="select.html">Select</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link active" href="checks.html">Checks</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="range.html">Range</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="input-group.html">Input group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="floating-labels.html">Floating labels</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-layout.html">Layout</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="validation.html">Validation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#components-collapse" role="button" aria-expanded="false">Components</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="components-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accordion.html">Accordion</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="alerts.html">Alerts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="avatars.html">Avatars</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="badge.html">Badge</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="buttons.html">Buttons</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="button-group.html">Button Group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="links.html">Links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="cards.html">Cards</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="carousel.html">Carousel</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="close-button.html">Close Button</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="collapse.html">Collapse</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dropdowns.html">Dropdowns</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="list-group.html">List group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="modal.html">Modal</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navbar.html">Navbar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navs.html">Navs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="pagination.html">Pagination</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="popovers.html">Popovers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="progress.html">Progress</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="scrollspy.html">Scrollspy</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spinners.html">Spinners</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabs.html">Tabs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="toasts.html">Toasts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#helpers-collapse" role="button" aria-expanded="false">Helpers</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="helpers-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="clearfix.html">Clearfix</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colored-links.html">Colored links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="embed.html">Embed</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="screen-readers.html">Screen readers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="stretched-link.html">Stretched link</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="text-truncation.html">Text truncation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#utilities-collapse" role="button" aria-expanded="false">Utilities</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="utilities-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="animations.html">Animations</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="borders.html">Borders</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="display.html">Display</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="flex.html">Flex</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="float.html">Float</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="overflow.html">Overflow</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="utilitie-position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="shadows.html">Shadows</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sizing.html">Sizing</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spacings.html">Spacings</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="ui.html">UI</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="vertical-align.html">Vertical align</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="visibility.html">Visibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="others.html">Others</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#extend-collapse" role="button" aria-expanded="false">Extend</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="extend-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="approach.html">Approach</a></li>
+              <li class="muzesidebar-item">
+                <span class="muzesidebar-link">Icons:</span>
+                <ul class="muzesidebar-nav ms-2">
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="bootstrap-icons.html">Bootstrap Icons</a></li>
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabler-icons.html">Tabler Icons</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#plugins-collapse" role="button" aria-expanded="false">Plugins</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="plugins-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="charts.html">Charts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link " href="fullcalendar.html">Fullcalendar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="quill.html">Quill</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#more-collapse" role="button" aria-expanded="false">More</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="more-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="credits.html">Credits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="col-xl-10 muze-docs-content"> 
+        <div class="p-0 p-md-4">
+          <div class="muzedocs-content-divider">
+            <h1>Checks</h1>
+            <p class="bd-lead">Create consistent cross-browser and cross-device checkboxes and radios with our completely rewritten checks component.</p>
+          </div>
+
+          <div id="approach" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Approach</h2>
+            <p>Browser default checkboxes and radios are replaced with the help of <code>.form-check</code>, a series of classes for both input types that improves the layout and behavior of their HTML elements, that provide greater customization and cross browser consistency. Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
+            <p>Structurally, our <code>&lt;input&gt;</code>s and <code>&lt;label&gt;</code>s are sibling elements as opposed to an <code>&lt;input&gt;</code> within a <code>&lt;label&gt;</code>. This is slightly more verbose as you must specify <code>id</code> and <code>for</code> attributes to relate the <code>&lt;input&gt;</code> and <code>&lt;label&gt;</code>. We use the sibling selector (<code>~</code>) for all our <code>&lt;input&gt;</code> states, like <code>:checked</code> or <code>:disabled</code>. When combined with the <code>.form-check-label</code> class, we can easily style the text for each item based on the <code>&lt;input&gt;</code>'s state.</p>
+            <p>Our checks use custom Bootstrap icons to indicate checked or indeterminate states.</p>
+
+          </div>
+          <div id="checks" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Checks</h2>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-1" data-bs-toggle="pill" href="#pills-result-1" role="tab" aria-controls="pills-result-1" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-1" data-bs-toggle="pill" href="#pills-html-1" role="tab" aria-controls="pills-html-1" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-1">
+                <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Checked checkbox
+                    </label>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"&gt;
+                        &lt;label class="form-check-label" for="flexCheckDefault"&gt;
+                          Default checkbox
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked&gt;
+                        &lt;label class="form-check-label" for="flexCheckChecked"&gt;
+                          Checked checkbox
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="checks5" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Checkbox Shapes</h2>
+            <p>Custom <code>&lt;select&gt;</code> menus need only a custom class, <code>.form-select</code> to trigger the custom styles. Custom styles are limited to the <code>&lt;select&gt;</code>'s initial appearance and cannot modify the <code>&lt;option&gt;</code>s due to browser limitations.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-1sa" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-1sa" data-bs-toggle="pill" href="#pills-result-1sa" role="tab" aria-controls="pills-result-1sa" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-1sa" data-bs-toggle="pill" href="#pills-html-1sa" role="tab" aria-controls="pills-html-1sa" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-1sa">
+                <div class="tab-pane fade p-4 show active" id="pills-result-1sa" role="tabpanel" aria-labelledby="pills-result-tab-1sa">
+                  <div class="form-check form-check-inline rounded-none">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" checked>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" checked>
+                  </div>
+                  <div class="form-check form-check-inline form-check-rounded">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" checked>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-1sa" role="tabpanel" aria-labelledby="pills-html-tab-1sa">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check form-check-inline rounded-none"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" checked&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-check-inline"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2" checked&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-check-inline form-check-rounded"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" checked&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="indeterminate" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Indeterminate</h2>
+            <p>Checkboxes can utilize the <code>:indeterminate</code> pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-2" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-2" data-bs-toggle="pill" href="#pills-result-2" role="tab" aria-controls="pills-result-2" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-2" data-bs-toggle="pill" href="#pills-html-2" role="tab" aria-controls="pills-html-2" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-2">
+                <div class="tab-pane fade p-4 show active" id="pills-result-2" role="tabpanel" aria-labelledby="pills-result-tab-2">
+                  <div class="bd-example">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                      <label class="form-check-label" for="flexCheckIndeterminate">
+                        Indeterminate checkbox
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-2" role="tabpanel" aria-labelledby="pills-html-tab-2">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"&gt;
+                        &lt;label class="form-check-label" for="flexCheckIndeterminate"&gt;
+                          Indeterminate checkbox
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="disabled" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Disabled</h2>
+            <p>Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s state.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-5" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-5" data-bs-toggle="pill" href="#pills-result-5" role="tab" aria-controls="pills-result-5" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-5" data-bs-toggle="pill" href="#pills-html-5" role="tab" aria-controls="pills-html-5" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-5">
+                <div class="tab-pane fade p-4 show active" id="pills-result-5" role="tabpanel" aria-labelledby="pills-result-tab-5">
+                  <div class="bd-example">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled>
+                      <label class="form-check-label" for="flexCheckDisabled">
+                        Disabled checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+                      <label class="form-check-label" for="flexCheckCheckedDisabled">
+                        Disabled checked checkbox
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-5" role="tabpanel" aria-labelledby="pills-html-tab-5">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" id="flexCheckDisabled" disabled&gt;
+                        &lt;label class="form-check-label" for="flexCheckDisabled"&gt;
+                          Disabled checkbox
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled&gt;
+                        &lt;label class="form-check-label" for="flexCheckCheckedDisabled"&gt;
+                          Disabled checked checkbox
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+          <div id="radios" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Radios</h2>
+            
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-6" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-6" data-bs-toggle="pill" href="#pills-result-6" role="tab" aria-controls="pills-result-6" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-6" data-bs-toggle="pill" href="#pills-html-6" role="tab" aria-controls="pills-html-6" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-6">
+                <div class="tab-pane fade p-4 show active" id="pills-result-6" role="tabpanel" aria-labelledby="pills-result-tab-6">
+                  <div class="bd-example">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        Default radio
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        Default checked radio
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-6" role="tabpanel" aria-labelledby="pills-html-tab-6">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"&gt;
+                        &lt;label class="form-check-label" for="flexRadioDefault1"&gt;
+                          Default radio
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked&gt;
+                        &lt;label class="form-check-label" for="flexRadioDefault2"&gt;
+                          Default checked radio
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+          <div id="disabled-1" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Disabled</h2>
+            <p>Add the <code>disabled</code> attribute and the associated <code>&lt;label&gt;</code>s are automatically styled to match with a lighter color to help indicate the input’s state.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-610" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-610" data-bs-toggle="pill" href="#pills-result-610" role="tab" aria-controls="pills-result-610" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-610" data-bs-toggle="pill" href="#pills-html-610" role="tab" aria-controls="pills-html-610" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-610">
+                <div class="tab-pane fade p-4 show active" id="pills-result-610" role="tabpanel" aria-labelledby="pills-result-tab-610">
+                  <div class="bd-example">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled>
+                      <label class="form-check-label" for="flexRadioDisabled">
+                        Disabled radio
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked disabled>
+                      <label class="form-check-label" for="flexRadioCheckedDisabled">
+                        Disabled checked radio
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-610" role="tabpanel" aria-labelledby="pills-html-tab-610">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled&gt;
+                        &lt;label class="form-check-label" for="flexRadioDisabled"&gt;
+                          Disabled radio
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked disabled&gt;
+                        &lt;label class="form-check-label" for="flexRadioCheckedDisabled"&gt;
+                          Disabled checked radio
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="switches" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Switches</h2>
+            <p>A switch has the markup of a custom checkbox but uses the <code>.form-switch</code> class to render a toggle switch. Switches also support the <code>disabled</code> attribute.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-7" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-7" data-bs-toggle="pill" href="#pills-result-7" role="tab" aria-controls="pills-result-7" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-7" data-bs-toggle="pill" href="#pills-html-7" role="tab" aria-controls="pills-html-7" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-7">
+                <div class="tab-pane fade p-4 show active" id="pills-result-7" role="tabpanel" aria-labelledby="pills-result-tab-7">
+                  <div class="bd-example">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                      <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+                      <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                      <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-7" role="tabpanel" aria-labelledby="pills-html-tab-7">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check form-switch"&gt;
+                        &lt;input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault"&gt;
+                        &lt;label class="form-check-label" for="flexSwitchCheckDefault"&gt;Default switch checkbox input&lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-switch"&gt;
+                        &lt;input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked&gt;
+                        &lt;label class="form-check-label" for="flexSwitchCheckChecked"&gt;Checked switch checkbox input&lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-switch"&gt;
+                        &lt;input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled&gt;
+                        &lt;label class="form-check-label" for="flexSwitchCheckDisabled"&gt;Disabled switch checkbox input&lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-switch"&gt;
+                        &lt;input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled&gt;
+                        &lt;label class="form-check-label" for="flexSwitchCheckCheckedDisabled"&gt;Disabled checked switch checkbox input&lt;/label&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="default-stacked" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Default (stacked)</h2>
+            <p>By default, any number of checkboxes and radios that are immediate sibling will be vertically stacked and appropriately spaced with <code>.form-check</code>.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-710" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-710" data-bs-toggle="pill" href="#pills-result-710" role="tab" aria-controls="pills-result-710" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-710" data-bs-toggle="pill" href="#pills-html-710" role="tab" aria-controls="pills-html-710" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-710">
+                <div class="tab-pane fade p-4 show active" id="pills-result-710" role="tabpanel" aria-labelledby="pills-result-tab-710">
+                  <div class="bd-example">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                      <label class="form-check-label" for="defaultCheck1">
+                        Default checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                      <label class="form-check-label" for="defaultCheck2">
+                        Disabled checkbox
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-710" role="tabpanel" aria-labelledby="pills-html-tab-710">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" id="defaultCheck1"&gt;
+                        &lt;label class="form-check-label" for="defaultCheck1"&gt;
+                          Default checkbox
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled&gt;
+                        &lt;label class="form-check-label" for="defaultCheck2"&gt;
+                          Disabled checkbox
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-8" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-8" data-bs-toggle="pill" href="#pills-result-8" role="tab" aria-controls="pills-result-8" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-8" data-bs-toggle="pill" href="#pills-html-8" role="tab" aria-controls="pills-html-8" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-8">
+                <div class="tab-pane fade p-4 show active" id="pills-result-8" role="tabpanel" aria-labelledby="pills-result-tab-8">
+                  <div class="bd-example">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        Default radio
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
+                        Second default radio
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                      <label class="form-check-label" for="exampleRadios3">
+                        Disabled radio
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-8" role="tabpanel" aria-labelledby="pills-html-tab-8">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked&gt;
+                        &lt;label class="form-check-label" for="exampleRadios1"&gt;
+                          Default radio
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2"&gt;
+                        &lt;label class="form-check-label" for="exampleRadios2"&gt;
+                          Second default radio
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check"&gt;
+                        &lt;input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled&gt;
+                        &lt;label class="form-check-label" for="exampleRadios3"&gt;
+                          Disabled radio
+                        &lt;/label&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="sizing" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Sizing</h2>
+            <p>You may also choose from small and large checks to match our similarly sized text inputs.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-215" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-215" data-bs-toggle="pill" href="#pills-result-215" role="tab" aria-controls="pills-result-215" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-215" data-bs-toggle="pill" href="#pills-html-215" role="tab" aria-controls="pills-html-215" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-215">
+                <div class="tab-pane fade p-4 show active" id="pills-result-215" role="tabpanel" aria-labelledby="pills-result-tab-215">
+                  <div class="d-flex align-items-center">
+                    <div class="form-check form-check-sm form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault20">
+                    </div>
+                    <div class="form-check form-check-lg form-check-inline">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault30">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-215" role="tabpanel" aria-labelledby="pills-html-tab-215">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check form-check-sm form-check-inline"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10"&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-check-inline"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" id="flexCheckDefault20"&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-check-lg form-check-inline"&gt;
+                        &lt;input class="form-check-input" type="checkbox" value="" id="flexCheckDefault30"&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-21" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-21" data-bs-toggle="pill" href="#pills-result-21" role="tab" aria-controls="pills-result-21" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-21" data-bs-toggle="pill" href="#pills-html-21" role="tab" aria-controls="pills-html-21" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-21">
+                <div class="tab-pane fade p-4 show active" id="pills-result-21" role="tabpanel" aria-labelledby="pills-result-tab-21">
+                  <div class="d-flex align-items-center">
+                    <div class="form-check form-check-sm form-check-inline">
+                      <input class="form-check-input rounded-pill" type="checkbox" value="" id="flexCheckDefault4">
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input rounded-pill" type="checkbox" value="" id="flexCheckDefault5">
+                    </div>
+                    <div class="form-check form-check-lg form-check-inline">
+                      <input class="form-check-input rounded-pill" type="checkbox" value="" id="flexCheckDefault6">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-21" role="tabpanel" aria-labelledby="pills-html-tab-21">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check form-check-sm form-check-inline"&gt;
+                        &lt;input class="form-check-input rounded-pill" type="checkbox" value="" id="flexCheckDefault4"&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-check-inline"&gt;
+                        &lt;input class="form-check-input rounded-pill" type="checkbox" value="" id="flexCheckDefault5"&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-check-lg form-check-inline"&gt;
+                        &lt;input class="form-check-input rounded-pill" type="checkbox" value="" id="flexCheckDefault6"&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <p>You may also choose from small and large radio to match our similarly sized text inputs.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-22" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-22" data-bs-toggle="pill" href="#pills-result-22" role="tab" aria-controls="pills-result-22" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-22" data-bs-toggle="pill" href="#pills-html-22" role="tab" aria-controls="pills-html-22" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-22">
+                <div class="tab-pane fade p-4 show active" id="pills-result-22" role="tabpanel" aria-labelledby="pills-result-tab-22">
+                  <div class="d-flex align-items-center">
+                    <div class="form-check form-check-sm form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                    </div>
+                    <div class="form-check form-check-lg form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option7">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-22" role="tabpanel" aria-labelledby="pills-html-tab-22">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;select class="form-select" size="3" aria-label="multiple select example"&gt;
+                        &lt;option selected&gt;Open this select menu&lt;/option&gt;
+                        &lt;option value="1"&gt;One&lt;/option&gt;
+                        &lt;option value="2"&gt;Two&lt;/option&gt;
+                        &lt;option value="3"&gt;Three&lt;/option&gt;
+                      &lt;/select&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <p>You may also choose from small and large switch to match our similarly sized text inputs.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-23" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-23" data-bs-toggle="pill" href="#pills-result-23" role="tab" aria-controls="pills-result-23" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-23" data-bs-toggle="pill" href="#pills-html-23" role="tab" aria-controls="pills-html-23" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-23">
+                <div class="tab-pane fade p-4 show active" id="pills-result-23" role="tabpanel" aria-labelledby="pills-result-tab-23">
+                  <div class="d-flex align-items-center">
+                    <div class="form-check form-check-sm form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked101" checked="">
+                    </div>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked102" checked="">
+                    </div>
+                    <div class="form-check form-check-lg form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked103" checked="">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-23" role="tabpanel" aria-labelledby="pills-html-tab-23">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check form-check-sm form-switch"&gt;
+                        &lt;input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked101" checked=""&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-switch"&gt;
+                        &lt;input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked102" checked=""&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-check-lg form-switch"&gt;
+                        &lt;input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked103" checked=""&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="inline" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Inline</h2>
+            <p>Group checkboxes or radios on the same horizontal row by adding <code>.form-check-inline</code> to any <code>.form-check</code>.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-9" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-9" data-bs-toggle="pill" href="#pills-result-9" role="tab" aria-controls="pills-result-9" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-9" data-bs-toggle="pill" href="#pills-html-9" role="tab" aria-controls="pills-html-9" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-9">
+                <div class="tab-pane fade p-4 show active" id="pills-result-9" role="tabpanel" aria-labelledby="pills-result-tab-9">
+                  <div class="bd-example">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label class="form-check-label" for="inlineCheckbox1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label class="form-check-label" for="inlineCheckbox2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                      <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-9" role="tabpanel" aria-labelledby="pills-html-tab-9">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check form-check-inline"&gt;
+                        &lt;input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"&gt;
+                        &lt;label class="form-check-label" for="inlineCheckbox1"&gt;1&lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-check-inline"&gt;
+                        &lt;input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"&gt;
+                        &lt;label class="form-check-label" for="inlineCheckbox2"&gt;2&lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-check-inline"&gt;
+                        &lt;input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled&gt;
+                        &lt;label class="form-check-label" for="inlineCheckbox3"&gt;3 (disabled)&lt;/label&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-10" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-10" data-bs-toggle="pill" href="#pills-result-10" role="tab" aria-controls="pills-result-10" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-10" data-bs-toggle="pill" href="#pills-html-10" role="tab" aria-controls="pills-html-10" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-10">
+                <div class="tab-pane fade p-4 show active" id="pills-result-10" role="tabpanel" aria-labelledby="pills-result-tab-10">
+                  <div class="bd-example">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                      <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-10" role="tabpanel" aria-labelledby="pills-html-tab-10">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="form-check form-check-inline"&gt;
+                        &lt;input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"&gt;
+                        &lt;label class="form-check-label" for="inlineRadio1"&gt;1&lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-check-inline"&gt;
+                        &lt;input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"&gt;
+                        &lt;label class="form-check-label" for="inlineRadio2"&gt;2&lt;/label&gt;
+                      &lt;/div&gt;
+                      &lt;div class="form-check form-check-inline"&gt;
+                        &lt;input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled&gt;
+                        &lt;label class="form-check-label" for="inlineRadio3"&gt;3 (disabled)&lt;/label&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+          <div id="without-labels" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Without labels</h2>
+            <p>Omit the wrapping <code>.form-check</code> for checkboxes and radios that have no label text. Remember to still provide some form of label for assistive technologies (for instance, using <code>aria-label</code>).</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-11" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-11" data-bs-toggle="pill" href="#pills-result-11" role="tab" aria-controls="pills-result-11" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-11" data-bs-toggle="pill" href="#pills-html-11" role="tab" aria-controls="pills-html-11" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-11">
+                <div class="tab-pane fade p-4 show active" id="pills-result-11" role="tabpanel" aria-labelledby="pills-result-tab-11">
+                  <div class="bd-example">
+                    <div class="mb-2">
+                      <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                    </div>
+                    
+                    <div>
+                      <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-11" role="tabpanel" aria-labelledby="pills-html-tab-11">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div&gt;
+                        &lt;input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."&gt;
+                      &lt;/div&gt;
+                      
+                      &lt;div&gt;
+                        &lt;input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="..."&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+          </div>
+          <div id="toggle-buttons" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Toggle buttons</h2>
+            <h6>Checkbox toggle buttons</h6>
+            <p>Bootstrap’s <code>.btn</code> styles can be applied to <code>&lt;label&gt;</code>s, to provide checkbox style button toggling. Add an input with a <code>.btn-check</code> class as previous sibling to toggle the input state.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-12" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-12" data-bs-toggle="pill" href="#pills-result-12" role="tab" aria-controls="pills-result-12" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-12" data-bs-toggle="pill" href="#pills-html-12" role="tab" aria-controls="pills-html-12" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-12">
+                <div class="tab-pane fade p-4 show active" id="pills-result-12" role="tabpanel" aria-labelledby="pills-result-tab-12">
+                  <div class="bd-example">
+                    <input type="checkbox" class="btn-check" id="btn-check">
+                    <label class="btn btn-primary" for="btn-check">Single toggle</label>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-12" role="tabpanel" aria-labelledby="pills-html-tab-12">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;input type="checkbox" class="btn-check" id="btn-check"&gt;
+                      &lt;label class="btn btn-primary" for="btn-check"&gt;Single toggle&lt;/label&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+          </div>
+
+          <div id="radio-toggle-buttons" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Radio toggle buttons</h2>
+            <p>Toggle buttons can be grouped in a <a href="https://v5.getbootstrap.com/docs/5.0/components/button-group/">button group</a> if needed.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-13" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-13" data-bs-toggle="pill" href="#pills-result-13" role="tab" aria-controls="pills-result-13" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-13" data-bs-toggle="pill" href="#pills-html-13" role="tab" aria-controls="pills-html-13" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-13">
+                <div class="tab-pane fade p-4 show active" id="pills-result-13" role="tabpanel" aria-labelledby="pills-result-tab-13">
+                  <div class="bd-example">
+                    <div class="btn-group">
+                      <input type="radio" class="btn-check" name="options" id="option1" checked>
+                      <label class="btn btn-primary" for="option1">Checked</label>
+                    
+                      <input type="radio" class="btn-check" name="options" id="option2">
+                      <label class="btn btn-primary" for="option2">Radio</label>
+                    
+                      <input type="radio" class="btn-check" name="options" id="option3">
+                      <label class="btn btn-primary" for="option3">Radio</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-13" role="tabpanel" aria-labelledby="pills-html-tab-13">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="btn-group"&gt;
+                        &lt;input type="radio" class="btn-check" name="options" id="option1" checked&gt;
+                        &lt;label class="btn btn-primary" for="option1"&gt;Checked&lt;/label&gt;
+                      
+                        &lt;input type="radio" class="btn-check" name="options" id="option2"&gt;
+                        &lt;label class="btn btn-primary" for="option2"&gt;Radio&lt;/label&gt;
+                      
+                        &lt;input type="radio" class="btn-check" name="options" id="option3"&gt;
+                        &lt;label class="btn btn-primary" for="option3"&gt;Radio&lt;/label&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+          </div>
+
+          <div id="radio-toggle-buttons2" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Outlined styles</h2>
+            <p>Different variants of <code>.btn</code>, such at the various outlined styles, are supported.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-139" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-139" data-bs-toggle="pill" href="#pills-result-139" role="tab" aria-controls="pills-result-139" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-139" data-bs-toggle="pill" href="#pills-html-139" role="tab" aria-controls="pills-html-139" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-139">
+                <div class="tab-pane fade p-4 show active" id="pills-result-139" role="tabpanel" aria-labelledby="pills-result-tab-139">
+                  <div class="bd-example">
+                    <input type="checkbox" class="btn-check" id="btn-check-outlined">
+                    <label class="btn btn-outline-primary mb-2" for="btn-check-outlined">Single toggle</label><br>
+
+                    <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked>
+                    <label class="btn btn-outline-primary mb-2" for="btn-check-2-outlined">Checked</label><br>
+
+                    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" checked>
+                    <label class="btn btn-outline-success" for="success-outlined">Checked success radio</label>
+
+                    <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined">
+                    <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-139" role="tabpanel" aria-labelledby="pills-html-tab-139">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;input type="checkbox" class="btn-check" id="btn-check-outlined"&gt;
+                      &lt;label class="btn btn-outline-primary" for="btn-check-outlined"&gt;Single toggle&lt;/label&gt;&lt;br&gt;
+  
+                      &lt;input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked&gt;
+                      &lt;label class="btn btn-outline-primary" for="btn-check-2-outlined"&gt;Checked&lt;/label&gt;&lt;br&gt;
+
+                      &lt;input type="radio" class="btn-check" name="options-outlined" id="success-outlined" checked&gt;
+                      &lt;label class="btn btn-outline-success" for="success-outlined"&gt;Checked success radio&lt;/label&gt;
+
+                      &lt;input type="radio" class="btn-check" name="options-outlined" id="danger-outlined"&gt;
+                      &lt;label class="btn btn-outline-danger" for="danger-outlined"&gt;Danger radio&lt;/label&gt;
+
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JS Global Compulsory -->
+<script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Muze Javascript Plugins -->
+<script src="assets/vendor/prism/prism.js"></script>
+<script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+<script>
+  //Muze Sidebar Toggle JavaScript
+  var elem = document.body;
+  function toggleClass(){
+    elem.classList.toggle("sidebar-show");  // Toggle hide class
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Flex - Muze Documentation | Muze - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+  <link href="../assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
+
+  <!-- CSS Muze Template -->
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+
+  <!-- CSS Muze Doc -->
+  <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body>
+  <!-- Muze Documentation -->
+<div class="muze-documentation">
+	<header class="doc-header bg-white px-3 px-md-4 shadow-sm position-fixed">
+    <nav class="navbar navbar-expand-lg has-header-inner py-0">
+      <a class="navbar-brand" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="21" viewBox="0 0 102 21">
+          <g data-name="Group 5" transform="translate(0 -14)">
+            <path d="M38.591,21a12.83,12.83,0,0,1-4-.588,8.284,8.284,0,0,1-3.046-1.736,7.742,7.742,0,0,1-1.93-2.8,9.914,9.914,0,0,1-.677-3.772V0h5.281V12.393a4.5,4.5,0,0,0,1.117,3.127,4.177,4.177,0,0,0,3.25,1.234,4.176,4.176,0,0,0,3.249-1.234,4.5,4.5,0,0,0,1.118-3.127V0h5.28V12.107a9.317,9.317,0,0,1-.677,3.586,8.03,8.03,0,0,1-1.93,2.812,8.9,8.9,0,0,1-3.047,1.836A11.55,11.55,0,0,1,38.591,21ZM5.218,20.518H0V0H5.218l6.913,10.03h.339L19.383,0H24.6V20.516H19.383V11.434l.338-3.439h-.338L13.86,16.161H10.742L5.218,7.995H4.88l.338,3.439v9.084Zm83.782,0H73.081V0H89V4.241H78.342v3.9h9.579V12.38H78.342v3.9H89v4.24Zm-19.536,0H51.133v-4.47L63.149,4.241H51.676V0H69.328V4.47L57.515,16.277H69.464v4.24Z" transform="translate(0 14)" fill="#1e1e1e"></path>
+            <circle cx="4.5" cy="4.5" r="4.5" transform="translate(93 25)" fill="#ffc107"></circle>
+          </g>
+        </svg>
+      </a>
+      <div class="text-end d-block d-xl-none order-md-2 ms-auto">
+        <a href="javascript:void(0);" class="aside-toggle" onclick="toggleClass()">
+          <img src="../assets/svg/icons/hamburger@20.svg" class="menu-icon" alt="Menu">        
+          <img src="../assets/svg/icons/close@20.svg" class="menu-close" alt="Menu Close">
+        </a>
+      </div>
+      <ul class="nav nav-classic nav-sm border-0 nav-docs-space ms-auto">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+            <span class="d-none d-sm-block">Documentation</span>
+            <span class="d-sm-none">Docs</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/analytics.html">Templates</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container-fluid main-docs">
+    <div class="row justify-content-lg-end">
+      <nav class="col-lg-3 col-xl-2 muzesidebar navbar-expand-lg ms-2 px-0 muze-sidebar">
+        <div class="collapse navbar-collapse show" id="sidebar-nav">
+          <div id="sidebarNav" class="muzesidebar-scrollbar muzesidebar-sticky ps-2 ps-md-0 pe-2 accordion" data-simplebar>
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#getting-started-collapse" role="button" aria-expanded="false">Getting started</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="getting-started-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="index.html">Introduction</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="gulp.html">Gulp</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="contents.html">Contents</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="browsers-devices.html">Browsers &amp; devices</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="javascript.html">JavaScript</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="build-tools.html">Build tools</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="webpack.html">Webpack</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accessibility.html">Accessibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rfs.html">RFS</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rtl.html">RTL</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#customize-collapse" role="button" aria-expanded="false">Customize</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="customize-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sass.html">Sass</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="options.html">Options</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colors.html">Color</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="customize-components.html">Components</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="css-variables.html">CSS variables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="optimize.html">Optimize</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dark-mode.html">Dark mode</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="container.html">Container</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="headers.html">Headers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sidebar.html">Sidebar</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#content-collapse" role="button" aria-expanded="false">Content</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="content-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="typography.html">Typography</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="images.html">Images</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tables.html">Tables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="figures.html">Figures</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#forms-collapse" role="button" aria-expanded="false">Forms</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="forms-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-control.html">Form control</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="select.html">Select</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="checks.html">Checks</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="range.html">Range</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="input-group.html">Input group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="floating-labels.html">Floating labels</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-layout.html">Layout</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="validation.html">Validation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#components-collapse" role="button" aria-expanded="false">Components</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="components-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accordion.html">Accordion</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="alerts.html">Alerts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="avatars.html">Avatars</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="badge.html">Badge</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="buttons.html">Buttons</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="button-group.html">Button Group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="links.html">Links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="cards.html">Cards</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="carousel.html">Carousel</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="close-button.html">Close Button</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="collapse.html">Collapse</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dropdowns.html">Dropdowns</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="list-group.html">List group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="modal.html">Modal</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navbar.html">Navbar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navs.html">Navs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="pagination.html">Pagination</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="popovers.html">Popovers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="progress.html">Progress</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="scrollspy.html">Scrollspy</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spinners.html">Spinners</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabs.html">Tabs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="toasts.html">Toasts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#helpers-collapse" role="button" aria-expanded="false">Helpers</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="helpers-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="clearfix.html">Clearfix</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colored-links.html">Colored links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="embed.html">Embed</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="screen-readers.html">Screen readers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="stretched-link.html">Stretched link</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="text-truncation.html">Text truncation</a></li>
+            </ul>
+
+            <a class="muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#utilities-collapse" role="button" aria-expanded="true">Utilities</a>
+            <ul class="muzesidebar-nav collapse show mb-0" id="utilities-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="animations.html">Animations</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="borders.html">Borders</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="display.html">Display</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link active" href="flex.html">Flex</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="float.html">Float</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="overflow.html">Overflow</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="utilitie-position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="shadows.html">Shadows</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sizing.html">Sizing</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spacings.html">Spacings</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="ui.html">UI</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="vertical-align.html">Vertical align</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="visibility.html">Visibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="others.html">Others</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#extend-collapse" role="button" aria-expanded="false">Extend</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="extend-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="approach.html">Approach</a></li>
+              <li class="muzesidebar-item">
+                <span class="muzesidebar-link">Icons:</span>
+                <ul class="muzesidebar-nav ms-2">
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="bootstrap-icons.html">Bootstrap Icons</a></li>
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabler-icons.html">Tabler Icons</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#plugins-collapse" role="button" aria-expanded="false">Plugins</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="plugins-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="charts.html">Charts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link " href="fullcalendar.html">Fullcalendar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="quill.html">Quill</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#more-collapse" role="button" aria-expanded="false">More</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="more-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="credits.html">Credits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="col-xl-10 muze-docs-content"> 
+        <div class="p-0 p-md-4">
+          <div class="muzedocs-content-divider">
+            <h1>Flex</h1>
+            <p class="lead">Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.</p>
+          </div>
+
+          <div id="enable-flex-behaviors" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Enable flex behaviors</h2>
+            <p>Apply <code>display</code> utilities to create a flexbox container and transform <strong>direct children elements</strong> into flex items. Flex containers and items are able to be modified further with additional flex properties.</p>
+          </div>
+
+          <div id="examples" class="muzedocs-content-divider">
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-3" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-3" data-bs-toggle="pill" href="#pills-result-3" role="tab" aria-controls="pills-result-3" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-3" data-bs-toggle="pill" href="#pills-html-3" role="tab" aria-controls="pills-html-3" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-3">
+                <div class="tab-pane fade p-4 show active" id="pills-result-3" role="tabpanel" aria-labelledby="pills-result-tab-3">
+                  <div class="d-flex p-2 bd-highlight">I'm a flexbox container!</div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-3" role="tabpanel" aria-labelledby="pills-html-tab-3">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex p-2 bd-highlight"&gt;I'm a flexbox container!&lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-34" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-34" data-bs-toggle="pill" href="#pills-result-34" role="tab" aria-controls="pills-result-34" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-34" data-bs-toggle="pill" href="#pills-html-34" role="tab" aria-controls="pills-html-34" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-34">
+                <div class="tab-pane fade p-4 show active" id="pills-result-34" role="tabpanel" aria-labelledby="pills-result-tab-34">
+                  <div class="d-inline-flex p-2 bd-highlight">I'm an inline flexbox container!</div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-34" role="tabpanel" aria-labelledby="pills-html-tab-34">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-inline-flex p-2 bd-highlight"&gt;I'm an inline flexbox container!&lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <p>Responsive variations also exist for <code>.d-flex</code> and <code>.d-inline-flex</code>.</p>
+            <ul>
+              <li><code>.d-flex</code></li>
+              <li><code>.d-inline-flex</code></li>
+              <li><code>.d-sm-flex</code></li>
+              <li><code>.d-sm-inline-flex</code></li>
+              <li><code>.d-md-flex</code></li>
+              <li><code>.d-md-inline-flex</code></li>
+              <li><code>.d-lg-flex</code></li>
+              <li><code>.d-lg-inline-flex</code></li>
+              <li><code>.d-xl-flex</code></li>
+              <li><code>.d-xl-inline-flex</code></li>
+              <li><code>.d-xxl-flex</code></li>
+              <li><code>.d-xxl-inline-flex</code></li>
+              </ul>
+          </div>
+
+          <div id="direction" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Direction</h2>
+            <p>Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the horizontal class here as the browser default is <code>row</code>. However, you may encounter situations where you needed to explicitly set this value (like responsive layouts).</p>
+            <p>Use <code>.flex-row</code> to set a horizontal direction (the browser default), or <code>.flex-row-reverse</code> to start the horizontal direction from the opposite side.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-12" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-12" data-bs-toggle="pill" href="#pills-result-12" role="tab" aria-controls="pills-result-12" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-12" data-bs-toggle="pill" href="#pills-html-12" role="tab" aria-controls="pills-html-12" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-12">
+                <div class="tab-pane fade p-4 show active" id="pills-result-12" role="tabpanel" aria-labelledby="pills-result-tab-12">
+                  <div class="d-flex flex-row bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                  </div>
+                  <div class="d-flex flex-row-reverse bd-highlight">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-12" role="tabpanel" aria-labelledby="pills-html-tab-12">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex flex-row bd-highlight mb-3"&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class="d-flex flex-row-reverse bd-highlight"&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <p>Use <code>.flex-column</code> to set a vertical direction, or <code>.flex-column-reverse</code>  to start the vertical direction from the opposite side.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-123" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-123" data-bs-toggle="pill" href="#pills-result-123" role="tab" aria-controls="pills-result-123" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-123" data-bs-toggle="pill" href="#pills-html-123" role="tab" aria-controls="pills-html-123" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-123">
+                <div class="tab-pane fade p-4 show active" id="pills-result-123" role="tabpanel" aria-labelledby="pills-result-tab-123">
+                  <div class="d-flex flex-column bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                  </div>
+                  <div class="d-flex flex-column-reverse bd-highlight">
+                    <div class="p-2 bd-highlight">Flex item 1</div>
+                    <div class="p-2 bd-highlight">Flex item 2</div>
+                    <div class="p-2 bd-highlight">Flex item 3</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-123" role="tabpanel" aria-labelledby="pills-html-tab-123">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex flex-column bd-highlight mb-3"&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class="d-flex flex-row-reverse bd-highlight"&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item 1&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item 2&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item 3&lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <p>Responsive variations also exist for <code>flex-direction</code>.</p>
+            <ul>
+              <li><code>.flex-row</code></li>
+              <li><code>.flex-row-reverse</code></li>
+              <li><code>.flex-column</code></li>
+              <li><code>.flex-column-reverse</code></li>
+              <li><code>.flex-sm-row</code></li>
+              <li><code>.flex-sm-row-reverse</code></li>
+              <li><code>.flex-sm-column</code></li>
+              <li><code>.flex-sm-column-reverse</code></li>
+              <li><code>.flex-md-row</code></li>
+              <li><code>.flex-md-row-reverse</code></li>
+              <li><code>.flex-md-column</code></li>
+              <li><code>.flex-md-column-reverse</code></li>
+              <li><code>.flex-lg-row</code></li>
+              <li><code>.flex-lg-row-reverse</code></li>
+              <li><code>.flex-lg-column</code></li>
+              <li><code>.flex-lg-column-reverse</code></li>
+              <li><code>.flex-xl-row</code></li>
+              <li><code>.flex-xl-row-reverse</code></li>
+              <li><code>.flex-xl-column</code></li>
+              <li><code>.flex-xl-column-reverse</code></li>
+              <li><code>.flex-xxl-row</code></li>
+              <li><code>.flex-xxl-row-reverse</code></li>
+              <li><code>.flex-xxl-column</code></li>
+              <li><code>.flex-xxl-column-reverse</code></li>
+              </ul>
+          </div>
+
+          <div id="justify-content" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Justify content</h2>
+            <p>Use <code>justify-content</code> utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if <code>flex-direction: column</code>). Choose from <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, <code>around</code>, or <code>evenly</code>.</p>
+            
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-2" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-2" data-bs-toggle="pill" href="#pills-result-2" role="tab" aria-controls="pills-result-2" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-2" data-bs-toggle="pill" href="#pills-html-2" role="tab" aria-controls="pills-html-2" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-2">
+                <div class="tab-pane fade p-4 show active" id="pills-result-2" role="tabpanel" aria-labelledby="pills-result-tab-2">
+                  <div class="d-flex justify-content-start bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  <div class="d-flex justify-content-end bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  <div class="d-flex justify-content-center bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  <div class="d-flex justify-content-between bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  <div class="d-flex justify-content-around bd-highlight">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  <div class="d-flex justify-content-evenly bd-highlight">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-2" role="tabpanel" aria-labelledby="pills-html-tab-2">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex justify-content-start"&gt;...&lt;/div&gt;
+                      &lt;div class="d-flex justify-content-end"&gt;...&lt;/div&gt;
+                      &lt;div class="d-flex justify-content-center"&gt;...&lt;/div&gt;
+                      &lt;div class="d-flex justify-content-between"&gt;...&lt;/div&gt;
+                      &lt;div class="d-flex justify-content-around"&gt;...&lt;/div&gt;
+                      &lt;div class="d-flex justify-content-evenly"&gt;...&lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <p>Responsive variations also exist for <code>justify-content</code>.</p>
+            <ul>
+              <li><code>.justify-content-start</code></li>
+              <li><code>.justify-content-end</code></li>
+              <li><code>.justify-content-center</code></li>
+              <li><code>.justify-content-between</code></li>
+              <li><code>.justify-content-around</code></li>
+              <li><code>.justify-content-evenly</code></li>
+              <li><code>.justify-content-sm-start</code></li>
+              <li><code>.justify-content-sm-end</code></li>
+              <li><code>.justify-content-sm-center</code></li>
+              <li><code>.justify-content-sm-between</code></li>
+              <li><code>.justify-content-sm-around</code></li>
+              <li><code>.justify-content-sm-evenly</code></li>
+              <li><code>.justify-content-md-start</code></li>
+              <li><code>.justify-content-md-end</code></li>
+              <li><code>.justify-content-md-center</code></li>
+              <li><code>.justify-content-md-between</code></li>
+              <li><code>.justify-content-md-around</code></li>
+              <li><code>.justify-content-md-evenly</code></li>
+              <li><code>.justify-content-lg-start</code></li>
+              <li><code>.justify-content-lg-end</code></li>
+              <li><code>.justify-content-lg-center</code></li>
+              <li><code>.justify-content-lg-between</code></li>
+              <li><code>.justify-content-lg-around</code></li>
+              <li><code>.justify-content-lg-evenly</code></li>
+              <li><code>.justify-content-xl-start</code></li>
+              <li><code>.justify-content-xl-end</code></li>
+              <li><code>.justify-content-xl-center</code></li>
+              <li><code>.justify-content-xl-between</code></li>
+              <li><code>.justify-content-xl-around</code></li>
+              <li><code>.justify-content-xl-evenly</code></li>
+              <li><code>.justify-content-xxl-start</code></li>
+              <li><code>.justify-content-xxl-end</code></li>
+              <li><code>.justify-content-xxl-center</code></li>
+              <li><code>.justify-content-xxl-between</code></li>
+              <li><code>.justify-content-xxl-around</code></li>
+              <li><code>.justify-content-xxl-evenly</code></li>
+              </ul>
+          </div>
+          <div id="align-items" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Align items</h2>
+            <p>Use <code>align-items</code> utilities on flexbox containers to change the alignment of flex items on the cross axis (the y-axis to start, x-axis if <code>flex-direction: column</code>). Choose from <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default).</p>
+            
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-21" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-21" data-bs-toggle="pill" href="#pills-result-21" role="tab" aria-controls="pills-result-21" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-21" data-bs-toggle="pill" href="#pills-html-21" role="tab" aria-controls="pills-html-21" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-21">
+                <div class="tab-pane fade p-4 show active" id="pills-result-21" role="tabpanel" aria-labelledby="pills-result-tab-21">
+                  <div class="d-flex align-items-start bd-highlight mb-3" style="height: 100px">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  <div class="d-flex align-items-end bd-highlight mb-3" style="height: 100px">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  <div class="d-flex align-items-center bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  <div class="d-flex align-items-baseline bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  <div class="d-flex align-items-stretch bd-highlight">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-21" role="tabpanel" aria-labelledby="pills-html-tab-21">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex align-items-start"&gt;...&lt;/div&gt;
+                      &lt;div class="d-flex align-items-end"&gt;...&lt;/div&gt;
+                      &lt;div class="d-flex align-items-center"&gt;...&lt;/div&gt;
+                      &lt;div class="d-flex align-items-baseline"&gt;...&lt;/div&gt;
+                      &lt;div class="d-flex align-items-stretch"&gt;...&lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <p>Responsive variations also exist for <code>align-items</code>.</p>
+            <ul>
+              <li><code>.align-items-start</code></li>
+              <li><code>.align-items-end</code></li>
+              <li><code>.align-items-center</code></li>
+              <li><code>.align-items-baseline</code></li>
+              <li><code>.align-items-stretch</code></li>
+              <li><code>.align-items-sm-start</code></li>
+              <li><code>.align-items-sm-end</code></li>
+              <li><code>.align-items-sm-center</code></li>
+              <li><code>.align-items-sm-baseline</code></li>
+              <li><code>.align-items-sm-stretch</code></li>
+              <li><code>.align-items-md-start</code></li>
+              <li><code>.align-items-md-end</code></li>
+              <li><code>.align-items-md-center</code></li>
+              <li><code>.align-items-md-baseline</code></li>
+              <li><code>.align-items-md-stretch</code></li>
+              <li><code>.align-items-lg-start</code></li>
+              <li><code>.align-items-lg-end</code></li>
+              <li><code>.align-items-lg-center</code></li>
+              <li><code>.align-items-lg-baseline</code></li>
+              <li><code>.align-items-lg-stretch</code></li>
+              <li><code>.align-items-xl-start</code></li>
+              <li><code>.align-items-xl-end</code></li>
+              <li><code>.align-items-xl-center</code></li>
+              <li><code>.align-items-xl-baseline</code></li>
+              <li><code>.align-items-xl-stretch</code></li>
+              <li><code>.align-items-xxl-start</code></li>
+              <li><code>.align-items-xxl-end</code></li>
+              <li><code>.align-items-xxl-center</code></li>
+              <li><code>.align-items-xxl-baseline</code></li>
+              <li><code>.align-items-xxl-stretch</code></li>
+            </ul>
+          </div>
+
+          <div id="align-self" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Align self</h2>
+            <p>Use <code>align-self</code> utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if <code>flex-direction: column</code>). Choose from the same options as <code>align-items</code>: <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch</code> (browser default).</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-22" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-22" data-bs-toggle="pill" href="#pills-result-22" role="tab" aria-controls="pills-result-22" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-22" data-bs-toggle="pill" href="#pills-html-22" role="tab" aria-controls="pills-html-22" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-22">
+                <div class="tab-pane fade p-4 show active" id="pills-result-22" role="tabpanel" aria-labelledby="pills-result-tab-22">
+                  <div class="d-flex bd-highlight mb-3" style="height: 100px">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="align-self-start p-2 bd-highlight">Aligned flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  <div class="d-flex bd-highlight mb-3" style="height: 100px">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="align-self-end p-2 bd-highlight">Aligned flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  <div class="d-flex bd-highlight mb-3" style="height: 100px">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="align-self-center p-2 bd-highlight">Aligned flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  <div class="d-flex bd-highlight mb-3" style="height: 100px">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="align-self-baseline p-2 bd-highlight">Aligned flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  <div class="d-flex bd-highlight" style="height: 100px">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="align-self-stretch p-2 bd-highlight">Aligned flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-22" role="tabpanel" aria-labelledby="pills-html-tab-22">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="align-self-start"&gt;Aligned flex item&lt;/div&gt;
+                      &lt;div class="align-self-end"&gt;Aligned flex item&lt;/div&gt;
+                      &lt;div class="align-self-center"&gt;Aligned flex item&lt;/div&gt;
+                      &lt;div class="align-self-baseline"&gt;Aligned flex item&lt;/div&gt;
+                      &lt;div class="align-self-stretch"&gt;Aligned flex item&lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <p>Responsive variations also exist for <code>align-self</code>.</p>
+            <ul>
+              <li><code>.align-self-start</code></li>
+              <li><code>.align-self-end</code></li>
+              <li><code>.align-self-center</code></li>
+              <li><code>.align-self-baseline</code></li>
+              <li><code>.align-self-stretch</code></li>
+              <li><code>.align-self-sm-start</code></li>
+              <li><code>.align-self-sm-end</code></li>
+              <li><code>.align-self-sm-center</code></li>
+              <li><code>.align-self-sm-baseline</code></li>
+              <li><code>.align-self-sm-stretch</code></li>
+              <li><code>.align-self-md-start</code></li>
+              <li><code>.align-self-md-end</code></li>
+              <li><code>.align-self-md-center</code></li>
+              <li><code>.align-self-md-baseline</code></li>
+              <li><code>.align-self-md-stretch</code></li>
+              <li><code>.align-self-lg-start</code></li>
+              <li><code>.align-self-lg-end</code></li>
+              <li><code>.align-self-lg-center</code></li>
+              <li><code>.align-self-lg-baseline</code></li>
+              <li><code>.align-self-lg-stretch</code></li>
+              <li><code>.align-self-xl-start</code></li>
+              <li><code>.align-self-xl-end</code></li>
+              <li><code>.align-self-xl-center</code></li>
+              <li><code>.align-self-xl-baseline</code></li>
+              <li><code>.align-self-xl-stretch</code></li>
+              <li><code>.align-self-xxl-start</code></li>
+              <li><code>.align-self-xxl-end</code></li>
+              <li><code>.align-self-xxl-center</code></li>
+              <li><code>.align-self-xxl-baseline</code></li>
+              <li><code>.align-self-xxl-stretch</code></li>
+            </ul>
+          </div>
+          <div id="fill" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Fill</h2>
+            <p>Use the <code>.flex-fill</code> class on a series of sibling elements to force them into widths equal to their content (or equal widths if their content does not surpass their border-boxes) while taking up all available horizontal space.</p>
+            
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-23" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-23" data-bs-toggle="pill" href="#pills-result-23" role="tab" aria-controls="pills-result-23" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-23" data-bs-toggle="pill" href="#pills-html-23" role="tab" aria-controls="pills-html-23" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-23">
+                <div class="tab-pane fade p-4 show active" id="pills-result-23" role="tabpanel" aria-labelledby="pills-result-tab-23">
+                  <div class="d-flex bd-highlight">
+                    <div class="p-2 flex-fill bd-highlight">Flex item with a lot of content</div>
+                    <div class="p-2 flex-fill bd-highlight">Flex item</div>
+                    <div class="p-2 flex-fill bd-highlight">Flex item</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-23" role="tabpanel" aria-labelledby="pills-html-tab-23">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex bd-highlight"&gt;
+                      &lt;div class="p-2 flex-fill bd-highlight"&gt;Flex item with a lot of content&lt;/div&gt;
+                      &lt;div class="p-2 flex-fill bd-highlight"&gt;Flex item&l&lt;;/di&gt;
+                      &lt;div class="p-2 flex-fill bd-highlight"&gt;Fle&lt; ite&lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <p>Responsive variations also exist for <code>align-fill</code>.</p>
+            <ul>
+              <li><code>.flex-fill</code></li>
+              <li><code>.flex-sm-fill</code></li>
+              <li><code>.flex-md-fill</code></li>
+              <li><code>.flex-lg-fill</code></li>
+              <li><code>.flex-xl-fill</code></li>
+              <li><code>.flex-xxl-fill</code></li>
+            </ul>
+          </div>
+          <div id="grow-and-shrink" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Grow and shrink</h2>
+            <p>Use <code>.flex-grow-*</code> utilities to toggle a flex item’s ability to grow to fill available space. In the example below, the <code>.flex-grow-1</code> elements uses all available space it can, while allowing the remaining two flex items their necessary space.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-238" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-238" data-bs-toggle="pill" href="#pills-result-238" role="tab" aria-controls="pills-result-238" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-238" data-bs-toggle="pill" href="#pills-html-238" role="tab" aria-controls="pills-html-238" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-238">
+                <div class="tab-pane fade p-4 show active" id="pills-result-238" role="tabpanel" aria-labelledby="pills-result-tab-238">
+                  <div class="d-flex bd-highlight">
+                    <div class="p-2 flex-grow-1 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Third flex item</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-238" role="tabpanel" aria-labelledby="pills-html-tab-238">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex bd-highlight"&gt;
+                        &lt;div class="p-2 flex-grow-1 bd-highlight"&gt;Flex item&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Third flex item&lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <p>Responsive variations also exist for <code>flex-grow</code> and <code>flex-shrink</code>.</p>
+            <ul>
+              <li><code>.flex-{grow|shrink}-0</code></li>
+              <li><code>.flex-{grow|shrink}-1</code></li>
+              <li><code>.flex-sm-{grow|shrink}-0</code></li>
+              <li><code>.flex-sm-{grow|shrink}-1</code></li>
+              <li><code>.flex-md-{grow|shrink}-0</code></li>
+              <li><code>.flex-md-{grow|shrink}-1</code></li>
+              <li><code>.flex-lg-{grow|shrink}-0</code></li>
+              <li><code>.flex-lg-{grow|shrink}-1</code></li>
+              <li><code>.flex-xl-{grow|shrink}-0</code></li>
+              <li><code>.flex-xl-{grow|shrink}-1</code></li>
+              <li><code>.flex-xxl-{grow|shrink}-0</code></li>
+              <li><code>.flex-xxl-{grow|shrink}-1</code></li>
+              </ul>
+          </div>
+          <div id="auto-margins" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Auto margins</h2>
+            <p>Flexbox can do some pretty awesome things when you mix flex alignments with auto margins. Shown below are three examples of controlling flex items via auto margins: default (no auto margin), pushing two items to the right (<code>.mr-auto</code>), and pushing two items to the left (<code>.ml-auto</code>).</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-25" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-25" data-bs-toggle="pill" href="#pills-result-25" role="tab" aria-controls="pills-result-25" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-25" data-bs-toggle="pill" href="#pills-html-25" role="tab" aria-controls="pills-html-25" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-25">
+                <div class="tab-pane fade p-4 show active" id="pills-result-25" role="tabpanel" aria-labelledby="pills-result-tab-25">
+                  <div class="d-flex bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  
+                  <div class="d-flex bd-highlight mb-3">
+                    <div class="me-auto p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                  
+                  <div class="d-flex bd-highlight mb-3">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="ms-auto p-2 bd-highlight">Flex item</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-25" role="tabpanel" aria-labelledby="pills-html-tab-25">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex bd-highlight mb-3"&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+                      &lt;/div&gt;
+                      
+                      &lt;div class="d-flex bd-highlight mb-3"&gt;
+                        &lt;div class="me-auto p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+                      &lt;/div&gt;
+                      
+                      &lt;div class="d-flex bd-highlight mb-3"&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+                        &lt;div class="p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+                        &lt;div class="ms-auto p-2 bd-highlight"&gt;Flex item&lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+          <div id="order" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Order</h2>
+            <p>Change the <em>visual</em> order of specific flex items with a handful of <code>order</code> utilities. We only provide options for making an item first or last, as well as a reset to use the DOM order. As <code>order</code> takes any integer value from 0 to 5, add custom CSS for any additional values needed.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-26" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-26" data-bs-toggle="pill" href="#pills-result-26" role="tab" aria-controls="pills-result-26" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-26" data-bs-toggle="pill" href="#pills-html-26" role="tab" aria-controls="pills-html-26" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-26">
+                <div class="tab-pane fade p-4 show active" id="pills-result-26" role="tabpanel" aria-labelledby="pills-result-tab-26">
+                  <div class="d-flex flex-nowrap bd-highlight">
+                    <div class="order-3 p-2 bd-highlight">First flex item</div>
+                    <div class="order-2 p-2 bd-highlight">Second flex item</div>
+                    <div class="order-1 p-2 bd-highlight">Third flex item</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-26" role="tabpanel" aria-labelledby="pills-html-tab-26">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex flex-nowrap bd-highlight"&gt;
+                        &lt;div class="order-3 p-2 bd-highlight"&gt;First flex item&lt;/div&gt;
+                        &lt;div class="order-2 p-2 bd-highlight"&gt;Second flex item&lt;/div&gt;
+                        &lt;div class="order-1 p-2 bd-highlight"&gt;Third flex item&lt;/div&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <p>Responsive variations also exist for <code>order</code>.</p>
+            <ul>
+              <li><code>.order-0</code></li>
+              <li><code>.order-1</code></li>
+              <li><code>.order-2</code></li>
+              <li><code>.order-3</code></li>
+              <li><code>.order-4</code></li>
+              <li><code>.order-5</code></li>
+              <li><code>.order-sm-0</code></li>
+              <li><code>.order-sm-1</code></li>
+              <li><code>.order-sm-2</code></li>
+              <li><code>.order-sm-3</code></li>
+              <li><code>.order-sm-4</code></li>
+              <li><code>.order-sm-5</code></li>
+              <li><code>.order-md-0</code></li>
+              <li><code>.order-md-1</code></li>
+              <li><code>.order-md-2</code></li>
+              <li><code>.order-md-3</code></li>
+              <li><code>.order-md-4</code></li>
+              <li><code>.order-md-5</code></li>
+              <li><code>.order-lg-0</code></li>
+              <li><code>.order-lg-1</code></li>
+              <li><code>.order-lg-2</code></li>
+              <li><code>.order-lg-3</code></li>
+              <li><code>.order-lg-4</code></li>
+              <li><code>.order-lg-5</code></li>
+              <li><code>.order-xl-0</code></li>
+              <li><code>.order-xl-1</code></li>
+              <li><code>.order-xl-2</code></li>
+              <li><code>.order-xl-3</code></li>
+              <li><code>.order-xl-4</code></li>
+              <li><code>.order-xl-5</code></li>
+              <li><code>.order-xxl-0</code></li>
+              <li><code>.order-xxl-1</code></li>
+              <li><code>.order-xxl-2</code></li>
+              <li><code>.order-xxl-3</code></li>
+              <li><code>.order-xxl-4</code></li>
+              <li><code>.order-xxl-5</code></li>
+              </ul>
+              <p>Additionally there are also responsive <code>.order-first</code> and <code>.order-last</code> classes that change the <code>order</code> of an element by applying <code>order: -1</code> and <code>order: 6</code>, respectively.</p>
+              <ul>
+                <li><code>.order-first</code></li>
+                <li><code>.order-last</code></li>
+                <li><code>.order-sm-first</code></li>
+                <li><code>.order-sm-last</code></li>
+                <li><code>.order-md-first</code></li>
+                <li><code>.order-md-last</code></li>
+                <li><code>.order-lg-first</code></li>
+                <li><code>.order-lg-last</code></li>
+                <li><code>.order-xl-first</code></li>
+                <li><code>.order-xl-last</code></li>
+                <li><code>.order-xxl-first</code></li>
+                <li><code>.order-xxl-last</code></li>
+                </ul>
+          </div>
+          <div id="align-content" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Align content</h2>
+            <p>Use <code>align-content</code> utilities on flexbox containers to align flex items <em>together</em> on the cross axis. Choose from <code>start</code> (browser default), <code>end</code>, <code>center</code>, <code>between</code>, <code>around</code>, or <code>stretch</code>. To demonstrate these utilities, we’ve enforced <code>flex-wrap: wrap</code> and increased the number of flex items.</p>
+            <p><strong>Heads up!</strong> This property has no effect on single rows of flex items.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-27" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-27" data-bs-toggle="pill" href="#pills-result-27" role="tab" aria-controls="pills-result-27" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-27" data-bs-toggle="pill" href="#pills-html-27" role="tab" aria-controls="pills-html-27" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-27">
+                <div class="tab-pane fade p-4 show active" id="pills-result-27" role="tabpanel" aria-labelledby="pills-result-tab-27">
+                  <div class="d-flex align-content-start flex-wrap bd-highlight mb-3" style="height: 200px">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-27" role="tabpanel" aria-labelledby="pills-html-tab-27">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex align-content-start flex-wrap"&gt;
+                        ...
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-28" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-28" data-bs-toggle="pill" href="#pills-result-28" role="tab" aria-controls="pills-result-28" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-28" data-bs-toggle="pill" href="#pills-html-28" role="tab" aria-controls="pills-html-28" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-28">
+                <div class="tab-pane fade p-4 show active" id="pills-result-28" role="tabpanel" aria-labelledby="pills-result-tab-28">
+                  <div class="d-flex align-content-end flex-wrap bd-highlight mb-3" style="height: 200px">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-28" role="tabpanel" aria-labelledby="pills-html-tab-28">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex align-content-end flex-wrap"&gt;
+                        ...
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-29" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-29" data-bs-toggle="pill" href="#pills-result-29" role="tab" aria-controls="pills-result-29" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-29" data-bs-toggle="pill" href="#pills-html-29" role="tab" aria-controls="pills-html-29" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-29">
+                <div class="tab-pane fade p-4 show active" id="pills-result-29" role="tabpanel" aria-labelledby="pills-result-tab-29">
+                  <div class="d-flex align-content-center flex-wrap bd-highlight mb-3" style="height: 200px">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-29" role="tabpanel" aria-labelledby="pills-html-tab-29">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex align-content-center flex-wrap"&gt;
+                        ...
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-30" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-30" data-bs-toggle="pill" href="#pills-result-30" role="tab" aria-controls="pills-result-30" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-30" data-bs-toggle="pill" href="#pills-html-30" role="tab" aria-controls="pills-html-30" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-30">
+                <div class="tab-pane fade p-4 show active" id="pills-result-30" role="tabpanel" aria-labelledby="pills-result-tab-30">
+                  <div class="d-flex align-content-between flex-wrap bd-highlight mb-3" style="height: 200px">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-30" role="tabpanel" aria-labelledby="pills-html-tab-30">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex align-content-between flex-wrap"&gt;
+                        ...
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-31" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-31" data-bs-toggle="pill" href="#pills-result-31" role="tab" aria-controls="pills-result-31" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-31" data-bs-toggle="pill" href="#pills-html-31" role="tab" aria-controls="pills-html-31" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-31">
+                <div class="tab-pane fade p-4 show active" id="pills-result-31" role="tabpanel" aria-labelledby="pills-result-tab-31">
+                  <div class="d-flex align-content-around flex-wrap bd-highlight mb-3" style="height: 200px">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-31" role="tabpanel" aria-labelledby="pills-html-tab-31">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex align-content-around flex-wrap"&gt;
+                        ...
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-32" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-32" data-bs-toggle="pill" href="#pills-result-32" role="tab" aria-controls="pills-result-32" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-32" data-bs-toggle="pill" href="#pills-html-32" role="tab" aria-controls="pills-html-32" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-32">
+                <div class="tab-pane fade p-4 show active" id="pills-result-32" role="tabpanel" aria-labelledby="pills-result-tab-32">
+                  <div class="d-flex align-content-stretch flex-wrap bd-highlight mb-3" style="height: 200px">
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                    <div class="p-2 bd-highlight">Flex item</div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-html-32" role="tabpanel" aria-labelledby="pills-html-tab-32">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="d-flex align-content-stretch flex-wrap"&gt;
+                        ...
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <p>Responsive variations also exist for <code>align-content</code>.</p>
+            <ul>
+              <li><code>.align-content-start</code></li>
+              <li><code>.align-content-end</code></li>
+              <li><code>.align-content-center</code></li>
+              <li><code>.align-content-around</code></li>
+              <li><code>.align-content-stretch</code></li>
+              <li><code>.align-content-sm-start</code></li>
+              <li><code>.align-content-sm-end</code></li>
+              <li><code>.align-content-sm-center</code></li>
+              <li><code>.align-content-sm-around</code></li>
+              <li><code>.align-content-sm-stretch</code></li>
+              <li><code>.align-content-md-start</code></li>
+              <li><code>.align-content-md-end</code></li>
+              <li><code>.align-content-md-center</code></li>
+              <li><code>.align-content-md-around</code></li>
+              <li><code>.align-content-md-stretch</code></li>
+              <li><code>.align-content-lg-start</code></li>
+              <li><code>.align-content-lg-end</code></li>
+              <li><code>.align-content-lg-center</code></li>
+              <li><code>.align-content-lg-around</code></li>
+              <li><code>.align-content-lg-stretch</code></li>
+              <li><code>.align-content-xl-start</code></li>
+              <li><code>.align-content-xl-end</code></li>
+              <li><code>.align-content-xl-center</code></li>
+              <li><code>.align-content-xl-around</code></li>
+              <li><code>.align-content-xl-stretch</code></li>
+              <li><code>.align-content-xxl-start</code></li>
+              <li><code>.align-content-xxl-end</code></li>
+              <li><code>.align-content-xxl-center</code></li>
+              <li><code>.align-content-xxl-around</code></li>
+              <li><code>.align-content-xxl-stretch</code></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JS Global Compulsory -->
+<script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Muze Javascript Plugins -->
+<script src="assets/vendor/prism/prism.js"></script>
+<script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+<script>
+  // Tooltip Script
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+
+  //Muze Sidebar Toggle JavaScript
+  var elem = document.body;
+  function toggleClass(){
+    elem.classList.toggle("sidebar-show");  // Toggle hide class
+  }
+</script>
+</body>
+</html>

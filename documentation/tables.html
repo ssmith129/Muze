@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title -->
+  <title>Tables - Muze Documentation | Muze - Responsive Website Template</title>
+
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+  <link href="../assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
+
+  <!-- CSS Muze Template -->
+  <link rel="stylesheet" href="../assets/css/theme.min.css">
+
+  <!-- CSS Muze Doc -->
+  <link rel="stylesheet" href="assets/css/docs.css">
+</head>
+<body>
+  <!-- Muze Documentation -->
+<div class="muze-documentation">
+	<header class="doc-header bg-white px-3 px-md-4 shadow-sm position-fixed">
+    <nav class="navbar navbar-expand-lg has-header-inner py-0">
+      <a class="navbar-brand" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="21" viewBox="0 0 102 21">
+          <g data-name="Group 5" transform="translate(0 -14)">
+            <path d="M38.591,21a12.83,12.83,0,0,1-4-.588,8.284,8.284,0,0,1-3.046-1.736,7.742,7.742,0,0,1-1.93-2.8,9.914,9.914,0,0,1-.677-3.772V0h5.281V12.393a4.5,4.5,0,0,0,1.117,3.127,4.177,4.177,0,0,0,3.25,1.234,4.176,4.176,0,0,0,3.249-1.234,4.5,4.5,0,0,0,1.118-3.127V0h5.28V12.107a9.317,9.317,0,0,1-.677,3.586,8.03,8.03,0,0,1-1.93,2.812,8.9,8.9,0,0,1-3.047,1.836A11.55,11.55,0,0,1,38.591,21ZM5.218,20.518H0V0H5.218l6.913,10.03h.339L19.383,0H24.6V20.516H19.383V11.434l.338-3.439h-.338L13.86,16.161H10.742L5.218,7.995H4.88l.338,3.439v9.084Zm83.782,0H73.081V0H89V4.241H78.342v3.9h9.579V12.38H78.342v3.9H89v4.24Zm-19.536,0H51.133v-4.47L63.149,4.241H51.676V0H69.328V4.47L57.515,16.277H69.464v4.24Z" transform="translate(0 14)" fill="#1e1e1e"></path>
+            <circle cx="4.5" cy="4.5" r="4.5" transform="translate(93 25)" fill="#ffc107"></circle>
+          </g>
+        </svg>
+      </a>
+      <div class="text-end d-block d-xl-none order-md-2 ms-auto">
+        <a href="javascript:void(0);" class="aside-toggle" onclick="toggleClass()">
+          <img src="../assets/svg/icons/hamburger@20.svg" class="menu-icon" alt="Menu">        
+          <img src="../assets/svg/icons/close@20.svg" class="menu-close" alt="Menu Close">
+        </a>
+      </div>
+      <ul class="nav nav-classic nav-sm border-0 nav-docs-space ms-auto">
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3 active" href="index.html">
+            <span class="d-none d-sm-block">Documentation</span>
+            <span class="d-sm-none">Docs</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center px-2 px-sm-3" target="_blank" href="../html/analytics.html">Templates</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container-fluid main-docs">
+    <div class="row justify-content-lg-end">
+      <nav class="col-lg-3 col-xl-2 muzesidebar navbar-expand-lg ms-2 px-0 muze-sidebar">
+        <div class="collapse navbar-collapse show" id="sidebar-nav">
+          <div id="sidebarNav" class="muzesidebar-scrollbar muzesidebar-sticky ps-2 ps-md-0 pe-2 accordion" data-simplebar>
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#getting-started-collapse" role="button" aria-expanded="false">Getting started</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="getting-started-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="index.html">Introduction</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="gulp.html">Gulp</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="contents.html">Contents</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="browsers-devices.html">Browsers &amp; devices</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="javascript.html">JavaScript</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="build-tools.html">Build tools</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="webpack.html">Webpack</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accessibility.html">Accessibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rfs.html">RFS</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="rtl.html">RTL</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#customize-collapse" role="button" aria-expanded="false">Customize</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="customize-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sass.html">Sass</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="options.html">Options</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colors.html">Color</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="customize-components.html">Components</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="css-variables.html">CSS variables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="optimize.html">Optimize</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dark-mode.html">Dark mode</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="container.html">Container</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="headers.html">Headers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sidebar.html">Sidebar</a></li>
+            </ul>
+
+            <a class="muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#content-collapse" role="button" aria-expanded="true">Content</a>
+            <ul class="muzesidebar-nav collapse show mb-0" id="content-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="typography.html">Typography</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="images.html">Images</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link active" href="tables.html">Tables</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="figures.html">Figures</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#forms-collapse" role="button" aria-expanded="false">Forms</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="forms-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-control.html">Form control</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="select.html">Select</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="checks.html">Checks</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="range.html">Range</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="input-group.html">Input group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="floating-labels.html">Floating labels</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="form-layout.html">Layout</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="validation.html">Validation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#components-collapse" role="button" aria-expanded="false">Components</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="components-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="accordion.html">Accordion</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="alerts.html">Alerts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="avatars.html">Avatars</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="badge.html">Badge</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="breadcrumb.html">Breadcrumb</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="buttons.html">Buttons</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="button-group.html">Button Group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="links.html">Links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="cards.html">Cards</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="carousel.html">Carousel</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="close-button.html">Close Button</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="collapse.html">Collapse</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="dropdowns.html">Dropdowns</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="list-group.html">List group</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="modal.html">Modal</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navbar.html">Navbar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="navs.html">Navs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="pagination.html">Pagination</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="popovers.html">Popovers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="progress.html">Progress</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="scrollspy.html">Scrollspy</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spinners.html">Spinners</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabs.html">Tabs</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="toasts.html">Toasts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="tooltips.html">Tooltips</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#helpers-collapse" role="button" aria-expanded="false">Helpers</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="helpers-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="clearfix.html">Clearfix</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="colored-links.html">Colored links</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="embed.html">Embed</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="screen-readers.html">Screen readers</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="stretched-link.html">Stretched link</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="text-truncation.html">Text truncation</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#utilities-collapse" role="button" aria-expanded="false">Utilities</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="utilities-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="animations.html">Animations</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="borders.html">Borders</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="display.html">Display</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="flex.html">Flex</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="float.html">Float</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="overflow.html">Overflow</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="utilitie-position.html">Position</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="shadows.html">Shadows</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="sizing.html">Sizing</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="spacings.html">Spacings</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="ui.html">UI</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="vertical-align.html">Vertical align</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="visibility.html">Visibility</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="others.html">Others</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#extend-collapse" role="button" aria-expanded="false">Extend</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="extend-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="approach.html">Approach</a></li>
+              <li class="muzesidebar-item">
+                <span class="muzesidebar-link">Icons:</span>
+                <ul class="muzesidebar-nav ms-2">
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="bootstrap-icons.html">Bootstrap Icons</a></li>
+                  <li class="muzesidebar-item"><a class="muzesidebar-link" href="tabler-icons.html">Tabler Icons</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#plugins-collapse" role="button" aria-expanded="false">Plugins</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="plugins-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="charts.html">Charts</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link " href="fullcalendar.html">Fullcalendar</a></li>
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="quill.html">Quill</a></li>
+            </ul>
+
+            <a class="collapsed muzesidebar-heading mb-0" data-bs-toggle="collapse" href="#more-collapse" role="button" aria-expanded="false">More</a>
+            <ul class="muzesidebar-nav collapse mb-0" id="more-collapse" data-bs-parent="#sidebarNav">
+              <li class="muzesidebar-item"><a class="muzesidebar-link" href="credits.html">Credits</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="col-xl-10 muze-docs-content"> 
+        <div class="p-0 p-md-4">
+          <div class="muzedocs-content-divider">
+            <h1>Tables</h1>
+            <p class="lead">Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.</p>
+            <a href="https://v5.getbootstrap.com/docs/5.0/content/tables/" target="_blank">Bootstrap Tables documentation</a>
+          </div>
+
+          <div id="examples" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Overview</h2>
+            <p>Due to the widespread use of <code>&lt;table&gt;</code> elements across third-party widgets like calendars and date pickers, Bootstrap’s tables are <strong>opt-in</strong>. Add the base class <code>.table</code> to any <code>&lt;table&gt;</code>, then extend with our optional modifier classes or custom styles. All table styles are not inherited in Bootstrap, meaning any nested tables can be styled independent from the parent.</p>
+            <p>Using the most basic table markup, here’s how <code>.table</code>-based tables look in Bootstrap.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-1" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-1" data-bs-toggle="pill" href="#pills-result-1" role="tab" aria-controls="pills-result-1" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-1" data-bs-toggle="pill" href="#pills-html-1" role="tab" aria-controls="pills-html-1" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-1">
+                <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;table class="table"&gt;
+                        &lt;thead&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="col">#&lt;/th&gt;
+                            &lt;th scope="col">First&lt;/th&gt;
+                            &lt;th scope="col">Last&lt;/th&gt;
+                            &lt;th scope="col">Handle&lt;/th&gt;
+                          &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">1&lt;/th&gt;
+                            &lt;td>Mark&lt;/td&gt;
+                            &lt;td>Otto&lt;/td&gt;
+                            &lt;td>@mdo&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">2&lt;/th&gt;
+                            &lt;td>Jacob&lt;/td&gt;
+                            &lt;td>Thornton&lt;/td&gt;
+                            &lt;td>@fat&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">3&lt;/th&gt;
+                            &lt;td>Larry&lt;/td&gt;
+                            &lt;td>the Bird&lt;/td&gt;
+                            &lt;td>@twitter&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                      &lt;/table&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <h2 class="muzedocs-heading">Variants</h2>
+            <p>Use contextual classes to color tables, table rows or individual cells.</p>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-2" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-2" data-bs-toggle="pill" href="#pills-result-2" role="tab" aria-controls="pills-result-2" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-2" data-bs-toggle="pill" href="#pills-html-2" role="tab" aria-controls="pills-html-2" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-2">
+                <div class="tab-pane fade p-4 show active" id="pills-result-2" role="tabpanel" aria-labelledby="pills-result-tab-2">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Class</th>
+                        <th scope="col">Heading</th>
+                        <th scope="col">Heading</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Default</th>
+                        <td>Cell</td>
+                        <td>Cell</td>
+                      </tr>
+                      
+                        <tr class="table-primary">
+                          <th scope="row">Primary</th>
+                          <td>Cell</td>
+                          <td>Cell</td>
+                        </tr>
+                        <tr class="table-secondary">
+                          <th scope="row">Secondary</th>
+                          <td>Cell</td>
+                          <td>Cell</td>
+                        </tr>
+                        <tr class="table-success">
+                          <th scope="row">Success</th>
+                          <td>Cell</td>
+                          <td>Cell</td>
+                        </tr>
+                        <tr class="table-danger">
+                          <th scope="row">Danger</th>
+                          <td>Cell</td>
+                          <td>Cell</td>
+                        </tr>
+                        <tr class="table-warning">
+                          <th scope="row">Warning</th>
+                          <td>Cell</td>
+                          <td>Cell</td>
+                        </tr>
+                        <tr class="table-info">
+                          <th scope="row">Info</th>
+                          <td>Cell</td>
+                          <td>Cell</td>
+                        </tr>
+                        <tr class="table-light">
+                          <th scope="row">Light</th>
+                          <td>Cell</td>
+                          <td>Cell</td>
+                        </tr>
+                        <tr class="table-dark">
+                          <th scope="row">Dark</th>
+                          <td>Cell</td>
+                          <td>Cell</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-2" role="tabpanel" aria-labelledby="pills-html-tab-2">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;!-- On tables --&gt;
+                      &lt;table class="table-primary"&gt;...&lt;/table&gt;
+                      &lt;table class="table-secondary"&gt;...&lt;/table&gt;
+                      &lt;table class="table-success"&gt;...&lt;/table&gt;
+                      &lt;table class="table-danger"&gt;...&lt;/table&gt;
+                      &lt;table class="table-warning"&gt;...&lt;/table&gt;
+                      &lt;table class="table-info"&gt;...&lt;/table&gt;
+                      &lt;table class="table-light"&gt;...&lt;/table&gt;
+                      &lt;table class="table-dark"&gt;...&lt;/table&gt;
+                      
+                      &lt;!-- On rows --&gt;
+                      &lt;tr class="table-primary"&gt;...&lt;/tr&gt;
+                      &lt;tr class="table-secondary"&gt;...&lt;/tr&gt;
+                      &lt;tr class="table-success"&gt;...&lt;/tr&gt;
+                      &lt;tr class="table-danger"&gt;...&lt;/tr&gt;
+                      &lt;tr class="table-warning"&gt;...&lt;/tr&gt;
+                      &lt;tr class="table-info"&gt;...&lt;/tr&gt;
+                      &lt;tr class="table-light"&gt;...&lt;/tr&gt;
+                      &lt;tr class="table-dark"&gt;...&lt;/tr&gt;
+                      
+                      &lt;!-- On cells (`td` or `th`) --&gt;
+                      &lt;tr&gt;
+                        &lt;td class="table-primary"&gt;...&lt;/td&gt;
+                        &lt;td class="table-secondary"&gt;...&lt;/td&gt;
+                        &lt;td class="table-success"&gt;...&lt;/td&gt;
+                        &lt;td class="table-danger"&gt;...&lt;/td&gt;
+                        &lt;td class="table-warning"&gt;...&lt;/td&gt;
+                        &lt;td class="table-info"&gt;...&lt;/td&gt;
+                        &lt;td class="table-light"&gt;...&lt;/td&gt;
+                        &lt;td class="table-dark"&gt;...&lt;/td&gt;
+                      &lt;/tr&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <div class="bd-callout bd-callout-info">
+              <h5 id="conveying-meaning-to-assistive-technologies">Conveying meaning to assistive technologies</h5>
+              <p>Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies – such as screen readers. Ensure that information denoted by the color is either obvious from the content itself (e.g. the visible text), or is included through alternative means, such as additional text hidden with the <code>.visually-hidden</code> class.
+              </p>
+            </div>
+
+            <h2 class="muzedocs-heading">Striped rows</h2>
+            <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-11" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-11" data-bs-toggle="pill" href="#pills-result-11" role="tab" aria-controls="pills-result-11" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-11" data-bs-toggle="pill" href="#pills-html-11" role="tab" aria-controls="pills-html-11" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-11">
+                <div class="tab-pane fade p-4 show active" id="pills-result-11" role="tabpanel" aria-labelledby="pills-result-tab-11">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-11" role="tabpanel" aria-labelledby="pills-html-tab-11">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;table class="table table-striped"&gt;
+                        &lt;thead&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="col">#&lt;/th&gt;
+                            &lt;th scope="col">First&lt;/th&gt;
+                            &lt;th scope="col">Last&lt;/th&gt;
+                            &lt;th scope="col">Handle&lt;/th&gt;
+                          &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">1&lt;/th&gt;
+                            &lt;td>Mark&lt;/td&gt;
+                            &lt;td>Otto&lt;/td&gt;
+                            &lt;td>@mdo&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">2&lt;/th&gt;
+                            &lt;td>Jacob&lt;/td&gt;
+                            &lt;td>Thornton&lt;/td&gt;
+                            &lt;td>@fat&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">3&lt;/th&gt;
+                            &lt;td>Larry&lt;/td&gt;
+                            &lt;td>the Bird&lt;/td&gt;
+                            &lt;td>@twitter&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                      &lt;/table&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <p>These classes can also be added to table variants:</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-12" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-12" data-bs-toggle="pill" href="#pills-result-12" role="tab" aria-controls="pills-result-12" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-12" data-bs-toggle="pill" href="#pills-html-12" role="tab" aria-controls="pills-html-12" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-12">
+                <div class="tab-pane fade p-4 show active" id="pills-result-12" role="tabpanel" aria-labelledby="pills-result-tab-12">
+                  <table class="table table-success table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-12" role="tabpanel" aria-labelledby="pills-html-tab-12">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;table class="table table-success table-striped"&gt;
+                        &lt;thead&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="col">#&lt;/th&gt;
+                            &lt;th scope="col">First&lt;/th&gt;
+                            &lt;th scope="col">Last&lt;/th&gt;
+                            &lt;th scope="col">Handle&lt;/th&gt;
+                          &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">1&lt;/th&gt;
+                            &lt;td>Mark&lt;/td&gt;
+                            &lt;td>Otto&lt;/td&gt;
+                            &lt;td>@mdo&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">2&lt;/th&gt;
+                            &lt;td>Jacob&lt;/td&gt;
+                            &lt;td>Thornton&lt;/td&gt;
+                            &lt;td>@fat&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">3&lt;/th&gt;
+                            &lt;td>Larry&lt;/td&gt;
+                            &lt;td>the Bird&lt;/td&gt;
+                            &lt;td>@twitter&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                      &lt;/table&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <h2 class="muzedocs-heading">Hoverable rows</h2>
+            <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-13" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-13" data-bs-toggle="pill" href="#pills-result-13" role="tab" aria-controls="pills-result-13" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-13" data-bs-toggle="pill" href="#pills-html-13" role="tab" aria-controls="pills-html-13" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-13">
+                <div class="tab-pane fade p-4 show active" id="pills-result-13" role="tabpanel" aria-labelledby="pills-result-tab-13">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-13" role="tabpanel" aria-labelledby="pills-html-tab-13">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;table class="table table-hover"&gt;
+                        &lt;thead&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="col">#&lt;/th&gt;
+                            &lt;th scope="col">First&lt;/th&gt;
+                            &lt;th scope="col">Last&lt;/th&gt;
+                            &lt;th scope="col">Handle&lt;/th&gt;
+                          &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">1&lt;/th&gt;
+                            &lt;td>Mark&lt;/td&gt;
+                            &lt;td>Otto&lt;/td&gt;
+                            &lt;td>@mdo&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">2&lt;/th&gt;
+                            &lt;td>Jacob&lt;/td&gt;
+                            &lt;td>Thornton&lt;/td&gt;
+                            &lt;td>@fat&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">3&lt;/th&gt;
+                            &lt;td>Larry&lt;/td&gt;
+                            &lt;td>the Bird&lt;/td&gt;
+                            &lt;td>@twitter&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                      &lt;/table&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-14" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-14" data-bs-toggle="pill" href="#pills-result-14" role="tab" aria-controls="pills-result-14" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-14" data-bs-toggle="pill" href="#pills-html-14" role="tab" aria-controls="pills-html-14" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-14">
+                <div class="tab-pane fade p-4 show active" id="pills-result-14" role="tabpanel" aria-labelledby="pills-result-tab-14">
+                  <table class="table table-dark table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-14" role="tabpanel" aria-labelledby="pills-html-tab-14">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;table class="table table-dark table-hover"&gt;
+                        &lt;thead&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="col">#&lt;/th&gt;
+                            &lt;th scope="col">First&lt;/th&gt;
+                            &lt;th scope="col">Last&lt;/th&gt;
+                            &lt;th scope="col">Handle&lt;/th&gt;
+                          &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">1&lt;/th&gt;
+                            &lt;td>Mark&lt;/td&gt;
+                            &lt;td>Otto&lt;/td&gt;
+                            &lt;td>@mdo&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">2&lt;/th&gt;
+                            &lt;td>Jacob&lt;/td&gt;
+                            &lt;td>Thornton&lt;/td&gt;
+                            &lt;td>@fat&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">3&lt;/th&gt;
+                            &lt;td>Larry&lt;/td&gt;
+                            &lt;td>the Bird&lt;/td&gt;
+                            &lt;td>@twitter&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                      &lt;/table&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <p>These hoverable rows can also be combined with the striped variant:</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-145" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-145" data-bs-toggle="pill" href="#pills-result-145" role="tab" aria-controls="pills-result-145" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-145" data-bs-toggle="pill" href="#pills-html-145" role="tab" aria-controls="pills-html-14" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-145">
+                <div class="tab-pane fade p-4 show active" id="pills-result-145" role="tabpanel" aria-labelledby="pills-result-tab-145">
+                  <table class="table table-striped table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-145" role="tabpanel" aria-labelledby="pills-html-tab-145">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;table class="table table-striped table-hover"&gt;
+                        &lt;thead&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="col">#&lt;/th&gt;
+                            &lt;th scope="col">First&lt;/th&gt;
+                            &lt;th scope="col">Last&lt;/th&gt;
+                            &lt;th scope="col">Handle&lt;/th&gt;
+                          &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">1&lt;/th&gt;
+                            &lt;td>Mark&lt;/td&gt;
+                            &lt;td>Otto&lt;/td&gt;
+                            &lt;td>@mdo&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">2&lt;/th&gt;
+                            &lt;td>Jacob&lt;/td&gt;
+                            &lt;td>Thornton&lt;/td&gt;
+                            &lt;td>@fat&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">3&lt;/th&gt;
+                            &lt;td>Larry&lt;/td&gt;
+                            &lt;td>the Bird&lt;/td&gt;
+                            &lt;td>@twitter&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                      &lt;/table&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+
+            <h2 class="muzedocs-heading">Active tables</h2>
+            <p>Highlight a table row or cell by adding a <code>.table-active</code> class.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-7" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-7" data-bs-toggle="pill" href="#pills-result-7" role="tab" aria-controls="pills-result-7" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-7" data-bs-toggle="pill" href="#pills-html-7" role="tab" aria-controls="pills-html-7" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-7">
+                <div class="tab-pane fade p-4 show active" id="pills-result-7" role="tabpanel" aria-labelledby="pills-result-tab-7">
+                  <table class="table table-thead-bordered">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table-active">
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-7" role="tabpanel">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;table class="table table-thead-bordered"&gt;
+                        &lt;thead class="thead-light"&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="col">#&lt;/th&gt;
+                            &lt;th scope="col">First&lt;/th&gt;
+                            &lt;th scope="col">Last&lt;/th&gt;
+                            &lt;th scope="col">Handle&lt;/th&gt;
+                          &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          &lt;tr class="table-active"&gt;
+                            &lt;th scope="row">1&lt;/th&gt;
+                            &lt;td>Mark&lt;/td&gt;
+                            &lt;td>Otto&lt;/td&gt;
+                            &lt;td>@mdo&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">2&lt;/th&gt;
+                            &lt;td>Jacob&lt;/td&gt;
+                            &lt;td>Thornton&lt;/td&gt;
+                            &lt;td>@fat&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row">3&lt;/th&gt;
+                            &lt;td>Larry&lt;/td&gt;
+                            &lt;td>the Bird&lt;/td&gt;
+                            &lt;td>@twitter&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                      &lt;/table&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">How do the variants and accented tables work?</h2>
+            <p>For the accented tables (<a href="#striped-rows">striped rows</a>, <a href="#hoverable-rows">hoverable rows</a>, and <a href="#active-tables">active tables</a>), we used some techniques to make these effects work for all our <a href="#variants">table variants</a>:</p>
+            <ul>
+              <li>We start by setting the background of a table cell with the <code>--bs-table-bg</code> custom property. All table variants then set that custom property to colorize the table cells. This way, we don’t get into trouble if semi-transparent colors are used as table backgrounds.</li>
+              <li>Then we add an inset box shadow on the table cells with <code>box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);</code> to layer on top of any specified <code>background-color</code>. Because we use a huge spread and no blur, the color will be monotone. Since <code>--bs-table-accent-bg</code> is unset by default, we don’t have a default box shadow.</li>
+              <li>When either <code>.table-striped</code>, <code>.table-hover</code> or <code>.table-active</code> classes are added, the <code>--bs-table-accent-bg</code> is set to a semitransparent color to colorize the background.</li>
+              <li>For each table variant, we generate a <code>--bs-table-accent-bg</code> color with the highest contrast depending on that color. For example, the accent color for <code>.table-primary</code> is darker while <code>.table-dark</code> has a lighter accent color.</li>
+              <li>Text and border colors are generated the same way, and their colors are inherited by default.</li>
+            </ul>
+            <p>Behind the scenes it looks like this:</p>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                @mixin table-variant($state, $background) {
+                  .table-#{$state} {
+                    $color: color-contrast(opaque($body-bg, $background));
+                    $hover-bg: mix($color, $background, percentage($table-hover-bg-factor));
+                    $striped-bg: mix($color, $background, percentage($table-striped-bg-factor));
+                    $active-bg: mix($color, $background, percentage($table-active-bg-factor));
+                
+                    --#{$variable-prefix}table-bg: #{$background};
+                    --#{$variable-prefix}table-striped-bg: #{$striped-bg};
+                    --#{$variable-prefix}table-striped-color: #{color-contrast($striped-bg)};
+                    --#{$variable-prefix}table-active-bg: #{$active-bg};
+                    --#{$variable-prefix}table-active-color: #{color-contrast($active-bg)};
+                    --#{$variable-prefix}table-hover-bg: #{$hover-bg};
+                    --#{$variable-prefix}table-hover-color: #{color-contrast($hover-bg)};
+                
+                    color: $color;
+                    border-color: mix($color, $background, percentage($table-border-factor));
+                  }
+                }                
+              </code>
+            </pre>
+          </div>
+
+          <div class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Table borders</h2>
+            <h5>Bordered tables</h5>
+            <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-291" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-291" data-bs-toggle="pill" href="#pills-result-291" role="tab" aria-controls="pills-result-291" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-291" data-bs-toggle="pill" href="#pills-html-291" role="tab" aria-controls="pills-html-291" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-291">
+                <div class="tab-pane fade p-4 show active" id="pills-result-291" role="tabpanel" aria-labelledby="pills-result-tab-291">
+                  <div class="bd-example">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-291" role="tabpanel" aria-labelledby="pills-html-tab-291">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="table-responsive"&gt;
+                        &lt;table class="table table-bordered"&gt;
+                          ...
+                        &lt;/table&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <p><a href="https://getbootstrap.com/docs/5.0/utilities/borders/#border-color">Border color utilities</a> can be added to change colors:</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-292" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-292" data-bs-toggle="pill" href="#pills-result-292" role="tab" aria-controls="pills-result-292" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-292" data-bs-toggle="pill" href="#pills-html-292" role="tab" aria-controls="pills-html-292" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-292">
+                <div class="tab-pane fade p-4 show active" id="pills-result-292" role="tabpanel" aria-labelledby="pills-result-tab-292">
+                  <div class="bd-example">
+                    <table class="table table-bordered border-primary">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-292" role="tabpanel" aria-labelledby="pills-html-tab-292">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="table-responsive"&gt;
+                        &lt;table class="table table-bordered border-primary"&gt;
+                          ...
+                        &lt;/table&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <h5>Tables without borders</h5>
+            <p>Add <code>.table-borderless</code> for a table without borders.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-293" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-293" data-bs-toggle="pill" href="#pills-result-293" role="tab" aria-controls="pills-result-293" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-293" data-bs-toggle="pill" href="#pills-html-293" role="tab" aria-controls="pills-html-293" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-293">
+                <div class="tab-pane fade p-4 show active" id="pills-result-293" role="tabpanel" aria-labelledby="pills-result-tab-293">
+                  <div class="bd-example">
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-293" role="tabpanel" aria-labelledby="pills-html-tab-293">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="table-responsive"&gt;
+                        &lt;table class="table table-borderless"&gt;
+                          ...
+                        &lt;/table&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <h5>Small tables</h5>
+            <p>Add <code>.table-sm</code> to make any <code>.table</code> more compact by cutting all cell <code>padding</code> in half.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-294" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-294" data-bs-toggle="pill" href="#pills-result-294" role="tab" aria-controls="pills-result-294" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-294" data-bs-toggle="pill" href="#pills-html-294" role="tab" aria-controls="pills-html-294" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-294">
+                <div class="tab-pane fade p-4 show active" id="pills-result-294" role="tabpanel" aria-labelledby="pills-result-tab-294">
+                  <div class="bd-example">
+                    <table class="table table-sm">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-294" role="tabpanel" aria-labelledby="pills-html-tab-294">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="table-responsive"&gt;
+                        &lt;table class="table table-sm"&gt;
+                          ...
+                        &lt;/table&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Vertical alignment</h2>
+            <p>Table cells of <code>&lt;thead&gt;</code> are always vertical aligned to the bottom. Table cells in <code>&lt;tbody&gt;</code> inherit their alignment from <code>&lt;table&gt;</code> and are aligned to the the top by default. Use the <a href="https://getbootstrap.com/docs/5.0/utilities/vertical-align/">vertical align</a> classes to re-align where needed.</p>
+            <div class="bd-example">
+              <div class="table-responsive">
+                <table class="table align-middle">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="w-25">Heading 1</th>
+                      <th scope="col" class="w-25">Heading 2</th>
+                      <th scope="col" class="w-25">Heading 3</th>
+                      <th scope="col" class="w-25">Heading 4</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
+                      <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
+                      <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
+                      <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                    </tr>
+                    <tr class="align-bottom">
+                      <td>This cell inherits <code>vertical-align: bottom;</code> from the table row</td>
+                      <td>This cell inherits <code>vertical-align: bottom;</code> from the table row</td>
+                      <td>This cell inherits <code>vertical-align: bottom;</code> from the table row</td>
+                      <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                    </tr>
+                    <tr>
+                      <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
+                      <td>This cell inherits <code>vertical-align: middle;</code> from the table</td>
+                      <td class="align-top">This cell is aligned to the top.</td>
+                      <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Nesting</h2>
+            <p>Border styles, active styles, and table variants are not inherited by nested tables.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-296" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-296" data-bs-toggle="pill" href="#pills-result-296" role="tab" aria-controls="pills-result-296" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-296" data-bs-toggle="pill" href="#pills-html-296" role="tab" aria-controls="pills-html-296" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-296">
+                <div class="tab-pane fade p-4 show active" id="pills-result-296" role="tabpanel" aria-labelledby="pills-result-tab-296">
+                  <div class="bd-example">
+                    <table class="table table-striped table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td colspan="4">
+                            <table class="table mb-0">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Header</th>
+                                  <th scope="col">Header</th>
+                                  <th scope="col">Header</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">A</th>
+                                  <td>First</td>
+                                  <td>Last</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">B</th>
+                                  <td>First</td>
+                                  <td>Last</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">C</th>
+                                  <td>First</td>
+                                  <td>Last</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-296" role="tabpanel" aria-labelledby="pills-html-tab-296">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;table class="table table-striped"&gt;
+                        &lt;thead&gt;
+                          ...
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          ...
+                          &lt;tr&gt;
+                            &lt;td colspan="4"&gt;
+                              &lt;table class="table mb-0"&gt;
+                                ...
+                              &lt;/table&gt;
+                            &lt;/td&gt;
+                          &lt;/tr&gt;
+                          ...
+                        &lt;/tbody&gt;
+                      &lt;/table&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+          <div class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">How nesting works</h2>
+            <p>To prevent <em>any</em> styles from leaking to nested tables, we use the child combinator (<code>&gt;</code>) selector in our CSS. Since we need to target all the <code>td</code>s and <code>th</code>s in the <code>thead</code>, <code>tbody</code>, and <code>tfoot</code>, our selector would look pretty long without it. As such, we use the rather odd looking <code>.table &gt; :not(caption) &gt; * &gt; *</code> selector to target all <code>td</code>s and <code>th</code>s of the <code>.table</code>, but none of any potential nested tables.</p>
+            <p>Note that if you add <code>&lt;tr&gt;</code>s as direct children of a table, those <code>&lt;tr&gt;</code> will be wrapped in a <code>&lt;tbody&gt;</code> by default, thus making our selectors work as intended.</p>
+          </div>
+
+          <div class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Anatomy</h2>
+            <h5>Table head</h5>
+            <p>Similar to tables and dark tables, use the modifier classes <code>.table-light</code> or <code>.table-dark</code> to make <code>&lt;thead&gt;</code>s appear light or dark gray.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-297" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-297" data-bs-toggle="pill" href="#pills-result-297" role="tab" aria-controls="pills-result-297" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-297" data-bs-toggle="pill" href="#pills-html-297" role="tab" aria-controls="pills-html-297" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-297">
+                <div class="tab-pane fade p-4 show active" id="pills-result-297" role="tabpanel" aria-labelledby="pills-result-tab-297">
+                  <div class="bd-example">
+                    <table class="table">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-297" role="tabpanel" aria-labelledby="pills-html-tab-297">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;table class="table"&gt;
+                        &lt;thead class="table-light"&gt;
+                          ...
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          ...
+                        &lt;/tbody&gt;
+                      &lt;/table&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-298" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-298" data-bs-toggle="pill" href="#pills-result-298" role="tab" aria-controls="pills-result-298" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-298" data-bs-toggle="pill" href="#pills-html-298" role="tab" aria-controls="pills-html-298" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-298">
+                <div class="tab-pane fade p-4 show active" id="pills-result-298" role="tabpanel" aria-labelledby="pills-result-tab-298">
+                  <div class="bd-example">
+                    <table class="table">
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-298" role="tabpanel" aria-labelledby="pills-html-tab-298">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;table class="table"&gt;
+                        &lt;thead class="table-dark"&gt;
+                          ...
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          ...
+                        &lt;/tbody&gt;
+                      &lt;/table&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <h5>Table foot</h5>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-299" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-299" data-bs-toggle="pill" href="#pills-result-299" role="tab" aria-controls="pills-result-299" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-299" data-bs-toggle="pill" href="#pills-html-299" role="tab" aria-controls="pills-html-299" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-299">
+                <div class="tab-pane fade p-4 show active" id="pills-result-299" role="tabpanel" aria-labelledby="pills-result-tab-299">
+                  <div class="bd-example">
+                    <table class="table">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td>Footer</td>
+                          <td>Footer</td>
+                          <td>Footer</td>
+                          <td>Footer</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-299" role="tabpanel" aria-labelledby="pills-html-tab-299">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;table class="table"&gt;
+                        &lt;thead&gt;
+                          ...
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          ...
+                        &lt;/tbody&gt;
+                        &lt;tfoot&gt;
+                          ...
+                        &lt;/tfoot&gt;
+                      &lt;/table&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <h5>Captions</h5>
+            <p>A <code>&lt;caption&gt;</code> functions like a heading for a table. It helps users with screen readers to find a table and understand what it’s about and decide if they want to read it.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-300" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-300" data-bs-toggle="pill" href="#pills-result-300" role="tab" aria-controls="pills-result-300" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-300" data-bs-toggle="pill" href="#pills-html-300" role="tab" aria-controls="pills-html-300" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-300">
+                <div class="tab-pane fade p-4 show active" id="pills-result-300" role="tabpanel" aria-labelledby="pills-result-tab-300">
+                  <div class="bd-example">
+                    <table class="table">
+                      <caption>List of users</caption>
+                        <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  
+                  
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-300" role="tabpanel" aria-labelledby="pills-html-tab-300">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;table class="table table-sm"&gt;
+                        &lt;caption&gt;List of users&lt;/caption&gt;
+                        &lt;thead&gt;
+                          ...
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          ...
+                        &lt;/tbody&gt;
+                      &lt;/table&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+            <p>You can also put the <code>&lt;caption&gt;</code> on the top of the table with <code>.caption-top</code>.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-301" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-301" data-bs-toggle="pill" href="#pills-result-301" role="tab" aria-controls="pills-result-301" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-301" data-bs-toggle="pill" href="#pills-html-301" role="tab" aria-controls="pills-html-301" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-301">
+                <div class="tab-pane fade p-4 show active" id="pills-result-301" role="tabpanel" aria-labelledby="pills-result-tab-301">
+                  <div class="bd-example">
+                    <table class="table caption-top">
+                      <caption>List of users</caption>
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-301" role="tabpanel" aria-labelledby="pills-html-tab-301">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;table class="table caption-top"&gt;
+                        &lt;caption&gt;List of users&lt;/caption&gt;
+                        &lt;thead&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="col"&gt;#&lt;/th&gt;
+                            &lt;th scope="col"&gt;First&lt;/th&gt;
+                            &lt;th scope="col"&gt;Last&lt;/th&gt;
+                            &lt;th scope="col"&gt;Handle&lt;/th&gt;
+                          &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row"&gt;1&lt;/th&gt;
+                            &lt;td&gt;Mark&lt;/td&gt;
+                            &lt;td&gt;Otto&lt;/td&gt;
+                            &lt;td&gt;@mdo&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row"&gt;2&lt;/th&gt;
+                            &lt;td&gt;Jacob&lt;/td&gt;
+                            &lt;td&gt;Thornton&lt;/td&gt;
+                            &lt;td&gt;@fat&lt;/td&gt;
+                          &lt;/tr&gt;
+                          &lt;tr&gt;
+                            &lt;th scope="row"&gt;3&lt;/th&gt;
+                            &lt;td&gt;Larry&lt;/td&gt;
+                            &lt;td&gt;the Bird&lt;/td&gt;
+                            &lt;td&gt;@twitter&lt;/td&gt;
+                          &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                      &lt;/table&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="responsive-tables" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Responsive tables</h2>
+            <p>Responsive tables allow tables to be scrolled horizontally with ease. Make any table responsive across all viewports by wrapping a <code>.table</code> with <code>.table-responsive</code>. Or, pick a maximum breakpoint with which to have a responsive table up to by using <code>.table-responsive{-sm|-md|-lg|-xl|-xxl}</code>.</p>
+            <div class="bd-callout bd-callout-warning">
+              <h5 id="vertical-clippingtruncation">Vertical clipping/truncation</h5>
+              <p>Responsive tables make use of <code>overflow-y: hidden</code>, which clips off any content that goes beyond the bottom or top edges of the table. In particular, this can clip off dropdown menus and other third-party widgets.
+              </p>
+            </div>
+            <h6>Always responsive</h6>
+            <p>Across every breakpoint, use <code>.table-responsive</code> for horizontally scrolling tables.</p>
+            <div class="tab-wrapper">
+              <!-- Nav Classic -->
+              <ul class="nav nav-classic" id="pills-tab-29" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-result-tab-29" data-bs-toggle="pill" href="#pills-result-29" role="tab" aria-controls="pills-result-29" aria-selected="true">Preview</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-html-tab-29" data-bs-toggle="pill" href="#pills-html-29" role="tab" aria-controls="pills-html-29" aria-selected="false">HTML</a>
+                </li>
+              </ul>
+              <!-- End Nav Classic -->
+
+              <!-- Tab Content -->
+              <div class="tab-content" id="pills-tabContent-29">
+                <div class="tab-pane fade p-4 show active" id="pills-result-29" role="tabpanel" aria-labelledby="pills-result-tab-29">
+                  <div class="bd-example">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                            <th scope="col">Heading</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                            <td>Cell</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-html-29" role="tabpanel" aria-labelledby="pills-html-tab-29">
+                  <pre class="rounded">
+                    <code class="language-markup" data-lang="html">
+                      &lt;div class="table-responsive"&gt;
+                        &lt;table class="table"&gt;
+                          ...
+                        &lt;/table&gt;
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+              <!-- End Tab Content -->
+            </div>
+          </div>
+
+          <div id="customizing-in-sass" class="muzedocs-content-divider">
+            <h2 class="muzedocs-heading">Customizing in Sass <a class="anchorjs-link" href="#customizing-in-sass" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+            <ul>
+              <li>The factor variables (<code>$table-striped-bg-factor</code>, <code>$table-active-bg-factor</code> &amp; <code>$table-hover-bg-factor</code>) are used to determine the contrast in table variants.</li>
+              <li>Apart from the light &amp; dark table variants, theme colors are lightened by the <code>$table-bg-level</code> variable.</li>
+            </ul>
+            <pre class="rounded">
+              <code class="language-markup" data-lang="html">
+                $table-cell-padding-y:        .5rem;
+                $table-cell-padding-x:        .5rem;
+                $table-cell-padding-y-sm:     .25rem;
+                $table-cell-padding-x-sm:     .25rem;
+
+                $table-cell-vertical-align:   top;
+
+                $table-color:                 $body-color;
+                $table-bg:                    transparent;
+
+                $table-striped-color:         $table-color;
+                $table-striped-bg-factor:     .05;
+                $table-striped-bg:            rgba($black, $table-striped-bg-factor);
+
+                $table-active-color:          $table-color;
+                $table-active-bg-factor:      .1;
+                $table-active-bg:             rgba($black, $table-active-bg-factor);
+
+                $table-hover-color:           $table-color;
+                $table-hover-bg-factor:       .075;
+                $table-hover-bg:              rgba($black, $table-hover-bg-factor);
+
+                $table-border-factor:         .1;
+                $table-border-width:          $border-width;
+                $table-border-color:          $border-color;
+
+                $table-striped-order:         odd;
+
+                $table-group-seperator-color: currentColor;
+
+                $table-caption-color:         $text-muted;
+
+                $table-bg-level:              -9;
+
+                $table-variants: (
+                  "primary":    color-level($primary, $table-bg-level),
+                  "secondary":  color-level($secondary, $table-bg-level),
+                  "success":    color-level($success, $table-bg-level),
+                  "info":       color-level($info, $table-bg-level),
+                  "warning":    color-level($warning, $table-bg-level),
+                  "danger":     color-level($danger, $table-bg-level),
+                  "light":      $light,
+                  "dark":       $dark,
+                );
+              </code>
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- JS Global Compulsory -->
+<script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Muze Javascript Plugins -->
+<script src="assets/vendor/prism/prism.js"></script>
+<script src="../assets/vendor/simplebar/dist/simplebar.min.js"></script>
+<script>
+  // Tooltip Script
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+  
+  //Muze Sidebar Toggle JavaScript
+  var elem = document.body;
+  function toggleClass(){
+    elem.classList.toggle("sidebar-show");  // Toggle hide class
+  }
+</script>
+</body>
+</html>
